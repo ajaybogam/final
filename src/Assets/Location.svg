@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="30px" viewBox="0 0 23 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Icon/Contact/Location</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Drf_Contact-Mobile" transform="translate(-39.000000, -389.000000)">
+            <g id="Icon/Contact/Location" transform="translate(32.000000, 386.000000)">
+                <rect id="Rectangle-Copy-4" fill-opacity="0" fill="#D8D8D8" x="0" y="0" width="36" height="36"></rect>
+                <path d="M18.6792453,31.9245283 C21.7052167,31.9245283 29.2075472,18.8938146 29.2075472,13.6216216 C29.2075472,8.3494286 24.4938659,4.0754717 18.6792453,4.0754717 C12.8646247,4.0754717 8.1509434,8.3494286 8.1509434,13.6216216 C8.1509434,18.8938146 15.6532738,31.9245283 18.6792453,31.9245283 Z" id="Oval" stroke="#343434" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <circle id="Oval" stroke="#343434" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" cx="18.6792453" cy="13.9245283" r="4.41509434"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

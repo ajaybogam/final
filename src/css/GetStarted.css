@@ -1,0 +1,77 @@
+@media screen and (min-width: 1400px) {
+  .getStarted {
+    background-color: #265182;
+    padding: 80px 0 100px 150px;
+  }
+  .getTitle {
+    font-weight: 700;
+    font-size: 50px;
+    color: #ffffff;
+  }
+  .getSub {
+    font-size: 22px;
+    color: #ffffff;
+  }
+  .getLogo {
+    display: flex;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .getStarted {
+    background-color: #265182;
+    padding: 80px 0 100px 150px;
+  }
+  .getTitle {
+    font-weight: 700;
+    font-size: 46px;
+    color: #ffffff;
+  }
+  .getSub {
+    font-size: 22px;
+    color: #ffffff;
+  }
+  .getLogo {
+    display: flex;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .getStarted {
+    background-color: #265182;
+    padding: 80px 0 100px 150px;
+  }
+  .getTitle {
+    font-weight: 700;
+    font-size: 42px;
+    color: #ffffff;
+  }
+  .getSub {
+    font-size: 20px;
+    color: #ffffff;
+  }
+  .getLogo {
+    display: flex;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 600px) {
+  .getStarted {
+    width: 550px;
+    background-color: #265182;
+    padding: 80px 0 100px 50px;
+  }
+  .getTitle {
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .getSub {
+    font-size: 22px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .getLogo {
+    display: flex;
+    padding: 0 100px 0 100px;
+    justify-content: space-around;
+  }
+}

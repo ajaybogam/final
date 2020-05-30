@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="195px" height="189px" viewBox="0 0 195 189" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Icon/Doorstep Service</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Drf_Loans-Mobile" transform="translate(-79.000000, -3294.000000)">
+            <g id="Group-2" transform="translate(0.000000, 1383.000000)">
+                <g id="Icon/Doorstep-Service" transform="translate(67.000000, 1892.000000)">
+                    <ellipse id="Oval" stroke-opacity="0.6" stroke="#FFFFFF" transform="translate(113.500000, 112.500000) rotate(45.000000) translate(-113.500000, -112.500000) " cx="113.5" cy="112.5" rx="126.5" ry="31.5"></ellipse>
+                    <ellipse id="Oval" stroke-opacity="0.6" stroke="#FFFFFF" transform="translate(112.500000, 112.500000) scale(-1, 1) rotate(45.000000) translate(-112.500000, -112.500000) " cx="112.5" cy="112.5" rx="126.5" ry="31.5"></ellipse>
+                    <circle id="Oval-Copy-3" stroke="#FFFFFF" stroke-width="2" fill="#FFFFFF" cx="103.5" cy="116.5" r="90.5"></circle>
+                    <path d="M96,154 C85.1943215,154 84.3640603,154 73.5583818,154 C72.4825718,154 71.7653651,153.283898 71.7653651,152.209746 L71.7653651,114.146186 L62.8002817,114.146186 C62.083075,114.146186 61.3658683,113.788136 61.1865667,113.072034 C60.8279633,112.355932 61.007265,111.639831 61.54517,111.102754 L102.784554,76.5370763 C103.50176,75.8209746 104.756872,75.8209746 105.294777,76.5370763 L146.534161,111.102754 C147.072066,111.639831 147.072066,112.355932 146.892764,113.072034 C146.713462,113.788136 145.996256,114.146186 145.279049,114.146186 L136.313966,114.146186 L136.313966,152 C136.313966,153.104569 135.418535,154 134.313966,154 C130.643685,154 122.973405,154 119.303125,154" id="Path" stroke="#1E9ED2" stroke-width="3"></path>
+                    <polyline id="Path" stroke="#1E9ED2" stroke-width="3" points="96 154 96 129 113 129 113 154"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

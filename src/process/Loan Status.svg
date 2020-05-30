@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="193px" height="189px" viewBox="0 0 193 189" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Icon/Loan Status</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Drf_Loans-Mobile" transform="translate(-81.000000, -4110.000000)">
+            <g id="Group-2" transform="translate(0.000000, 1383.000000)">
+                <g id="Icon/Loan-Status" transform="translate(68.000000, 2708.000000)">
+                    <ellipse id="Oval" stroke-opacity="0.6" stroke="#FFFFFF" transform="translate(112.500000, 112.500000) rotate(45.000000) translate(-112.500000, -112.500000) " cx="112.5" cy="112.5" rx="126.5" ry="31.5"></ellipse>
+                    <ellipse id="Oval" stroke-opacity="0.6" stroke="#FFFFFF" transform="translate(112.500000, 112.500000) scale(-1, 1) rotate(45.000000) translate(-112.500000, -112.500000) " cx="112.5" cy="112.5" rx="126.5" ry="31.5"></ellipse>
+                    <circle id="Oval-Copy-2" stroke="#FFFFFF" stroke-width="2" fill="#FFFFFF" cx="104.5" cy="116.5" r="90.5"></circle>
+                    <path d="M120.731324,153 L83,153 C80.790861,153 79,151.209139 79,149 L79,77 C79,74.790861 80.790861,73 83,73 L115.102101,73 L123,73 C125.209139,73 127,74.790861 127,77 L127,150" id="Path" stroke="#1E9ED2" stroke-width="3"></path>
+                    <circle id="Oval" stroke="#1E9ED2" stroke-width="3" cx="103.5" cy="107.5" r="11.5"></circle>
+                    <circle id="Oval" stroke="#1E9ED2" stroke-width="3" cx="103" cy="142" r="4"></circle>
+                    <polyline id="Path-2" stroke="#1E9ED2" stroke-width="3" points="92 73 92 79.159697 115 79.159697 115 73"></polyline>
+                    <polyline id="Path-3" stroke="#1E9ED2" stroke-width="3" points="103 101.827625 103 108.5 107.388462 111.731337"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

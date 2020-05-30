@@ -1,0 +1,1043 @@
+@media screen and (min-width: 1400px) {
+  .loansthrough {
+    background-color: #1e9ed2;
+    text-align: center;
+    padding: 10% 10% 10% 10%;
+    align-items: center;
+  }
+  .loansTitle {
+    font-size: 64px;
+    color: #ffffff;
+    font-weight: 700;
+    padding-bottom: 40px;
+  }
+  .loansTitle-mobile {
+    display: none;
+  }
+  .loansSub {
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .processed {
+    padding: 5%;
+    text-align: center;
+  }
+  .processedtitle {
+    font-weight: 700;
+    font-size: 64px;
+    padding-bottom: 70px;
+    color: #265182;
+  }
+  .applybtn {
+    background: #eba71f;
+    border-radius: 25px;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: #ffffff;
+  }
+  .processTitle {
+    font-size: 64px;
+    padding: 0 180px 100px 180px;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+  }
+  .dealsTitle {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 42px 0px 12px 0px;
+    text-transform: uppercase;
+  }
+  .dealsSub {
+    width: 300px;
+    font-size: 19px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .dealsBlock {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .catalog {
+    padding: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #343434;
+  }
+  .applyfor {
+    display: flex;
+    align-items: center;
+    padding-bottom: 60px;
+    justify-content: space-around;
+  }
+  .dealsRow1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  .dealsRow2 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+  }
+  .catalogTitle {
+    font-weight: 700;
+    font-size: 22px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+  .line {
+    border: 0.5px solid #d0d0d0;
+    height: 95px;
+  }
+  .Menu11 {
+    display: flex;
+    padding: 0px 176px 0px 176px;
+  }
+  .Menu22 {
+    display: flex;
+    padding: 0px 176px 80px 176px;
+  }
+  .Box11 {
+    width: 210px;
+    height: 100px;
+    padding-top: 50px;
+    border-bottom: 1px solid #d0d0d0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #343434;
+    border-right: 1px solid #d0d0d0;
+  }
+  .Box112 {
+    width: 210px;
+    height: 100px;
+    padding-top: 50px;
+    border-bottom: 1px solid #d0d0d0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #343434;
+  }
+  .Box22 {
+    width: 193px;
+    height: 100px;
+    padding-top: 50px;
+    border-right: 1px solid #d0d0d0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #343434;
+  }
+  .Box223 {
+    width: 193px;
+    height: 100px;
+    padding-top: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #343434;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .loansthrough {
+    background-color: #1e9ed2;
+    text-align: center;
+    padding: 10% 10% 10% 10%;
+    align-items: center;
+  }
+  .loansTitle {
+    font-size: 59px;
+    color: #ffffff;
+    font-weight: 700;
+    padding-bottom: 40px;
+  }
+  .loansTitle-mobile {
+    display: none;
+  }
+  .loansSub {
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .processed {
+    padding: 5%;
+    text-align: center;
+  }
+  .processedtitle {
+    font-weight: 700;
+    font-size: 59px;
+    padding-bottom: 70px;
+    color: #265182;
+  }
+  .applybtn {
+    background: #eba71f;
+    border-radius: 25px;
+    padding: 15px 50px 15px 50px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: #ffffff;
+  }
+  .processTitle {
+    font-size: 59px;
+    padding: 0 180px 100px 180px;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+  }
+  .dealsTitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 42px 0px 12px 0px;
+    text-transform: uppercase;
+  }
+  .dealsSub {
+    width: 278px;
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .dealsBlock {
+    display: flex;
+    width: 278px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .catalog {
+    padding: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #343434;
+  }
+  .applyfor {
+    display: flex;
+    align-items: center;
+    padding-bottom: 60px;
+    justify-content: space-around;
+  }
+  .dealsRow1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  .dealsRow2 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+  }
+  .catalogTitle {
+    font-weight: 700;
+    font-size: 20px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+  .line {
+    border: 0.5px solid #d0d0d0;
+    height: 88px;
+  }
+  .Menu11 {
+    display: flex;
+    padding: 0px 176px 0px 176px;
+  }
+  .Menu22 {
+    display: flex;
+    padding: 0px 176px 80px 176px;
+  }
+  .Box11 {
+    width: 195px;
+    height: 92px;
+    padding-top: 50px;
+    border-bottom: 1px solid #d0d0d0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #343434;
+    border-right: 1px solid #d0d0d0;
+  }
+  .Box112 {
+    width: 195px;
+    height: 92px;
+    padding-top: 50px;
+    border-bottom: 1px solid #d0d0d0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #343434;
+  }
+  .Box22 {
+    width: 173px;
+    height: 92px;
+    padding-top: 50px;
+    border-right: 1px solid #d0d0d0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #343434;
+  }
+  .Box223 {
+    width: 173px;
+    height: 92px;
+    padding-top: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #343434;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .loansthrough {
+    background-color: #1e9ed2;
+    text-align: center;
+    padding: 10% 10% 10% 10%;
+    align-items: center;
+  }
+  .loansTitle {
+    font-size: 54px;
+    color: #ffffff;
+    font-weight: 700;
+    padding-bottom: 40px;
+  }
+  .loansTitle-mobile {
+    display: none;
+  }
+  .loansSub {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .processed {
+    padding: 5%;
+    text-align: center;
+  }
+  .processedtitle {
+    font-weight: 700;
+    font-size: 54px;
+    padding-bottom: 70px;
+    color: #265182;
+  }
+  .applybtn {
+    background: #eba71f;
+    border-radius: 25px;
+    padding: 15px 50px 15px 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #ffffff;
+  }
+  .processTitle {
+    font-size: 54px;
+    padding: 0 180px 100px 180px;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+  }
+  .dealsTitle {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 42px 0px 12px 0px;
+    text-transform: uppercase;
+  }
+  .dealsSub {
+    width: 257px;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .dealsBlock {
+    display: flex;
+    width: 257px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .catalog {
+    padding: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #343434;
+  }
+  .applyfor {
+    display: flex;
+    align-items: center;
+    padding-bottom: 60px;
+    justify-content: space-around;
+  }
+  .dealsRow1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  .dealsRow2 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+  }
+  .catalogTitle {
+    font-weight: 700;
+    font-size: 18px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+  .line {
+    border: 0.5px solid #d0d0d0;
+    height: 81px;
+  }
+  .Menu11 {
+    display: flex;
+    padding: 0px 176px 0px 176px;
+  }
+  .Menu22 {
+    display: flex;
+    padding: 0px 176px 80px 176px;
+  }
+  .Box11 {
+    width: 180px;
+    height: 85px;
+    padding-top: 50px;
+    border-bottom: 1px solid #d0d0d0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #343434;
+    border-right: 1px solid #d0d0d0;
+  }
+  .Box112 {
+    width: 180px;
+    height: 85px;
+    padding-top: 50px;
+    border-bottom: 1px solid #d0d0d0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #343434;
+  }
+  .Box22 {
+    width: 165px;
+    height: 85px;
+    padding-top: 50px;
+    border-right: 1px solid #d0d0d0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #343434;
+  }
+  .Box223 {
+    width: 165px;
+    height: 85px;
+    padding-top: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #343434;
+  }
+}
+@media screen and (max-width: 600px) and (min-width: 320px) {
+  .image-mobile {
+    width: 241.4px;
+    height: 241.4px;
+    padding: 0px 59.3px 58px 59.3px;
+  }
+  .applybtn {
+    background: #eba71f;
+    border-radius: 25px;
+    padding: 15px 50px 15px 50px;
+    border: none;
+    margin-left: 30%;
+    margin-bottom: 50px;
+    align-items: center;
+    outline: none;
+    color: #ffffff;
+  }
+  .loansthrough {
+    padding: 0px;
+    width: 600px;
+    text-align: center;
+    align-items: center;
+  }
+  .loansTitle-mobile {
+    display: block;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+    font-size: 40px;
+    width: 190px;
+    padding: 100px 83px 24px 84px;
+    margin: 0px auto;
+  }
+  /* .loansTitle {
+    display: none;
+  } */
+  .loansSub {
+    font-size: 16px;
+    /* width:297px; */
+    padding: 0px 50px 60px 50px;
+  }
+  #insurance-width {
+    width: 250px;
+  }
+  #investments-width {
+    width: 270px;
+  }
+  .processedtitle {
+    font-size: 40px;
+    width: 232px;
+    margin-left: 200px;
+  }
+  .processTitle {
+    font-size: 54px;
+    padding: 0;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+  }
+  .applyfor {
+    flex-direction: row;
+    padding-left: 33px;
+  }
+  .line {
+    border: 1px solid #d0d0d0;
+  }
+  .loansMenu123 {
+    display: flex;
+    padding-bottom: 50px;
+  }
+  .Menu11 {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 0px 100px;
+  }
+  .Menu22 {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 100px 0px 0px;
+  }
+  .Box11 {
+    width: 180px;
+    height: 85px;
+    padding-top: 50px;
+    border-bottom: 1px solid #d0d0d0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #343434;
+    border-right: 1px solid #d0d0d0;
+  }
+  .Box112 {
+    width: 180px;
+    height: 85px;
+    padding-top: 50px;
+    border: none;
+    border-right: 1px solid #d0d0d0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #343434;
+  }
+  .Box22 {
+    width: 165px;
+    height: 85px;
+    padding-top: 50px;
+    border: none;
+    border-bottom: 1px solid #d0d0d0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #343434;
+  }
+  .Box223 {
+    width: 165px;
+    height: 85px;
+    padding-top: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #343434;
+  }
+  .catalog {
+    padding: 15px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #343434;
+  }
+  /* .mobile-menus{
+    display: flex;
+    
+  } */
+  /* .Menu11{
+    flex-direction: column;
+  }
+  .Menu22{
+    flex-direction: column;
+  } */
+  /* 
+  process images */
+  .processed {
+    padding: 0px;
+  }
+  .processTitle {
+    font-size: 40px;
+    width: 265px;
+    padding: 0px 45px 70px 45px;
+    text-align: center;
+    margin: 0px auto;
+  }
+  .dealsBlock {
+    padding: 0px;
+    margin: 0px;
+    align-items: baseline;
+    text-align: center;
+    width: 360px;
+    margin: 0px auto;
+  }
+  .dealsRow1 {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 0px;
+  }
+  .dealsRow2 {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 0px;
+  }
+  .dealsBlock > img {
+    width: 225px;
+    height: 225px;
+    align-items: center;
+    padding: 0px 68px;
+  }
+  .dealsTitle {
+    font-size: 20px;
+    padding: 16px 0px 8px 10%;
+    width: 295px;
+  }
+  .dealsSub {
+    font-size: 18px;
+    padding: 0px 0px 60px 10%;
+    width: 297px;
+    text-align: center;
+  }
+}
+
+/* @media screen and (min-width: 1400px) {
+  .loansthrough {
+    background-color: #1e9ed2;
+    text-align: center;
+    padding: 10% 10% 10% 10%;
+    align-items: center;
+  }
+  .loansTitle {
+    font-size: 64px;
+    color: #ffffff;
+    font-weight: 700;
+    padding-bottom: 40px;
+  }
+  .loansSub {
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .processed {
+    padding: 5%;
+    text-align: center;
+  }
+  .processedtitle {
+    font-weight: 700;
+    font-size: 64px;
+    padding-bottom: 70px;
+    color: #265182;
+  }
+  .applybtn {
+    background: #eba71f;
+    border-radius: 25px;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+  }
+  .processTitle {
+    font-size: 64px;
+    padding: 0 180px 100px 180px;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+  }
+  .dealsTitle {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 42px 0px 12px 0px;
+    text-transform: uppercase;
+  }
+  .dealsSub {
+    width: 300px;
+    font-size: 19px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .dealsBlock {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .catalog {
+    padding: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #343434;
+  }
+  .applyfor {
+    display: flex;
+    align-items: center;
+    padding-bottom: 60px;
+    justify-content: space-around;
+  }
+  .dealsRow1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  .dealsRow2 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+  }
+  .catalogTitle {
+    font-weight: 700;
+    font-size: 22px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+  .line {
+    border: 0.5px solid #d0d0d0;
+    height: 95px;
+  }
+  .Menu11 {
+    display: flex;
+    padding: 0px 176px 0px 176px;
+  }
+  .Menu22 {
+    display: flex;
+    padding: 0px 176px 80px 176px;
+  }
+  .Box11 {
+    width: 210px;
+    height: 100px;
+    padding-top: 50px;
+    border-bottom: 1px solid #d0d0d0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #343434;
+    border-right: 1px solid #d0d0d0;
+  }
+  .Box112 {
+    width: 210px;
+    height: 100px;
+    padding-top: 50px;
+    border-bottom: 1px solid #d0d0d0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #343434;
+  }
+  .Box22 {
+    width: 193px;
+    height: 100px;
+    padding-top: 50px;
+    border-right: 1px solid #d0d0d0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #343434;
+  }
+  .Box223 {
+    width: 193px;
+    height: 100px;
+    padding-top: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #343434;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .loansthrough {
+    background-color: #1e9ed2;
+    text-align: center;
+    padding: 10% 10% 10% 10%;
+    align-items: center;
+  }
+  .loansTitle {
+    font-size: 59px;
+    color: #ffffff;
+    font-weight: 700;
+    padding-bottom: 40px;
+  }
+  .loansSub {
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .processed {
+    padding: 5%;
+    text-align: center;
+  }
+  .processedtitle {
+    font-weight: 700;
+    font-size: 59px;
+    padding-bottom: 70px;
+    color: #265182;
+  }
+  .applybtn {
+    background: #eba71f;
+    border-radius: 25px;
+    padding: 15px 50px 15px 50px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+  }
+  .processTitle {
+    font-size: 59px;
+    padding: 0 180px 100px 180px;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+  }
+  .dealsTitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 42px 0px 12px 0px;
+    text-transform: uppercase;
+  }
+  .dealsSub {
+    width: 278px;
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .dealsBlock {
+    display: flex;
+    width: 278px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .catalog {
+    padding: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #343434;
+  }
+  .applyfor {
+    display: flex;
+    align-items: center;
+    padding-bottom: 60px;
+    justify-content: space-around;
+  }
+  .dealsRow1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  .dealsRow2 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+  }
+  .catalogTitle {
+    font-weight: 700;
+    font-size: 20px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+  .line {
+    border: 0.5px solid #d0d0d0;
+    height: 88px;
+  }
+  .Menu11 {
+    display: flex;
+    padding: 0px 176px 0px 176px;
+  }
+  .Menu22 {
+    display: flex;
+    padding: 0px 176px 80px 176px;
+  }
+  .Box11 {
+    width: 195px;
+    height: 92px;
+    padding-top: 50px;
+    border-bottom: 1px solid #d0d0d0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #343434;
+    border-right: 1px solid #d0d0d0;
+  }
+  .Box112 {
+    width: 195px;
+    height: 92px;
+    padding-top: 50px;
+    border-bottom: 1px solid #d0d0d0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #343434;
+  }
+  .Box22 {
+    width: 173px;
+    height: 92px;
+    padding-top: 50px;
+    border-right: 1px solid #d0d0d0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #343434;
+  }
+  .Box223 {
+    width: 173px;
+    height: 92px;
+    padding-top: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #343434;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .loansthrough {
+    background-color: #1e9ed2;
+    text-align: center;
+    padding: 10% 10% 10% 10%;
+    align-items: center;
+  }
+  .loansTitle {
+    font-size: 54px;
+    color: #ffffff;
+    font-weight: 700;
+    padding-bottom: 40px;
+  }
+  .loansSub {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .processed {
+    padding: 5%;
+    text-align: center;
+  }
+  .processedtitle {
+    font-weight: 700;
+    font-size: 54px;
+    padding-bottom: 70px;
+    color: #265182;
+  }
+  .applybtn {
+    background: #eba71f;
+    border-radius: 25px;
+    padding: 15px 50px 15px 50px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+  }
+  .processTitle {
+    font-size: 54px;
+    padding: 0 180px 100px 180px;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+  }
+  .dealsTitle {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 42px 0px 12px 0px;
+    text-transform: uppercase;
+  }
+  .dealsSub {
+    width: 257px;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .dealsBlock {
+    display: flex;
+    width: 257px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .catalog {
+    padding: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #343434;
+  }
+  .applyfor {
+    display: flex;
+    align-items: center;
+    padding-bottom: 60px;
+    justify-content: space-around;
+  }
+  .dealsRow1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  .dealsRow2 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+  }
+  .catalogTitle {
+    font-weight: 700;
+    font-size: 18px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+  .line {
+    border: 0.5px solid #d0d0d0;
+    height: 81px;
+  }
+  .Menu11 {
+    display: flex;
+    padding: 0px 176px 0px 176px;
+  }
+  .Menu22 {
+    display: flex;
+    padding: 0px 176px 80px 176px;
+  }
+  .Box11 {
+    width: 180px;
+    height: 85px;
+    padding-top: 50px;
+    border-bottom: 1px solid #d0d0d0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #343434;
+    border-right: 1px solid #d0d0d0;
+  }
+  .Box112 {
+    width: 180px;
+    height: 85px;
+    padding-top: 50px;
+    border-bottom: 1px solid #d0d0d0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #343434;
+  }
+  .Box22 {
+    width: 165px;
+    height: 85px;
+    padding-top: 50px;
+    border-right: 1px solid #d0d0d0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #343434;
+  }
+  .Box223 {
+    width: 165px;
+    height: 85px;
+    padding-top: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #343434;
+  }
+} */

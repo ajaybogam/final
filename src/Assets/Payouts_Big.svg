@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="195px" height="189px" viewBox="0 0 195 189" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Icon/Payouts_Big</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="DrF_Lead-Gen-3" transform="translate(-1048.000000, -1108.000000)">
+            <g id="Icon/Payouts_Big" transform="translate(1036.000000, 1089.000000)">
+                <ellipse id="Oval" stroke-opacity="0.6" stroke="#FFFFFF" transform="translate(113.500000, 112.500000) rotate(45.000000) translate(-113.500000, -112.500000) " cx="113.5" cy="112.5" rx="126.5" ry="31.5"></ellipse>
+                <ellipse id="Oval" stroke-opacity="0.6" stroke="#FFFFFF" transform="translate(112.500000, 112.500000) scale(-1, 1) rotate(45.000000) translate(-112.500000, -112.500000) " cx="112.5" cy="112.5" rx="126.5" ry="31.5"></ellipse>
+                <circle id="Oval-Copy-3" stroke="#FFFFFF" stroke-width="2" fill="#FFFFFF" cx="103.5" cy="116.5" r="90.5"></circle>
+                <circle id="Combined-Shape" stroke="#265182" stroke-width="3" cx="103.5" cy="116.5" r="46.5"></circle>
+                <path d="M88,94 L123,94 L88,94 Z M92.8910375,123.719313 L98.5448126,123.719313 L92.8910375,123.719313 Z M98.5448126,94 C105.297926,94 110.772406,100.652895 110.772406,108.859657 C110.772406,117.066418 105.297926,123.719313 98.5448126,123.719313 M92.8910375,123.719313 L114.792753,146 L92.8910375,123.719313 Z" id="Shape" stroke="#265182" stroke-width="3"></path>
+                <path d="M88,111.5 L123,111.5" id="Path-7" stroke="#265182" stroke-width="3"></path>
+            </g>
+        </g>
+    </g>
+</svg>

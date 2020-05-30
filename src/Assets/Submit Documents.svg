@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="130px" height="130px" viewBox="0 0 130 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Icon/Process/Submit Documents</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DrF_Homepage" transform="translate(-655.000000, -1892.000000)">
+            <g id="Group-18" transform="translate(140.000000, 1846.000000)">
+                <g id="Icon/Process/Submit-Documents" transform="translate(515.000000, 46.000000)">
+                    <circle id="Oval-Copy-5" fill="#22D1B4" cx="65" cy="65" r="65"></circle>
+                    <path d="M44.1439994,74.3 C43.4868518,74.3 42.3247407,74.3 40.6576663,74.3 C26,74.3 26,60.5500425 26,60.0961148 C26,54.4251138 31.0997362,48.964944 36.6715568,48.964944 C38.1822967,48.964944 39.6154791,49.3029184 40.9020972,49.9086321 C42.5520956,39.7485673 51.2239469,32 61.6739218,32 C70.797396,32 78.5655186,37.9062443 81.4886928,46.16702 C83.279614,45.662792 85.166357,45.3933769 87.1149247,45.3933769 C98.743072,45.3933769 107.163223,51.4751325 105.868617,62.7446867 C105.285448,67.8211714 99.385393,73.0836102 87.1093312,74.1427159" id="Shape" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M55.0214779,63.8359447 L76.3029695,63.8359447 C77.2379324,63.8359447 77.9958696,64.5938819 77.9958696,65.5288447 L77.9958696,92.7148419 C77.9958696,93.6498048 77.2379324,94.4077419 76.3029695,94.4077419 L55.0214779,94.4077419 C54.0865151,94.4077419 53.3285779,93.6498048 53.3285779,92.7148419 L53.3285779,65.5288447 C53.3285779,64.5938819 54.0865151,63.8359447 55.0214779,63.8359447 Z" id="Rectangle" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M66.1541764,84.2522581 L66.1541764,76.009264" id="Path-38" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <polyline id="Path-39" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="61.3428485 76.9963608 66.1541764 73.5368172 71.181901 76.9963608"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,301 @@
+.star1 {
+  position: relative;
+  left: 63.8%;
+  width: 24px;
+  height: 24px;
+}
+.star2 {
+  width: 44px;
+  height: 44px;
+  left: 40.4%;
+  top: 50px;
+  position: relative;
+}
+.star3 {
+  width: 44px;
+  height: 44px;
+  left: 10.4%;
+  top: 150px;
+  position: relative;
+}
+.star4 {
+  width: 34px;
+  height: 34px;
+  left: 44.9%;
+  position: relative;
+}
+.star5 {
+  width: 24px;
+  height: 14px;
+  left: 13.9%;
+  position: relative;
+}
+.star6 {
+  width: 34px;
+  height: 34px;
+  left: 84.9%;
+  position: relative;
+  margin-bottom: 34px;
+}
+.star8 {
+  width: 54px;
+  height: 54px;
+  left: 73.2%;
+  position: relative;
+}
+.star9 {
+  width: 74px;
+  height: 74px;
+  top: 40px;
+  left: 4.2%;
+  position: relative;
+}
+.star10 {
+  width: 54px;
+  height: 54px;
+  left: 4.2%;
+  padding-right: 80%;
+  position: relative;
+}
+.star11 {
+  width: 44px;
+  height: 44px;
+  left: 4.2%;
+  padding-left: 55%;
+  position: relative;
+}
+.star12 {
+  width: 44px;
+  height: 44px;
+  left: 30.2%;
+  padding-left: 55%;
+  position: relative;
+}
+.star13 {
+  width: 34px;
+  height: 34px;
+  left: 4.2%;
+  padding-left: 55%;
+  position: relative;
+}
+.star14 {
+  width: 24px;
+  height: 24px;
+  left: 64.2%;
+  position: relative;
+}
+.star15 {
+  width: 34px;
+  height: 34px;
+  left: 100%;
+  padding-bottom: 30px;
+  position: relative;
+}
+.star16 {
+  width: 44px;
+  height: 44px;
+  left: 14.2%;
+  position: relative;
+}
+.star17 {
+  width: 24px;
+  height: 24px;
+  top: 10px;
+  left: 20.2%;
+  position: relative;
+}
+.star18 {
+  width: 34px;
+  height: 34px;
+  top: 10px;
+  left: 90.2%;
+  position: relative;
+}
+.star19 {
+  width: 54px;
+  height: 54px;
+  top: 10px;
+  right: 25%;
+  position: relative;
+}
+.star20 {
+  width: 34px;
+  height: 34px;
+  left: 35%;
+  bottom: 80px;
+  position: relative;
+}
+.star21 {
+  width: 44px;
+  height: 44px;
+  right: 45%;
+  position: relative;
+}
+.star22 {
+  width: 54px;
+  height: 54px;
+  right: 30%;
+  top: 30px;
+  position: relative;
+}
+.star23 {
+  width: 44px;
+  height: 44px;
+  left: 35%;
+  bottom: 120px;
+  position: relative;
+}
+.star24 {
+  width: 44px;
+  height: 44px;
+  right: 60%;
+  top: 120px;
+  position: relative;
+}
+.star25 {
+  width: 37px;
+  height: 37px;
+  top: 20px;
+  right: 50px;
+  position: relative;
+}
+.star26 {
+  width: 26px;
+  height: 26px;
+  left: 30%;
+  position: relative;
+}
+.star27 {
+  width: 44px;
+  height: 44px;
+  left: 60%;
+  bottom: 40px;
+  position: relative;
+}
+.star28 {
+  width: 44px;
+  height: 44px;
+  left: 5%;
+  position: relative;
+}
+.star29 {
+  width: 24px;
+  height: 24px;
+  left: 95%;
+  bottom: 120px;
+  position: relative;
+}
+.star30 {
+  width: 24px;
+  height: 24px;
+  top: 100px;
+  left: 10%;
+  position: relative;
+}
+.star31 {
+  width: 34px;
+  height: 34px;
+  left: 50%;
+  top: 50px;
+  position: relative;
+}
+.star32 {
+  width: 26px;
+  height: 26px;
+  left: 80%;
+  top: 100px;
+  position: relative;
+}
+.star33 {
+  width: 44px;
+  height: 44px;
+  right: 10%;
+  position: relative;
+}
+.star34 {
+  width: 34px;
+  height: 34px;
+  right: 15%;
+  position: relative;
+}
+.star35 {
+  width: 44px;
+  height: 44px;
+  left: 15%;
+  bottom: 60px;
+  position: relative;
+}
+.star36 {
+  width: 44px;
+  height: 44px;
+  left: 10%;
+  position: relative;
+}
+.star37 {
+  width: 44px;
+  height: 44px;
+  right: 10%;
+  top: 400px;
+  position: relative;
+}
+.star38 {
+  width: 54px;
+  height: 54px;
+  left: 100%;
+  bottom: 80px;
+  position: relative;
+}
+.star39 {
+  width: 44px;
+  height: 44px;
+  right: 10%;
+  position: relative;
+}
+.star40 {
+  width: 44px;
+  height: 44px;
+  left: 80%;
+  top: 150px;
+  position: relative;
+}
+.star41 {
+  width: 34px;
+  height: 34px;
+  right: 32%;
+  position: relative;
+}
+.star42 {
+  width: 40px;
+  height: 40px;
+  left: 35%;
+  bottom: 50px;
+  position: relative;
+}
+.star43 {
+  width: 34px;
+  height: 34px;
+  right: 20%;
+  top: 20px;
+  position: relative;
+}
+.star44 {
+  width: 40px;
+  height: 40px;
+  left: 20%;
+  bottom: 100px;
+  position: relative;
+}
+.star45 {
+  width: 64px;
+  height: 64px;
+  right: 45%;
+  top: 90px;
+  position: relative;
+}
+.star46 {
+  width: 64px;
+  height: 64px;
+  left: 40%;
+  bottom: 200px;
+  position: relative;
+}
