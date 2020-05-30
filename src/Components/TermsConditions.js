@@ -214,7 +214,7 @@ function TermsCondition() {
               Indemnity
             </div>
             <br />
-            {/* <div className={"tacs_onclick_" + (tac[8].open ? 'valid' : 'invalid')}  onClick={()=>{renderSection(9)}}>Section 9</div><br/> */}
+            <div className={"tacs_onclick_" + (tac[8].open ? 'valid' : 'invalid')}  onClick={()=>{renderSection(9)}}> Additional Terms</div><br/>
           </div>
           <div className="tacs_">
             {tac.map((obj, i) => (

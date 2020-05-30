@@ -275,6 +275,18 @@ class Head extends React.Component {
                 Insurance
               </Link>
             </div>
+
+            <div className="mobileproducts-elements">
+              <Link
+                to="/creditcards"
+                style={style}
+                onClick={() => {
+                  this.setState({ mobilejoinOpen: false });
+                }}
+              >
+                Credit cards
+              </Link>
+            </div>
           </div>
           <hr className="modalmobileJoin-hr" />
 

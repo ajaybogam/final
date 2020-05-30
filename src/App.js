@@ -42,6 +42,7 @@ function App() {
           <Route path="/faqs" component={Faqs}></Route>
           <Route path="/termsandconditions" component={TncPage}></Route>
           <Route path="/creditcards" component={CreditPage}></Route>
+          
         </Switch>
         {/* <HomePage /> */}
         {/* <JoinasReferral /> */}

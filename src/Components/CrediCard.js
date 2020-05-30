@@ -72,7 +72,12 @@ class CrediCard extends React.Component {
     const { name, phone, email, instrument } = this.state;
     return (
       <div>
-        <Modal  
+        <Modal  style={{
+            overlay: {
+              background: "rgba(52,52,52,0.60)",
+              overflow: "hidden",
+            },
+          }}
           className="ApplyModal"
           isOpen={this.state.openSuccess}
           onRequestClose={this.successModalClose}
@@ -107,7 +112,12 @@ class CrediCard extends React.Component {
             </div>
           </div>
         </Modal>
-        <Modal
+        <Modal style={{
+            overlay: {
+              background: "rgba(52,52,52,0.60)",
+              overflow: "hidden",
+            },
+          }}
           className="ApplyModal"
           isOpen={this.state.openModal}
           onRequestClose={this.setModalClose}
@@ -196,6 +206,10 @@ class CrediCard extends React.Component {
             <div className="aboutTitle" id="CreditTitle" style={loantitle}>
               We will help you pick the best credit card for you
             </div>
+
+            <div className="aboutTitle-mobile" style={loantitle}>
+              We will help you pick the best credit card for you
+            </div>
             <div className="aboutSubtitle">
               After a thorough analysis of your requirements, our experts will
               choose the credit card that fits your needs. It will not just help
@@ -207,6 +221,7 @@ class CrediCard extends React.Component {
         <div className="loansthrough">
           <img src={Star} className="star41"></img>
           <div className="loansTitle">credit cards through dr. finance</div>
+          <div className="loansTitle-mobile">credit cards in dr. finance</div>
           <img src={Star} className="star42"></img>
           <div className="loansSub">
             There are a lot of advantages to using a credit card when chosen
