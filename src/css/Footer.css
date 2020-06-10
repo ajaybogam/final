@@ -1,0 +1,339 @@
+@media screen and (min-width: 1400px) {
+
+  .footer {
+    background-color: #092f4b;
+    padding: 80px 150px 80px 150px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer1 {
+    display: none;
+  }
+  .footerhead {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 700;
+    padding-bottom: 24px;
+    letter-spacing: 0;
+  }
+  .footerSub {
+    font-size: 14px;
+    padding-bottom: 24px;
+    color: #ffffff;
+    display: flex;
+  }
+  .footerSub1 {
+    font-size: 14px;
+    padding-bottom: 24px;
+    color: #ffffff;
+    display: flex;
+  }
+  .copyright {
+    font-weight: 300;
+    font-size: 16px;
+    padding-top: 66px;
+    color: #d0d0d0;
+    display: flex;
+  }
+  .footer1 {
+    display: none;
+  }
+  .footerForm {
+    width: 392px;
+    /* height: 592px; */
+    border-radius: 4px;
+    padding: 25px 50px 25px 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .footerFormTitle {
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 700;
+  }
+  .footerFormSub {
+    font-size: 18px;
+    color: #a1a1a1;
+  }
+  .footer-input-height{
+    height: 42px;
+    padding-top: 40px;
+  }
+  .footerFormName {
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #eeeeee;
+    width: 100%;
+    
+    background-color: transparent;
+    color: #ffffff;
+    letter-spacing: 0;
+  }
+  .footerButton {
+    width: 150px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    margin-top: 80px;
+    color: #ffffff;
+    padding: 15px 50px 15px 50px;
+    background: #eba71f;
+    border-radius: 25px;
+    border-radius: 25px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .footer {
+    background-color: #092f4b;
+    padding: 80px 150px 80px 150px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer1 {
+    display: none;
+  }
+  .footerhead {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 700;
+    padding-bottom: 24px;
+    letter-spacing: 0;
+  }
+  .footerSub {
+    font-size: 14px;
+    padding-bottom: 24px;
+    color: #ffffff;
+    display: flex;
+  }
+  .footerSub1 {
+    font-size: 14px;
+    padding-bottom: 24px;
+    color: #ffffff;
+    display: flex;
+  }
+  .copyright {
+    font-weight: 300;
+    font-size: 16px;
+    padding-top: 66px;
+    color: #d0d0d0;
+    display: flex;
+  }
+  .footerForm {
+    width: 392px;
+    /* height: 592px; */
+    border-radius: 4px;
+    padding: 25px 50px 25px 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .footerFormTitle {
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 700;
+  }
+  .footerFormSub {
+    font-size: 18px;
+    color: #a1a1a1;
+  }
+  .footer-input-height{
+    height: 42px;
+    padding-top: 40px;
+  }
+  .footerFormName {
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #eeeeee;
+    width: 100%;
+    /* padding-top: 60px; */
+    background-color: transparent;
+    color: #ffffff;
+    letter-spacing: 0;
+  }
+  .footerButton {
+    width: 150px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    margin-top: 80px;
+    color: #ffffff;
+    padding: 15px 50px 15px 50px;
+    background: #eba71f;
+    border-radius: 25px;
+    border-radius: 25px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  
+  .footer {
+    padding: 74px 119px 74px 119px;
+  }
+  .footer1 {
+    display: none;
+  }
+  .footerhead {
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  .footerSub {
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  .footerSub1 {
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  .copyright {
+    font-size: 15px;
+    padding-top: 60px;
+  }
+  .footerForm {
+    width: 364px;
+    /* height: 549px; */
+    border-radius: 4px;
+    padding: 23px 40px 23px 40px;
+  }
+  .footerFormTitle {
+    font-size: 27px;
+  }
+  .footerFormSub {
+    font-size: 16px;
+  }
+  .footer-input-height{
+    height: 42px;
+    padding-top: 30px;
+  }
+  .footerFormName {
+    font-size: 14px;
+    
+  }
+  .footerButton {
+    width: 139px;
+    font-size: 14px;
+    margin-top: 70px;
+    padding: 13px 40px 13px 40px;
+    border-radius: 25px;
+    border-radius: 25px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  
+  .footer {
+    padding: 64px 100px 64px 100px;
+  }
+  .footer1 {
+    display: none;
+  }
+  .footerhead {
+    font-size: 14px;
+    padding-bottom: 15px;
+  }
+  .footerSub {
+    font-size: 14px;
+    padding-bottom: 15px;
+  }
+  .footerSub1 {
+    font-size: 14px;
+    padding-bottom: 15px;
+  }
+  .copyright {
+    font-size: 15px;
+    padding-top: 50px;
+  }
+  .footerForm {
+    width: 336px;
+    /* height: 506px; */
+    border-radius: 4px;
+    padding: 20px 30px 20px 30px;
+  }
+  .footerFormTitle {
+    font-size: 24px;
+  }
+  .footerFormSub {
+    font-size: 12px;
+  }
+  .footerFormName {
+    font-size: 14px;
+    padding-top: 30px;
+  }
+  .footerButton {
+    width: 120px;
+    font-size: 14px;
+    margin-top: 60px;
+    padding: 13px 30px 13px 30px;
+    border-radius: 25px;
+    border-radius: 25px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .footer {
+    padding: 58px 91px;
+  }
+  .footerForm{
+    width:300px;
+    padding: 15px 20px;
+  }
+}
+@media only screen and (min-width: 350px) and (max-width: 600px) {
+  
+  .footer {
+    width: 575px;
+    padding: 60px 0px 0 24px;
+  }
+  .footer1 {
+    display: block;
+    width: 550px;
+    background-color: #092f4b;
+    padding: 20px 0px 0 50px;
+  }
+  .footCol1 {
+    display: none;
+  }
+  .footerhead {
+    font-size: 14px;
+    padding-bottom: 15px;
+  }
+  .footerSub {
+    font-size: 14px;
+    padding-bottom: 15px;
+  }
+  .footerSub1 {
+    font-size: 14px;
+    padding-bottom: 15px;
+  }
+  .copyright {
+    font-size: 15px;
+    padding: 40px 0 40px 0;
+  }
+  .footerForm {
+    width: 600px;
+    height: 600px;
+    border: none;
+    padding: 20px 30px 0px 30px;
+  }
+  .footerFormTitle {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .footerFormSub {
+    font-size: 18px;
+  }
+  .footer-input-height{
+    height: 42px;
+    padding-top: 40px;
+  }
+  .footerFormName {
+    font-size: 16px;
+    color: #ffffff;
+    /* padding-top: 40px; */
+  }
+  .footerButton {
+    width: 120px;
+    font-size: 14px;
+    margin-top: 60px;
+    padding: 13px 30px 13px 30px;
+    border-radius: 25px;
+    border-radius: 25px;
+  }
+}

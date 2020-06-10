@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="130px" height="130px" viewBox="0 0 130 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Icon/Process/Approval</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DrF_Homepage" transform="translate(-908.000000, -1911.000000)">
+            <g id="Group-18" transform="translate(140.000000, 1846.000000)">
+                <g id="Icon/Process/Approval" transform="translate(768.000000, 65.000000)">
+                    <circle id="Oval-Copy-6" fill="#22D1B4" cx="65" cy="65" r="65"></circle>
+                    <path d="M84.0047619,41 L84.0047619,52.0517723 C84.0047619,55.0201518 82.478049,57.7779865 79.9674613,59.3447004 L70.9119048,64.9957544 L79.9736939,70.6615324 C82.4807249,72.2290243 84.0047619,74.98481 84.0047619,77.9505674 L84.0047619,89 M48,89 L48,78.213073 C48,75.1060155 49.6714565,72.2413579 52.3705358,70.7225468 L62.547619,64.9957544 L52.3766226,59.2833318 C49.6741313,57.7655089 48,54.8989485 48,51.7893838 L48,41" id="Shape" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M43,36 L88,36" id="Path-40" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M43,94 L88,94" id="Path-40" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

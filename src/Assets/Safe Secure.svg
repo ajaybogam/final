@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="195px" height="189px" viewBox="0 0 195 189" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Icon/Safe Secure</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="DrF_Homepage" transform="translate(-1048.000000, -1108.000000)">
+            <g id="Icon/Safe-Secure" transform="translate(1036.000000, 1089.000000)">
+                <ellipse id="Oval" stroke-opacity="0.6" stroke="#FFFFFF" transform="translate(113.500000, 112.500000) rotate(45.000000) translate(-113.500000, -112.500000) " cx="113.5" cy="112.5" rx="126.5" ry="31.5"></ellipse>
+                <ellipse id="Oval" stroke-opacity="0.6" stroke="#FFFFFF" transform="translate(112.500000, 112.500000) scale(-1, 1) rotate(45.000000) translate(-112.500000, -112.500000) " cx="112.5" cy="112.5" rx="126.5" ry="31.5"></ellipse>
+                <circle id="Oval-Copy-3" stroke="#FFFFFF" stroke-width="2" fill="#FFFFFF" cx="103.5" cy="116.5" r="90.5"></circle>
+                <path d="M138,95.7512545 C135.435269,112.77545 132.485838,125.372381 129.921864,130.120629 C126.022978,137.341012 118.075318,148.524676 105.987446,156.164196 C104.977759,156.802317 103.939186,157.41571 102.871673,158 C87.8975836,148.482102 80.0460368,137.944123 75.8214814,130.120629 C73.239888,125.339752 70.6579107,114.336253 68.0755498,97.1101307 C67.6420874,94.2186567 69.1033111,91.3737498 71.7015565,90.0505281 L99.812209,75.7344734 C101.735134,74.7551755 104.008211,74.7551755 105.931136,75.7344734 L136.437009,91.0142865" id="Combined-Shape" stroke="#1E9ED2" stroke-width="3"></path>
+                <polyline id="Path-36" stroke="#1E9ED2" stroke-width="3" points="92 109.017342 97.7436932 118 120 102"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

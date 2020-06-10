@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="195px" height="189px" viewBox="0 0 195 189" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Icon/Claim Support</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="DrF_Insurance" transform="translate(-1059.000000, -2586.000000)">
+            <g id="Group-3" transform="translate(0.000000, 2223.000000)">
+                <g id="Icon/Claim-Support" transform="translate(1047.000000, 344.000000)">
+                    <ellipse id="Oval" stroke-opacity="0.6" stroke="#FFFFFF" transform="translate(113.500000, 112.500000) rotate(45.000000) translate(-113.500000, -112.500000) " cx="113.5" cy="112.5" rx="126.5" ry="31.5"></ellipse>
+                    <ellipse id="Oval" stroke-opacity="0.6" stroke="#FFFFFF" transform="translate(112.500000, 112.500000) scale(-1, 1) rotate(45.000000) translate(-112.500000, -112.500000) " cx="112.5" cy="112.5" rx="126.5" ry="31.5"></ellipse>
+                    <circle id="Oval-Copy-3" stroke="#FFFFFF" stroke-width="2" fill="#FFFFFF" cx="103.5" cy="116.5" r="90.5"></circle>
+                    <path d="M123.9907,150 L79,150 C77.8954305,150 77,149.104569 77,148 L77,85 C77,83.8954305 77.8954305,83 79,83 L128,83 C129.104569,83 130,83.8954305 130,85 L130,147" id="Path" stroke="#1E9ED2" stroke-width="3"></path>
+                    <path d="M89,102 L101,102" id="Path-18" stroke="#1E9ED2" stroke-width="3"></path>
+                    <path d="M89,112 L118,112" id="Path-18" stroke="#1E9ED2" stroke-width="3"></path>
+                    <path d="M89,122 L118,122" id="Path-18" stroke="#1E9ED2" stroke-width="3"></path>
+                    <path d="M89,132 L118,132" id="Path-18" stroke="#1E9ED2" stroke-width="3"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

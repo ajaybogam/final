@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="372px" height="372px" viewBox="0 0 372 372" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Icon/Hero/Insurance</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DrF_Insurance" transform="translate(-966.000000, -239.000000)">
+            <g id="Icon/Hero/Insurance" transform="translate(928.000000, 201.000000)">
+                <ellipse id="Oval" stroke="#1E9ED2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(224.000000, 224.000000) scale(-1, 1) rotate(45.000000) translate(-224.000000, -224.000000) " cx="224" cy="224" rx="253" ry="63"></ellipse>
+                <ellipse id="Oval" stroke="#1E9ED2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(224.000000, 224.000000) rotate(45.000000) translate(-224.000000, -224.000000) " cx="224" cy="224" rx="253" ry="63"></ellipse>
+                <path d="M224,62 C312.36556,62 384,133.63444 384,222 C384,310.36556 312.36556,382 224,382 C135.63444,382 64,310.36556 64,222 C64,133.63444 135.63444,62 224,62 Z" id="Rectangle" fill="#1E9ED2"></path>
+                <g id="Group-4" transform="translate(164.000000, 154.000000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="9.44999957">
+                    <path d="M59.6145777,140.738889 C34.4693076,124.758451 21.2845813,107.065309 14.1904878,93.9297562 C9.85320099,85.8987566 5.51526915,67.4097278 1.17669227,38.4626696 C0.452602325,33.6315324 2.89994332,28.8788099 7.25318011,26.6621634 L54.4627421,2.62328908 C57.6995675,0.975113655 61.5295878,0.975113655 64.7664133,2.62328908 L111.975974,26.662163 C116.329212,28.8788089 118.776553,33.6315315 118.052463,38.4626688 C113.713886,67.4097274 109.375954,85.8987566 105.038668,93.9297562 C97.9445741,107.065309 82.8683206,128.013245 59.6145777,140.738889 Z" id="Path" stroke="#FFFFFF" fill="#FFFFFF"></path>
+                    <polyline id="Path-31" stroke="#1E9ED2" points="39.7574373 67.6887037 51.0982094 82.1003852 88.9277893 50.7280122"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

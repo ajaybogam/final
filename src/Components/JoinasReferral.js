@@ -1,0 +1,28 @@
+import React from "react";
+import Head from "../Components/Head";
+import Join from "../Components/Join";
+import Profitable from "../Components/Profitable";
+import Tracking from "../Components/Tracking";
+import GetStarted from "../Components/GetStarted";
+import Footer from "../Components/Footer";
+
+class JoinasReferral extends React.Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+  componentDidUpdate() {
+    window.scrollTo(0, 0);
+  }
+  render() {
+    return (
+      <div>
+        <Join />
+        <Profitable />
+        <Tracking />
+        <GetStarted />
+      </div>
+    );
+  }
+}
+
+export default JoinasReferral;

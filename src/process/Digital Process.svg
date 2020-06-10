@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="193px" height="189px" viewBox="0 0 193 189" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Icon/Digital Process</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="DrF_Insurance" transform="translate(-621.000000, -2586.000000)">
+            <g id="Group-3" transform="translate(0.000000, 2223.000000)">
+                <g id="Icon/Digital-Process" transform="translate(608.000000, 344.000000)">
+                    <ellipse id="Oval" stroke-opacity="0.6" stroke="#FFFFFF" transform="translate(112.500000, 112.500000) rotate(45.000000) translate(-112.500000, -112.500000) " cx="112.5" cy="112.5" rx="126.5" ry="31.5"></ellipse>
+                    <ellipse id="Oval" stroke-opacity="0.6" stroke="#FFFFFF" transform="translate(112.500000, 112.500000) scale(-1, 1) rotate(45.000000) translate(-112.500000, -112.500000) " cx="112.5" cy="112.5" rx="126.5" ry="31.5"></ellipse>
+                    <circle id="Oval-Copy-2" stroke="#FFFFFF" stroke-width="2" fill="#FFFFFF" cx="104.5" cy="116.5" r="90.5"></circle>
+                    <path d="M126.180459,135.22807 L68.15,135.22807 C66.9625878,135.22807 66,134.269802 66,133.087719 L66,88.1403509 C66,86.9582677 66.9625878,86 68.15,86 L141.25,86 C142.437412,86 143.4,86.9582677 143.4,88.1403509 L143.4,107.698175" id="Path" stroke="#1E9ED2" stroke-width="3"></path>
+                    <path d="M104.7,135.22807 L104.7,145.929825" id="Path-2" stroke="#1E9ED2" stroke-width="3"></path>
+                    <rect id="Rectangle" stroke="#1E9ED2" stroke-width="3" x="132.65" y="113.824561" width="19.35" height="32.1052632"></rect>
+                    <ellipse id="Oval" stroke="#1E9ED2" stroke-width="3" cx="142.8625" cy="138.973684" rx="1.6125" ry="1.60526316"></ellipse>
+                    <path d="M92.875,145.929825 L116.525,145.929825" id="Path-3" stroke="#1E9ED2" stroke-width="3"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

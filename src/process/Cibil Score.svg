@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="193px" height="189px" viewBox="0 0 193 189" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Icon/Cibil Score</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Drf_Loans-Mobile" transform="translate(-81.000000, -5334.000000)">
+            <g id="Group-2" transform="translate(0.000000, 1383.000000)">
+                <g id="Icon/Cibil-Score" transform="translate(68.000000, 3932.000000)">
+                    <ellipse id="Oval" stroke-opacity="0.6" stroke="#FFFFFF" transform="translate(112.500000, 112.500000) rotate(45.000000) translate(-112.500000, -112.500000) " cx="112.5" cy="112.5" rx="126.5" ry="31.5"></ellipse>
+                    <ellipse id="Oval" stroke-opacity="0.6" stroke="#FFFFFF" transform="translate(112.500000, 112.500000) scale(-1, 1) rotate(45.000000) translate(-112.500000, -112.500000) " cx="112.5" cy="112.5" rx="126.5" ry="31.5"></ellipse>
+                    <circle id="Oval-Copy-2" stroke="#FFFFFF" stroke-width="2" fill="#FFFFFF" cx="104.5" cy="116.5" r="90.5"></circle>
+                    <path d="M117.026891,131 C126.839973,131 135.47584,131 150,131 C150,106.147186 129.852814,86 105,86 C80.1471863,86 60,106.147186 60,131 C74.0929894,131 83.6422515,131 93.0274027,131" id="Path" stroke="#1E9ED2" stroke-width="3"></path>
+                    <path d="M112,131 C112,127.134007 108.865993,124 105,124 C101.134007,124 98,127.134007 98,131 C100.606754,131 108.865993,131 112,131 Z" id="Oval" stroke="#1E9ED2" stroke-width="3"></path>
+                    <path d="M101.483048,124.919871 L81.8622413,105.723797" id="Path-4" stroke="#1E9ED2" stroke-width="3"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="14px" viewBox="0 0 20 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Icon/Contact/Email</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Drf_Mobile_FAQs" transform="translate(-26.000000, -1940.000000)">
+            <g id="Footer" transform="translate(0.000000, 1201.000000)">
+                <g id="Icon/Contact/Email" transform="translate(24.000000, 734.000000)">
+                    <rect id="Rectangle-Copy-4" fill-opacity="0" fill="#D8D8D8" x="0" y="0" width="24" height="24"></rect>
+                    <rect id="Rectangle" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" x="3" y="6" width="18" height="12" rx="1.48000002"></rect>
+                    <path d="M3.61825746,6.39570579 L11.1731667,11.2311046 C11.6580652,11.5414561 12.2789351,11.5424512 12.7648259,11.2336556 L20.246919,6.47860148" id="Path-34" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

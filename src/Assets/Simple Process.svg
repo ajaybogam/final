@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="225px" height="225px" viewBox="0 0 225 225" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Icon/Simple Process</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icon/Simple-Process" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <ellipse id="Oval" stroke-opacity="0.6" stroke="#FFFFFF" transform="translate(112.500000, 112.500000) rotate(45.000000) translate(-112.500000, -112.500000) " cx="112.5" cy="112.5" rx="126.5" ry="31.5"></ellipse>
+        <ellipse id="Oval" stroke-opacity="0.6" stroke="#FFFFFF" transform="translate(112.500000, 112.500000) scale(-1, 1) rotate(45.000000) translate(-112.500000, -112.500000) " cx="112.5" cy="112.5" rx="126.5" ry="31.5"></ellipse>
+        <circle id="Oval" stroke="#FFFFFF" stroke-width="2" fill="#FFFFFF" cx="115.5" cy="116.5" r="90.5"></circle>
+        <path d="M107,155 C96.1943215,155 95.3640603,155 84.5583818,155 C83.4825718,155 82.7653651,154.283898 82.7653651,153.209746 L82.7653651,115.146186 L73.8002817,115.146186 C73.083075,115.146186 72.3658683,114.788136 72.1865667,114.072034 C71.8279633,113.355932 72.007265,112.639831 72.54517,112.102754 L113.784554,77.5370763 C114.50176,76.8209746 115.756872,76.8209746 116.294777,77.5370763 L157.534161,112.102754 C158.072066,112.639831 158.072066,113.355932 157.892764,114.072034 C157.713462,114.788136 156.996256,115.146186 156.279049,115.146186 L147.313966,115.146186 L147.313966,153 C147.313966,154.104569 146.418535,155 145.313966,155 C141.643685,155 133.973405,155 130.303125,155" id="Path" stroke="#1E9ED2" stroke-width="3"></path>
+        <polyline id="Path" stroke="#1E9ED2" stroke-width="3" points="107 155 107 130 124 130 124 155"></polyline>
+    </g>
+</svg>

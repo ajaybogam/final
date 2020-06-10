@@ -1,0 +1,126 @@
+@media screen and (min-width: 1400px) {
+  .mobileSolar{display: none;}
+  .bg1 {
+    height: 540px;
+    margin-top: 172px;
+    background-image: url("../Assets/Solar\ System.svg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+  }
+  .solarSystem {
+    display: none;
+  }
+  #title {
+    font-family: "Nunito";
+    font-weight: 700;
+    width: 48.6%;
+    margin-top: 5%;
+    padding: 5.6% 0% 0% 6.9%;
+    font-size: 72px;
+    color: #1e9ed2;
+  }
+  #subtitle {
+    margin-left: 6.9%;
+    width: 36.6%;
+    font-family: "Nunito";
+    font-size: 22px;
+    color: #343434;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .mobileSolar{display: none;}
+  .bg1 {
+    height: 501px;
+    margin-top: 159px;
+    background-image: url("../Assets/Solar\ System.svg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+  }
+  .solarSystem {
+    display: none;
+  }
+  #title {
+    font-family: "Nunito";
+    font-weight: 700;
+    width: 48.6%;
+    margin-top: 5%;
+    padding: 0% 0% 0% 6.9%;
+    font-size: 66px;
+    color: #1e9ed2;
+  }
+  #subtitle {
+    margin-left: 6.9%;
+    width: 36.6%;
+    font-family: "Nunito";
+    font-size: 20px;
+    color: #343434;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .mobileSolar{display: none;}
+  .bg1 {
+    height: 462px;
+    margin-top: 147px;
+    background-image: url("../Assets/Solar\ System.svg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+  }
+  .solarSystem {
+    display: none;
+  }
+  #title {
+    font-family: "Nunito";
+    font-weight: 700;
+    width: 48.6%;
+    margin-top: 5%;
+    padding: 5.6% 0% 0% 6.9%;
+    font-size: 61px;
+    color: #1e9ed2;
+  }
+  #subtitle {
+    margin-left: 6.9%;
+    width: 36.6%;
+    font-family: "Nunito";
+    font-size: 18px;
+    color: #343434;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .mobileSolar{display: block;}
+  .bg1 {
+    background-image: none;
+    width: 600px;
+    height: 800px;
+  }
+  #title {
+    font-size: 66px;
+    color: #1e9ed2;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 700;
+    width:520px;
+  }
+  #subtitle {
+    font-size: 26px;
+    color: #343434;
+    margin: 0 auto;
+    text-align: center;
+    width:436px;
+  }
+  /* .solarSystem {
+    display: block;
+    width: 800px;
+    margin-top: 50px;
+    height: 250px;
+  } */
+  .mobileSolar {
+    width: 100%;
+    margin: 50px 0px;
+    
+    background-size: 380px;
+    background-color: #ffffff;
+  }
+}

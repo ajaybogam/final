@@ -1,0 +1,166 @@
+@media screen and (min-width: 1400px) {
+  .aboutTitle {
+    font-size: 54px;
+    width: 600px;
+    color: #1e9ed2;
+    font-weight: 700;
+  }
+  .aboutTitle-mobile {
+    display: none;
+  }
+  .aboutSubtitle {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #343434;
+    width: 75%;
+  }
+  .about {
+    display: flex;
+    margin: 10%;
+    
+    /* padding-top: 100px; */
+    align-items: center;
+
+    /* 6/5/2020 changes */
+    margin-top: 0px;
+    padding-top: 200px; 
+  }
+  .experience {
+    background-color: #1e9ed2;
+    display: flex;
+    padding: 10%;
+    align-items: center;
+  }
+  #etitle {
+    color: #ffffff;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .aboutTitle {
+    font-size: 50px;
+    width: 557px;
+    color: #1e9ed2;
+    font-weight: 700;
+  }
+  .aboutTitle-mobile {
+    display: none;
+  }
+  .aboutSubtitle {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #343434;
+    width: 75%;
+  }
+  .about {
+    display: flex;
+    margin: 10%;
+    padding-top: 100px;
+    align-items: center;
+  }
+  .experience {
+    background-color: #1e9ed2;
+    display: flex;
+    padding: 10%;
+    align-items: center;
+  }
+  #etitle {
+    color: #ffffff;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .aboutTitle {
+    font-size: 46px;
+    width: 514px;
+    color: #1e9ed2;
+    font-weight: 700;
+  }
+  .aboutTitle-mobile {
+    display: none;
+  }
+  .aboutSubtitle {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #343434;
+    width: 75%;
+  }
+  .about {
+    display: flex;
+    margin: 10%;
+    padding-top: 100px;
+    align-items: center;
+  }
+  .experience {
+    background-color: #1e9ed2;
+    display: flex;
+    padding: 10%;
+    align-items: center;
+  }
+  #etitle {
+    color: #ffffff;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 320px) {
+ 
+  .about {
+    flex-direction: column;
+    margin: 0px auto;
+    overflow: hidden;
+    width: 600px;
+    padding-bottom: 50px;
+    /* width:600px; */
+  }
+  .aboutTitle {
+    display: none;
+    padding: 0;
+    margin: 0;
+    width: 312px;
+    padding: 80px 0px 0px 80px;
+  }
+  .star40 {
+    display: none;
+  }
+  .aboutTitle-mobile {
+    display: block;
+    color: #1e9ed2;
+    font-weight: 700;
+    font-size: 66px;
+    width: 520px;
+    padding: 100px 24px 16px 24px;
+    align-items: baseline;
+    text-align: center;
+    margin: 0px auto;
+
+    /* read top after fixing header */
+  }
+  .loansTitle {
+    display: none;
+  }
+  .aboutSubtitle {
+    font-size: 26px;
+    width: 520px;
+    padding: 0px 37px 17.3px 37px;
+    align-items: baseline;
+    text-align: center;
+    margin: 0px auto;
+  }
+  .exp-mobile {
+    width: 360px;
+  }
+  .experience {
+    width: 600px;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px auto;
+  }
+  #etitle{
+    width:500px;
+    margin: 0px auto;
+  }
+ 
+  
+}

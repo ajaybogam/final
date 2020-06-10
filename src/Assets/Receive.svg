@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="130px" height="130px" viewBox="0 0 130 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Icon/Process/Receive</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DrF_Homepage" transform="translate(-1160.000000, -1979.000000)">
+            <g id="Group-18" transform="translate(140.000000, 1846.000000)">
+                <g id="Icon/Process/Receive" transform="translate(1020.000000, 133.000000)">
+                    <circle id="Oval-Copy-7" fill="#22D1B4" cx="65" cy="65" r="65"></circle>
+                    <rect id="Rectangle" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" x="49.5283019" y="27" width="36.2264151" height="43.4285714" rx="2.69999993"></rect>
+                    <path d="M46.3263891,84.4109846 L49.9004495,84.4109846 C50.632994,84.4109846 51.2268387,85.0017136 51.2268387,85.7304148 L51.2268387,101.68057 C51.2268387,102.409271 50.632994,103 49.9004495,103 L46.3263891,103 C45.5938446,103 45,102.409271 45,101.68057 L45,85.7304148 C45,85.0017136 45.5938446,84.4109846 46.3263891,84.4109846 Z" id="Path" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M55.442254,86.5332821 L59.8680284,82.2433413 C60.6110862,81.523089 61.6075498,81.1200079 62.6450394,81.1200079 L72.8545115,81.1200079 C74.1746422,81.1200079 75.2448195,82.1845705 75.2448195,83.497775 C75.2448195,84.8109796 74.1746422,85.8755422 72.8545115,85.8755422 L67.871081,85.8755422 L78.651187,85.8755422 L88.897624,79.8312154 C90.1173713,79.3113037 91.5356776,79.7679485 92.217856,80.9002136 L92.6224959,81.5718262 C93.2953139,82.6885551 93.0488383,84.1265283 92.0420252,84.9583732 L83.2513076,96.119249 C82.2988119,96.9062161 79.2882949,97.3370071 78.0501046,97.3370071 L62.6717082,97.3370071 C61.6003405,97.3370071 60.5540731,97.6596592 59.6705801,98.2625069 L55.442254,101.147687" id="Path" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M61.6318059,44.2703081 L74.6345013,44.2703081" id="Path-12" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M61.6318059,38.8151261 L74.6345013,38.8151261 L61.6318059,38.8151261 Z M65.5492627,38.8151261 C68.0580821,38.8151261 70.091882,41.3277012 70.091882,44.4271198 C70.091882,47.5265384 66.2204595,50.0391136 63.7116401,50.0391136 M63.4488537,50.0391136 L71.5854633,58.4537815 L63.4488537,50.0391136 Z" id="Shape" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

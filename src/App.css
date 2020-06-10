@@ -1,0 +1,469 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+.App {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Nunito";
+  font-variant-ligatures: none;
+}
+.ApplyClose {
+  display: flex;
+  justify-content: space-between;
+}
+.linkdecorate {
+  text-decoration: underline;
+  color: #eba71f;
+}
+.linkdecorate1 {
+  text-decoration: none;
+  color: #343434;
+}
+.ApplyButton {
+  border: none;
+  outline: none;
+  width: 150px;
+  padding: 15px 30px 15px 30px;
+  border-radius: 24px;
+  background-color: #eba71f;
+  font-size: 16px;
+  margin-right: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.firstBox {
+  padding: 20px;
+}
+.secondBox {
+  padding: 20px;
+}
+.hamburger {
+  display: none;
+}
+.ApplyQuest {
+  font-family: "Nunito";
+  font-weight: 600;
+  font-size: 20px;
+  color: #343434;
+}
+.ApplyModal {
+  width: 600px;
+  z-index: 9999;
+  margin: 0px auto;
+  border-bottom: 1px Solid #ffffff;
+  background-color: #ffffff;
+  /* margin-top: 50px; */
+  outline: none;
+  border-radius: 10px;
+  height: 680px;
+}
+.error{
+  color:red;
+  font-size: 16px;
+  font-weight: 600;
+}
+.phone {
+  display: flex;
+  font-family: "Nunito";
+  padding-top: 17px;
+  font-size: 16px;
+  color: #343434;
+}
+.ApplyBtnRow {
+  display: flex;
+  margin-top: 50px;
+}
+.ApplyLine {
+  border: 1px solid #d0d0d0;
+  margin: 30px 0 30px 0;
+}
+.ApplyButton1 {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  width: 150px;
+  padding: 15px 30px 15px 30px;
+  border-radius: 24px;
+  border: 1px solid #eba71f;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: transparent;
+  color: #eba71f;
+}
+.successModal {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.SubmitedSub {
+  width: 250px;
+  text-align: center;
+  font-size: 16px;
+  color: #343434;
+}
+.appSubmited {
+  font-weight: 700;
+  font-size: 20px;
+  color: #4ed489;
+}
+.modal-input-height{
+  padding-top: 40px;
+  height: 32px;
+}
+.ApplyInput {
+  outline: none;
+  border: none;
+  width: 312px;
+  
+  border-bottom: 1px solid #343434;
+}
+.Closeapply {
+  cursor: pointer;
+}
+.ApplyTitle {
+  font-size: 30px;
+  font-family: "Nunito";
+  font-weight: 700;
+  color: #1f86b9;
+}
+.ApplySub {
+  font-family: "Nunito";
+  font-size: 18px;
+  color: #a1a1a1;
+}
+.ReactModal__Overlay {
+  z-index: 9999;
+}
+.header {
+  display: flex;
+  padding: 37px 50px 37px 50px;
+  top: 0;
+  z-index: 9998;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 0 2px 0px;
+  background-color: #ffffff;
+  font-family: "Nunito";
+  font-weight: 600;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu {
+  width: 60%;
+  display: flex;
+  padding-right: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+#vertical {
+  width: 1px;
+  height: 36px;
+  background-color: #66343434;
+}
+#join {
+  display: flex;
+  padding-right: 50px;
+}
+#join img {
+  margin-right: 5px;
+}
+#referal {
+  color: #a1a1a1;
+  font-size: 14px;
+}
+.menu button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "Nunito";
+  font-weight: 600;
+  padding: 13px 40px 13px 40px;
+  border-radius: 25px;
+  color: #ffffff;
+  font-size: 16px;
+  background-color: #eba71f;
+}
+.dropdownMenu {
+  width: 312px;
+  border: none;
+  border-bottom: 1px solid #343434;
+  outline: none;
+  margin-top: 50px;
+  background-color: transparent;
+}
+
+.modalmobileJoin {
+  align-items: center;
+  margin: 0px auto;
+  border-radius: 10px;
+  z-index: 998;
+  padding: 20px;
+  background-color: #265182;
+  width: auto;
+  /* height: 813px; */
+  padding-top: 20px;
+  padding-left: 40px;
+  outline: none;
+}
+.modalmobileJoin-hr {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.modalmobileJoin_flex {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.mobilejoinReferral {
+  display: flex;
+  /* justify-content: flex-start; */
+  margin-bottom: 24.5px;
+}
+.mobilejoinReferral-img {
+  height: 29px;
+  padding-right: 10px;
+}
+.mobilejoinReferral-flex {
+  display: flex;
+  flex-direction: column;
+}
+.mobilejoinReferral-big {
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+}
+.mobilejoinReferral-small {
+  font-weight: 600;
+  font-size: 14px;
+  color: #a1a1a1;
+}
+.mobileProducts {
+  color: #ffffff;
+}
+.mobileProducts .mobileProducts-title {
+  font-size: 16px;
+  padding-top: 23.5px;
+  padding-bottom: 24px;
+}
+.mobileProducts .mobileproducts-elements {
+  font-size: 14px;
+  color: #ffffff;
+  padding-bottom: 24px;
+}
+.mobile-touch {
+  color: white;
+  padding-top: 23.5px;
+}
+.mobile-touch-title {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 700;
+  padding-bottom: 27px;
+}
+.mobile-touch-contact {
+  display: flex;
+  padding-bottom: 21px;
+}
+.mobile-padding {
+  padding-right: 10px;
+}
+
+.mobile-Quicklinks {
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+  padding-top: 23px;
+  padding-bottom: 16px;
+}
+.mobile-Quicklinks-elements {
+  font-size: 14px;
+  color: #ffffff;
+  padding-bottom: 24px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .App {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Nunito";
+    font-variant-ligatures: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .ApplyClose {
+    display: flex;
+    justify-content: space-between;
+  }
+  .ApplyButton {
+    border: none;
+    outline: none;
+    width: 150px;
+    padding: 15px 30px 15px 30px;
+    border-radius: 24px;
+    background-color: #eba71f;
+    font-size: 16px;
+    margin-right: 16px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  .firstBox {
+    padding: 20px;
+  }
+  .secondBox {
+    padding: 20px;
+  }
+  .ApplyQuest {
+    font-family: "Nunito";
+    font-weight: 600;
+    font-size: 20px;
+    color: #343434;
+  }
+  .ApplyModal {
+    width: 600px;
+    margin: 0px auto;
+    border-bottom: 1px Solid #ffffff;
+    background-color: #ffffff;
+    margin-top: 50px;
+  }
+  .phone {
+    display: flex;
+    font-family: "Nunito";
+    padding-top: 17px;
+    font-size: 16px;
+    color: #343434;
+  }
+  .ApplyBtnRow {
+    display: flex;
+    margin-top: 50px;
+  }
+  .ApplyLine {
+    border: 1px solid #d0d0d0;
+    margin: 30px 0 30px 0;
+  }
+  .ApplyButton1 {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    width: 150px;
+    padding: 15px 30px 15px 30px;
+    border-radius: 24px;
+    border: 1px solid #eba71f;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: transparent;
+    color: #eba71f;
+  }
+  .successModal {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .SubmitedSub {
+    width: 250px;
+    text-align: center;
+    font-size: 16px;
+    color: #343434;
+  }
+  .appSubmited {
+    font-weight: 700;
+    font-size: 20px;
+    color: #4ed489;
+  }
+  .modal-input-height{
+    padding-top: 40px;
+    height: 32px;
+  }
+  .ApplyInput {
+    outline: none;
+    border: none;
+    width: 312px;
+    
+    border-bottom: 1px solid #343434;
+  }
+  .Closeapply {
+    cursor: pointer;
+  }
+  .ApplyTitle {
+    font-size: 30px;
+    font-family: "Nunito";
+    font-weight: 700;
+    color: #1f86b9;
+  }
+  .ApplySub {
+    font-family: "Nunito";
+    font-size: 18px;
+    color: #a1a1a1;
+  }
+  .header {
+    display: flex;
+    padding: 37px 50px 37px 50px;
+    top: 0;
+    position: fixed;
+    z-index: 999;
+    /* width: 500px; */
+    width:600px;
+    box-shadow: 0 0 3px 0px;
+    background-color: #ffffff;
+    font-family: "Nunito";
+    font-weight: 600;
+    align-items: center;
+    justify-content:flex-start;
+  }
+  .star15 {
+    display: none;
+  }
+
+  .menu {
+    width: 60%;
+    
+    padding-right: 50px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #hide{
+    display: none;
+  }
+  .menu .apply {
+    display: block;
+  }
+  #vertical {
+    width: 1px;
+    height: 36px;
+    background-color: #66343434;
+  }
+  #join {
+    display: flex;
+    padding-right: 50px;
+  }
+  #join img {
+    margin-right: 5px;
+  }
+  #referal {
+    color: #a1a1a1;
+    font-size: 14px;
+  }
+  .menu button,.modal1button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: "Nunito";
+    font-weight: 600;
+    padding: 13px 40px 13px 40px;
+    border-radius: 25px;
+    color: #ffffff;
+    font-size: 16px;
+    background-color: #eba71f;
+  }
+  .dropdownMenu {
+    width: 312px;
+    border: none;
+    border-bottom: 1px solid #343434;
+    outline: none;
+    margin-top: 50px;
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,109 @@
+.mobile-row{
+    display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 600px) {
+.mobile-row{
+    display: block;
+    background-color:white ;
+    width:600px;
+    padding-bottom: 50px;
+}
+.row-title{
+font-weight: 700;
+font-size: 66px;
+color: #265182;
+text-align: center;
+width:386px;
+margin:0px auto;
+padding: 60px 64px 40px 64px;
+    }
+.carousel .thumb {
+    display: none;
+}
+.carousel .control-dots {
+    position: inherit;
+    margin:40px 0px;
+}
+/* .mobile-row>.carousel .control-dots .dot {
+    background-color:white;
+    color:white;
+  } */
+.mobile-row>.carousel .slider-wrapper.axis-horizontal .slider .slide {
+    flex-direction: column;
+    flex-flow: column;
+    background: white;
+    /* height: 500px; */
+}
+.mobile-row.carousel.carousel-slider .control-arrow {
+    display: none;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.mobile-row .carousel .slide img {
+    width: 60%;
+    vertical-align: top;
+    border: 0;
+    /* filter: grayscale(100); */
+}
+/* .mobile-row .carousel .slide img:hover {
+    filter: none;
+    transform: scale(1.01);
+  } */
+
+.carousel .carousel-status {
+    display: none;
+}
+
+.carousel img {
+    width: none;
+    display: inline-block;
+    pointer-events: none;
+}
+
+.c_img{
+    width:250px;
+    height:150px;
+    margin:0px auto;
+    margin-bottom: 30px;
+    
+
+    filter: grayscale(100);
+}
+.c_img:hover{
+    width:250px;
+    height:150px;
+    margin:0px auto;
+    margin-bottom: 30px;
+    filter: none;
+}
+
+
+  .carousel.carousel-slider .control-arrow:hover {
+    background: rgba(0,0,0,0.2);
+    display: none;
+  }
+  .carousel.carousel-slider .control-arrow {
+    background-color: #1e9ed2;
+    display: none;
+}
+.mobile-row .carousel .control-dots .dot.selected,.carousel .control-dots .dot:hover {
+      background-color: #1e9ed2;
+      color: #1e9ed2;
+      border: 1px solid #1e9ed2 ;
+      box-shadow: 1px 1px 2px #1e9ed2;
+} 
+.mobile-row .carousel .control-dots .dot{
+    background:white;
+    border: 3px solid #A1A1A1;
+   
+
+}
+/* #id .carousel .control-dots .dot:hover{
+    color: #1e9ed2;
+} */
+}

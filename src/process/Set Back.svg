@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="188px" height="189px" viewBox="0 0 188 189" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Icon/Set Back</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="DrF_Investments" transform="translate(-187.000000, -2196.000000)">
+            <g id="Group-3" transform="translate(0.000000, 1823.000000)">
+                <g id="Icon/Set-Back" transform="translate(168.000000, 354.000000)">
+                    <ellipse id="Oval" stroke-opacity="0.6" stroke="#FFFFFF" transform="translate(112.500000, 112.500000) rotate(45.000000) translate(-112.500000, -112.500000) " cx="112.5" cy="112.5" rx="126.5" ry="31.5"></ellipse>
+                    <ellipse id="Oval" stroke-opacity="0.6" stroke="#FFFFFF" transform="translate(112.500000, 112.500000) scale(-1, 1) rotate(45.000000) translate(-112.500000, -112.500000) " cx="112.5" cy="112.5" rx="126.5" ry="31.5"></ellipse>
+                    <circle id="Oval" stroke="#FFFFFF" stroke-width="2" fill="#FFFFFF" cx="115.5" cy="116.5" r="90.5"></circle>
+                    <path d="M114.782417,107.363016 C104.901375,107.363016 96.8912085,99.4467356 96.8912085,89.6815082 C96.8912085,79.9162809 104.901375,72 114.782417,72 C124.663459,72 132.673626,79.9162809 132.673626,89.6815082 C132.673626,99.4467356 124.663459,107.363016 114.782417,107.363016 Z M114.782417,115.338784 C120.23887,115.039309 128.090275,111.094511 132.420593,111.942606 C142.494855,113.141524 150.564835,128.751956 150.564835,141.916673 C149.431121,145.874533 141.717262,147.689752 133.140322,148.518759 M96.9324802,148.532485 C87.9382885,147.703138 79.7457565,145.88048 79,141.916673 C79,128.751956 87.0699789,113.141524 97.1442412,111.942606 C101.474559,111.094511 109.325964,115.039309 114.782418,115.338784" id="Shape" stroke="#1E9ED2" stroke-width="3"></path>
+                    <polygon id="Star" stroke="#1E9ED2" stroke-width="3" points="115.336264 154.895833 104.9189 160.310988 106.90844 148.841506 98.4806159 140.718774 110.127582 139.045399 115.336264 128.610119 120.544945 139.045399 132.191912 140.718774 123.764088 148.841506 125.753627 160.310988"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

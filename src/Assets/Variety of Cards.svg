@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="226px" height="225px" viewBox="0 0 226 225" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Icon/Variety of Cards</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icon/Variety-of-Cards" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <ellipse id="Oval" stroke-opacity="0.6" stroke="#FFFFFF" transform="translate(113.500000, 112.500000) rotate(45.000000) translate(-113.500000, -112.500000) " cx="113.5" cy="112.5" rx="126.5" ry="31.5"></ellipse>
+        <ellipse id="Oval" stroke-opacity="0.6" stroke="#FFFFFF" transform="translate(112.500000, 112.500000) scale(-1, 1) rotate(45.000000) translate(-112.500000, -112.500000) " cx="112.5" cy="112.5" rx="126.5" ry="31.5"></ellipse>
+        <circle id="Oval-Copy-3" stroke="#FFFFFF" stroke-width="2" fill="#FFFFFF" cx="103.5" cy="116.5" r="90.5"></circle>
+        <path d="M79,93.7222125 L79,92.25 C79,89.3505051 81.3214865,87 84.1851852,87 L143.814815,87 C146.678514,87 149,89.3505051 149,92.25 L149,123.75 C149,126.649495 146.678514,129 143.814815,129 L137.376141,129" id="Path" stroke="#1E9ED2" stroke-width="3"></path>
+        <rect id="Rectangle" stroke="#1E9ED2" stroke-width="3" x="61" y="101" width="70" height="45" rx="5"></rect>
+        <path d="M69,116.999997 L92,116.999997" id="Path-10" stroke="#1E9ED2" stroke-width="3"></path>
+        <path d="M70,129 L78,129" id="Path-10" stroke="#1E9ED2" stroke-width="3"></path>
+        <path d="M85,129 L93,129" id="Path-10" stroke="#1E9ED2" stroke-width="3"></path>
+        <path d="M100,129 L108,129" id="Path-10" stroke="#1E9ED2" stroke-width="3"></path>
+        <path d="M115,129 L122,129" id="Path-10" stroke="#1E9ED2" stroke-width="3"></path>
+    </g>
+</svg>
