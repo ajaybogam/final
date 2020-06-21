@@ -1,12 +1,10 @@
 @media screen and (min-width: 1400px) {
-
   .footer {
     background-color: #092f4b;
     padding: 80px 150px 80px 150px;
     display: flex;
     justify-content: space-between;
   }
-  
   .footer1 {
     display: none;
   }
@@ -55,7 +53,7 @@
     font-size: 18px;
     color: #a1a1a1;
   }
-  .footer-input-height{
+  .footer-input-height {
     height: 42px;
     padding-top: 40px;
   }
@@ -65,7 +63,6 @@
     border: none;
     border-bottom: 1px solid #eeeeee;
     width: 100%;
-    
     background-color: transparent;
     color: #ffffff;
     letter-spacing: 0;
@@ -83,6 +80,7 @@
     border-radius: 25px;
   }
 }
+
 @media screen and (max-width: 1400px) {
   .footer {
     background-color: #092f4b;
@@ -90,7 +88,6 @@
     display: flex;
     justify-content: space-between;
   }
-  
   .footer1 {
     display: none;
   }
@@ -136,7 +133,7 @@
     font-size: 18px;
     color: #a1a1a1;
   }
-  .footer-input-height{
+  .footer-input-height {
     height: 42px;
     padding-top: 40px;
   }
@@ -164,8 +161,8 @@
     border-radius: 25px;
   }
 }
+
 @media screen and (max-width: 1300px) {
-  
   .footer {
     padding: 74px 119px 74px 119px;
   }
@@ -200,13 +197,12 @@
   .footerFormSub {
     font-size: 16px;
   }
-  .footer-input-height{
+  .footer-input-height {
     height: 42px;
     padding-top: 30px;
   }
   .footerFormName {
     font-size: 14px;
-    
   }
   .footerButton {
     width: 139px;
@@ -217,8 +213,8 @@
     border-radius: 25px;
   }
 }
+
 @media screen and (max-width: 1200px) {
-  
   .footer {
     padding: 64px 100px 64px 100px;
   }
@@ -266,24 +262,24 @@
     border-radius: 25px;
   }
 }
+
 @media screen and (max-width: 1100px) {
   .footer {
     padding: 58px 91px;
   }
-  .footerForm{
-    width:300px;
+  .footerForm {
+    width: 300px;
     padding: 15px 20px;
   }
 }
-@media only screen and (min-width: 350px) and (max-width: 600px) {
-  
+
+@media only screen and (max-width: 600px) {
   .footer {
-    width: 575px;
-    padding: 60px 0px 0 24px;
+    width: 100%;
+    padding: 1em;;
   }
   .footer1 {
     display: block;
-    width: 550px;
     background-color: #092f4b;
     padding: 20px 0px 0 50px;
   }
@@ -307,10 +303,9 @@
     padding: 40px 0 40px 0;
   }
   .footerForm {
-    width: 600px;
-    height: 600px;
+    width: 100%;
     border: none;
-    padding: 20px 30px 0px 30px;
+    padding: 1em;
   }
   .footerFormTitle {
     font-size: 30px;
@@ -319,7 +314,7 @@
   .footerFormSub {
     font-size: 18px;
   }
-  .footer-input-height{
+  .footer-input-height {
     height: 42px;
     padding-top: 40px;
   }
