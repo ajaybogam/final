@@ -1,5 +1,40 @@
+.view__intro {
+  min-height: 80vh;
+  background: url("../../../Assets/Solar\ System.svg") no-repeat center;
+  background-position-x: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+
+.view__intro__bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  left: 0;
+  top: 0;
+}
+
+.view__intro__bg img {
+  position: absolute;
+}
+
+
+@media screen and (max-width: 640px) {
+  .view__intro {
+    text-align: center;
+    background-position: center 80%;
+    background-size: contain;
+  }
+}
+/* 
 @media screen and (min-width: 1400px) {
-  .mobileSolar{display: none;}
+  .mobileSolar {
+    display: none;
+  }
   .bg1 {
     height: 540px;
     margin-top: 172px;
@@ -28,8 +63,11 @@
     color: #343434;
   }
 }
+
 @media screen and (max-width: 1400px) {
-  .mobileSolar{display: none;}
+  .mobileSolar {
+    display: none;
+  }
   .bg1 {
     height: 501px;
     margin-top: 159px;
@@ -58,8 +96,11 @@
     color: #343434;
   }
 }
+
 @media screen and (max-width: 1300px) {
-  .mobileSolar{display: none;}
+  .mobileSolar {
+    display: none;
+  }
   .bg1 {
     height: 462px;
     margin-top: 147px;
@@ -88,8 +129,11 @@
     color: #343434;
   }
 }
+
 @media only screen and (max-width: 600px) {
-  .mobileSolar{display: block;}
+  .mobileSolar {
+    display: block;
+  }
   .bg1 {
     background-image: none;
     width: 600px;
@@ -101,26 +145,19 @@
     margin: 0 auto;
     text-align: center;
     font-weight: 700;
-    width:520px;
+    width: 520px;
   }
   #subtitle {
     font-size: 26px;
     color: #343434;
     margin: 0 auto;
     text-align: center;
-    width:436px;
+    width: 436px;
   }
-  /* .solarSystem {
-    display: block;
-    width: 800px;
-    margin-top: 50px;
-    height: 250px;
-  } */
   .mobileSolar {
     width: 100%;
     margin: 50px 0px;
-    
     background-size: 380px;
     background-color: #ffffff;
   }
-}
+} */

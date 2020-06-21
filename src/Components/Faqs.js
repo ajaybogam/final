@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Head from "../Components/Head";
+ 
 import Footer from "../Components/Footer";
 import "../css/Faqs.css";
 import axios from "axios";

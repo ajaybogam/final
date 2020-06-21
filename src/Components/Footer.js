@@ -8,19 +8,19 @@ import axios from "axios";
 const validEmailRegex = RegExp(
   /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
 );
-const validateName=name=>{
-  
-  var letter= /^[a-zA-Z\s]*$/;
-  if(name.match(letter)&& name.length>2){return true}
-  else{return false}
-  
+const validateName = name => {
+
+  var letter = /^[a-zA-Z\s]*$/;
+  if (name.match(letter) && name.length > 2) { return true }
+  else { return false }
+
 }
-const validateSubject=name=>{
-  
-  var letter= /^[a-zA-Z0-9\s]*$/;
-  if(name.match(letter)&& name.length>2){return true}
-  else{return false}
-  
+const validateSubject = name => {
+
+  var letter = /^[a-zA-Z0-9\s]*$/;
+  if (name.match(letter) && name.length > 2) { return true }
+  else { return false }
+
 }
 const validateForm = errors => {
   let valid = true;
@@ -38,46 +38,48 @@ class Footer extends React.Component {
       subject: "",
       message: "",
       dateTime: Date(),
-      errors:{
+      errors: {
         name: "",
-      phone: "",
-      email: "",
-      subject: "",
-      message: "",
+        phone: "",
+        email: "",
+        subject: "",
+        message: "",
       }
     };
   }
   submitHandler = (e) => {
     e.preventDefault();
-    if(validateForm(this.state.errors)){
-    console.log(this.state);
-    axios
-      .post("http://52.73.189.181/inquiries", this.state)
-      .then((response) => {
-        console.log(response);
-        if (response.status == 200) {
-          this.setState({
-            name: "",
-            phone: "",
-            email: "",
-            subject: "",
-            message: "",
-            errors:{
+    if (validateForm(this.state.errors)) {
+      console.log(this.state);
+      axios
+        .post("http://52.73.189.181/inquiries", this.state)
+        .then((response) => {
+          console.log(response);
+          if (response.status == 200) {
+            this.setState({
               name: "",
-            phone: "",
-            email: "",
-            subject: "",
-            message: "",}
-          });
-        }
-      alert("submitted Successfully")
-      })
-      .catch((error) => {
-        console.log(error);
-      });}
-      else{
-        console.log("Invalid application")
-      }
+              phone: "",
+              email: "",
+              subject: "",
+              message: "",
+              errors: {
+                name: "",
+                phone: "",
+                email: "",
+                subject: "",
+                message: "",
+              }
+            });
+          }
+          alert("submitted Successfully")
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }
+    else {
+      console.log("Invalid application")
+    }
   };
   changeHandler = (e) => {
     this.setState({
@@ -87,32 +89,32 @@ class Footer extends React.Component {
     let errors = this.state.errors;
 
     switch (name) {
-      case 'name': 
-        errors.name = 
+      case 'name':
+        errors.name =
           (!validateName(value))
             ? 'Enter a valid Name'
             : '';
         break;
-      case 'subject': 
-        errors.subject = 
+      case 'subject':
+        errors.subject =
           (!validateSubject(value))
             ? 'Enter a valid subject'
             : '';
-        break;      
-      case 'email': 
-        errors.email = 
+        break;
+      case 'email':
+        errors.email =
           validEmailRegex.test(value)
             ? ''
             : 'Email is not valid!';
         break;
       case 'phone':
-        errors.phone=
-          value.length==10
-            ?""
-            :"Enter a valid number"
+        errors.phone =
+          value.length == 10
+            ? ""
+            : "Enter a valid number"
       default:
         break;
-    } 
+    }
   };
   render() {
     const { name, phone, email, subject, message } = this.state;
@@ -205,7 +207,7 @@ class Footer extends React.Component {
             <div className="footerFormSub">Please fill the below details</div>
             <form onSubmit={this.submitHandler}>
               <div className="footer-input-height">
-                  <input
+                <input
                   type="text"
                   name="name"
                   value={name}
@@ -214,7 +216,7 @@ class Footer extends React.Component {
                   placeholder="Name*"
                   className="footerFormName"
                 ></input>
-                {this.state.errors.name.length > 0 && 
+                {this.state.errors.name.length > 0 &&
                   <div className='error'>{this.state.errors.name}</div>}
               </div>
               <div className="footer-input-height">
@@ -230,7 +232,7 @@ class Footer extends React.Component {
                   placeholder="Mobile Number*"
                   className="footerFormName"
                 ></input>
-                {this.state.errors.phone.length>0 && 
+                {this.state.errors.phone.length > 0 &&
                   <div className='error'>{this.state.errors.phone}</div>}
               </div>
               <div className="footer-input-height">
@@ -242,7 +244,7 @@ class Footer extends React.Component {
                   placeholder="Email"
                   className="footerFormName"
                 ></input>
-                  {this.state.errors.email.length>0 && 
+                {this.state.errors.email.length > 0 &&
                   <div className='error'>{this.state.errors.email}</div>}
               </div>
               <div className="footer-input-height">
@@ -255,11 +257,11 @@ class Footer extends React.Component {
                   placeholder="Subject*"
                   className="footerFormName"
                 ></input>
-                  {this.state.errors.subject.length>0 && 
+                {this.state.errors.subject.length > 0 &&
                   <div className='error'>{this.state.errors.subject}</div>}
               </div>
-             <div className="footer-input-height">
-              <input
+              <div className="footer-input-height">
+                <input
                   type="text"
                   name="message"
                   value={message}
@@ -268,7 +270,7 @@ class Footer extends React.Component {
                   placeholder="Message*"
                   className="footerFormName"
                 ></input>
-             </div>
+              </div>
               <button type="submit" className="footerButton">
                 Submit
               </button>

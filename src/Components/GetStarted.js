@@ -1,25 +1,23 @@
 import React from "react";
 import AppStore from "../Assets/App Store.svg";
 import PlayStore from "../Assets/Google Play.svg";
-import "../css/Stars.css";
-import Star from "../Assets/Star.svg";
-import "../css/GetStarted.css";
+import { Box, Text, Flex } from "@chakra-ui/core";
+import PageWrapper from "./shared/PageWrapper";
+import MainTitle from "./shared/MainTitle";
+import BgStar from "./shared/BgStar";
 
 function GetStarted() {
-  return (
-    <div>
-      <div className="getStarted">
-        <img src={Star} className="star25"></img>
-        <div className="getTitle">Get Started Now!</div>
-        <div className="getSub">Download the app</div>
-        <img src={Star} className="star26"></img>
-        <div className="getLogo">
-          <img src={PlayStore} style={{ paddingRight: "30px" }}></img>
-          <img src={AppStore}></img>
-        </div>
-      </div>
-    </div>
-  );
+  return <Box zIndex="1" position="relative" py={16} bg="blue.700" color="white" textAlign={{base: "center", md: "left"}}>
+    <PageWrapper >
+      <MainTitle title="Get Started Now!" mb={2} />
+      <Text fontSize="xl">Download the app</Text>
+      <Flex my={8} justifyContent={{ base: "center", md: "flex-start" }}>
+        <Box as="img" src={PlayStore}></Box>
+        <Box as="img" ml={4} src={AppStore}></Box>
+      </Flex>
+    </PageWrapper>
+    <BgStar stars={4} />
+  </Box>
 }
 
 export default GetStarted;
