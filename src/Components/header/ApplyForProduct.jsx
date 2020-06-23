@@ -21,6 +21,7 @@ import {
 
 import { useForm } from 'react-hook-form';
 import GotAnyQuestions from './GotAnyQuestions';
+import ApiServices from '../../services/api.services';
 
 
 const validEmailRegex = RegExp(
@@ -37,6 +38,9 @@ const validator = {
     phone: (value) => {
         return (!!value && value.length === 10) ? true : "Enter a valid number"
     },
+    instrument: (value) => {
+        return !value ? "Instrument is required" : true
+    },
 }
 
 const ApplyForProductForm = props => {
@@ -45,6 +49,13 @@ const ApplyForProductForm = props => {
     function onSubmit(values) {
         setTimeout(() => {
             alert(JSON.stringify(values, null, 2));
+            ApiServices
+                .product.apply(values)
+                .then(resp => resp.data).then(response => {
+
+                }).catch(err => {
+
+                })
         }, 1000);
     }
 
@@ -84,6 +95,7 @@ const ApplyForProductForm = props => {
                 <Select
                     name="instrument"
                 >
+                    <option value="" selected disabled>Select Instrument</option>
                     <option value="Loans">Loans</option>
                     <option value="Insurance">Insurance</option>
                     <option value="Investments">Investments</option>
@@ -91,7 +103,7 @@ const ApplyForProductForm = props => {
                 </Select>
             </FormControl>
             <Flex my={4}>
-                <Button variantColor="orange" mr={3} >Submit</Button>
+                <Button type="submit" variantColor="orange" mr={3} >Submit</Button>
                 <Button variantColor="orange" variant="outline" onClick={props.onClose}>Cancel</Button>
             </Flex>
         </Stack>
