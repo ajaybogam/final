@@ -11,17 +11,33 @@ import PageProcessView from "./shared/PageProccessView";
 import ProcessThrough from "./shared/ProcessThrough";
 
 const whyChooseOptionsList = [
-  { image: Back, title: "Expert Analysis", description: "Our experts will analyse your application and suggest you the best investment plans" },
-  { image: Deals, title: "Get the best deals", description: "We lobby on your behalf to get you the best possible deals on your investments" },
-  { image: Safe, title: "Be safe & Secure", description: "All your documents and details will be stored securely and by following the industry standards" },
-]
+  {
+    image: Back,
+    title: "Expert Analysis",
+    description:
+      "Our experts will analyse your application and suggest you the best investment plans",
+  },
+  {
+    image: Deals,
+    title: "Get the best deals",
+    description:
+      "We lobby on your behalf to get you the best possible deals on your investments",
+  },
+  {
+    image: Safe,
+    title: "Be safe & Secure",
+    description:
+      "All your documents and details will be stored securely and by following the industry standards",
+  },
+];
 const Investments = (props) => {
   return (
     <React.Fragment>
       <PageIntroView
         title="We will help you process & plan your investments"
         description="Get your investments processed by our experts and also receive advice on how to plan your investments"
-        image={Invest} />
+        image={Invest}
+      />
 
       <PageSecondaryInfo
         title="investments through dr. finance"
@@ -36,7 +52,8 @@ const Investments = (props) => {
 
       <PageProcessView
         title="investments processed"
-        list={["Personal",
+        list={[
+          "Personal",
           "Fixed Deposits",
           "Tax saving deposits",
           "Recurring deposits",
@@ -50,6 +67,6 @@ const Investments = (props) => {
       />
     </React.Fragment>
   );
-}
+};
 
 export default Investments;

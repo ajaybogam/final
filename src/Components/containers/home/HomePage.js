@@ -6,7 +6,6 @@ import Part from "../../Part";
 import Partners from "./Partners";
 
 class HomePage extends React.Component {
- 
   render() {
     return (
       <div>

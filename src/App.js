@@ -15,23 +15,22 @@ import TandC from "../src/Components/TandC";
 import JoinasReferral from "../src/Components/JoinasReferral";
 import Faqs from "./Components/Faqs";
 
-
 import "./App.css";
 import AppTheme from "./app.theme";
 import HomePage from "./Components/containers/home/HomePage";
 
 const routes = [
   { path: "/", component: HomePage, exact: true },
-  { path: "/loans", component: LoansPage, },
-  { path: "/investments", component: InvestmentsPage, },
-  { path: "/insurance", component: InsurancePage, },
-  { path: "/creditcards", component: CreditPage, },
-  { path: "/joinasreferral", component: JoinasReferral, },
-  { path: "/about", component: AboutPage, },
-  { path: "/contact", component: ContactPage, },
-  { path: "/faqs", component: Faqs, },
-  { path: "/termsandconditions", component: TandC, },
-]
+  { path: "/loans", component: LoansPage },
+  { path: "/investments", component: InvestmentsPage },
+  { path: "/insurance", component: InsurancePage },
+  { path: "/creditcards", component: CreditPage },
+  { path: "/joinasreferral", component: JoinasReferral },
+  { path: "/about", component: AboutPage },
+  { path: "/contact", component: ContactPage },
+  { path: "/faqs", component: Faqs },
+  { path: "/termsandconditions", component: TandC },
+];
 
 function App() {
   return (
@@ -41,7 +40,9 @@ function App() {
         <div className="App">
           <AppHeader />
           <Switch>
-            {routes.map((route, idx) => <Route key={idx} {...route} />)}
+            {routes.map((route, idx) => (
+              <Route key={idx} {...route} />
+            ))}
           </Switch>
           <Footer />
         </div>

@@ -12,16 +12,11 @@ import Close from "../Assets/Close.svg";
 import axios from "axios";
 import Success from "../Assets/Success.svg";
 
-
 import img1 from "../mobile/Email.svg";
 import img2 from "../mobile/Phone.svg";
 import join_img from "../mobile/Lead Gen.svg";
 import mobilecross from "../mobile/Close_Blue.svg";
 import TopHeader from "./header/TopHeader";
-
-
-
-
 
 const validEmailRegex = RegExp(
   /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
@@ -40,8 +35,6 @@ const validateForm = (errors) => {
   Object.values(errors).forEach((val) => val.length > 0 && (valid = false));
   return valid;
 };
-
-
 
 class AppHeader extends React.Component {
   constructor(props) {
@@ -71,7 +64,7 @@ class AppHeader extends React.Component {
     if (validateForm(this.state.errors)) {
       console.log(this.state);
       axios
-        .post("http://52.73.189.181/applyProduct", this.state)
+        .post("http://52.73.189.181/applyproduct", this.state)
         .then((response) => {
           console.log(response);
           if (response.status == 200) {
@@ -113,7 +106,6 @@ class AppHeader extends React.Component {
           ariaHideApp={false}
         >
           <div className="firstBox">
-
             <div className="successModal">
               <img src={Success}></img>
               <div className="appSubmited">Application Submitted</div>
@@ -122,10 +114,7 @@ class AppHeader extends React.Component {
               </div>
             </div>
           </div>
-
         </Modal2>
-
-
 
         <TopHeader />
       </React.Fragment>

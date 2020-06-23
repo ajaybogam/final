@@ -9,13 +9,32 @@ import PageSecondaryInfo from "./shared/PageSecondaryInfo";
 import PageProcessView from "./shared/PageProccessView";
 import ProcessThrough from "./shared/ProcessThrough";
 
-
 const whyChooseOptionsList = [
-  { image: Analysis, title: "Expert Analysis", description: "Our experts will conduct a deep analysis of your application & understand you requirements" },
-  { image: Digital, title: "Digital process", description: "Our online ecosystem will help you throughout the process. You can buy and renew your policies online" },
-  { image: Support, title: "Dedicated Claims support", description: "Our experienced team will not just help you in buying but they will also help you in settling claims smoothly" },
-  { image: Variety, title: "Variety of products", description: "Dr. Finance provides a variety of products for various stages of your life and health" },
-]
+  {
+    image: Analysis,
+    title: "Expert Analysis",
+    description:
+      "Our experts will conduct a deep analysis of your application & understand you requirements",
+  },
+  {
+    image: Digital,
+    title: "Digital process",
+    description:
+      "Our online ecosystem will help you throughout the process. You can buy and renew your policies online",
+  },
+  {
+    image: Support,
+    title: "Dedicated Claims support",
+    description:
+      "Our experienced team will not just help you in buying but they will also help you in settling claims smoothly",
+  },
+  {
+    image: Variety,
+    title: "Variety of products",
+    description:
+      "Dr. Finance provides a variety of products for various stages of your life and health",
+  },
+];
 
 const Insurance = (props) => {
   return (
@@ -25,7 +44,8 @@ const Insurance = (props) => {
         description=" Our partnership with premier insurance companies and our insurance
         experts enables us to provide you the best possible insurance
         policies"
-        image={Insure} />
+        image={Insure}
+      />
 
       <PageSecondaryInfo
         title="insurance through dr. finance"
@@ -67,9 +87,8 @@ const Insurance = (props) => {
         title="why process insurance through dr. finance?"
         options={whyChooseOptionsList}
       />
-
     </React.Fragment>
   );
-}
+};
 
 export default Insurance;

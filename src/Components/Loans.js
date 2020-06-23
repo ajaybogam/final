@@ -15,15 +15,55 @@ import PageProcessView from "./shared/PageProccessView";
 import ProcessThrough from "./shared/ProcessThrough";
 
 const whyChooseOptionsList = [
-  { image: Analysis, title: "Expert Analysis", description: "Our experts will conduct a deep analysis of your application & understand you requirements" },
-  { image: Deals, title: "Get the best deals", description: "We will get you the maximum tenure, higher loan amount, low processing fees & no hidden charges" },
-  { image: Service, title: "Doorstep Service", description: "Our team will ensure that your entire application is processed right from the comfort of your home" },
-  { image: Free, title: "Hassle-free processing", description: "Our Experts will make sure that the loan process is hassle free and gets approved in few days" },
-  { image: Status, title: "Loan Status Updates", description: "Our team will give your constant updates our mobile app until the end of the process" },
-  { image: Safe, title: "Be safe & Secure", description: "All your documents and details will be stored securely and by following the industry standards" },
-  { image: Checks, title: "Multiple Eligibility Checks", description: "Check your eligibility in various banks at same time without letting it affect your CIBIL score" },
-  { image: Score, title: "Low Cibil Score", description: "If you have a low CIBIL score? Then do not worry. Dr Finance will still help you process the application" },
-]
+  {
+    image: Analysis,
+    title: "Expert Analysis",
+    description:
+      "Our experts will conduct a deep analysis of your application & understand you requirements",
+  },
+  {
+    image: Deals,
+    title: "Get the best deals",
+    description:
+      "We will get you the maximum tenure, higher loan amount, low processing fees & no hidden charges",
+  },
+  {
+    image: Service,
+    title: "Doorstep Service",
+    description:
+      "Our team will ensure that your entire application is processed right from the comfort of your home",
+  },
+  {
+    image: Free,
+    title: "Hassle-free processing",
+    description:
+      "Our Experts will make sure that the loan process is hassle free and gets approved in few days",
+  },
+  {
+    image: Status,
+    title: "Loan Status Updates",
+    description:
+      "Our team will give your constant updates our mobile app until the end of the process",
+  },
+  {
+    image: Safe,
+    title: "Be safe & Secure",
+    description:
+      "All your documents and details will be stored securely and by following the industry standards",
+  },
+  {
+    image: Checks,
+    title: "Multiple Eligibility Checks",
+    description:
+      "Check your eligibility in various banks at same time without letting it affect your CIBIL score",
+  },
+  {
+    image: Score,
+    title: "Low Cibil Score",
+    description:
+      "If you have a low CIBIL score? Then do not worry. Dr Finance will still help you process the application",
+  },
+];
 
 const Loans = () => {
   return (
@@ -31,7 +71,8 @@ const Loans = () => {
       <PageIntroView
         title="Over a decade of experience in processing loans"
         description="Our experts will understand your requirements, analyse your application and provide you the best possible loans through our partnered premier banks & lending institutions"
-        image={Loan} />
+        image={Loan}
+      />
 
       <PageSecondaryInfo
         title="loans through dr. finance"
@@ -48,7 +89,8 @@ const Loans = () => {
 
       <PageProcessView
         title="loans processed"
-        list={["Personal",
+        list={[
+          "Personal",
           "Business",
           "Home",
           "Mortgage",
@@ -58,7 +100,8 @@ const Loans = () => {
           "Car",
           "Gold",
           "Education",
-          "Equipment"]}
+          "Equipment",
+        ]}
       />
 
       <ProcessThrough
@@ -67,6 +110,6 @@ const Loans = () => {
       />
     </React.Fragment>
   );
-}
+};
 
 export default Loans;

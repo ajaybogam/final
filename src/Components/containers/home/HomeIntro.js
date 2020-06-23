@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Text, Box } from '@chakra-ui/core';
+import { Flex, Text, Box } from "@chakra-ui/core";
 
 import "./Solar.css";
 // import "../css/Stars.css";
@@ -9,14 +9,22 @@ import Star from "../../../Assets/Star.svg";
 import PageWrapper from "../../shared/PageWrapper";
 import BgStar from "../../shared/BgStar";
 
-
-
 function HomeIntro() {
   return (
     <Flex className="view__intro">
       <PageWrapper position="relative" bottom={{ base: 12, md: 0 }}>
-        <Text maxW="580px" fontSize={{ base: "3xl", md: "6xl" }} color="blue.400" lineHeight="1">At the centre of your financial needs</Text>
-        <Text maxW="360px" mt={2}>Dr. Finance connects you with lenders & insurers to get you the best possible deals</Text>
+        <Text
+          maxW="580px"
+          fontSize={{ base: "3xl", md: "6xl" }}
+          color="blue.400"
+          lineHeight="1"
+        >
+          At the centre of your financial needs
+        </Text>
+        <Text maxW="360px" mt={2}>
+          Dr. Finance connects you with lenders & insurers to get you the best
+          possible deals
+        </Text>
       </PageWrapper>
       {/* <img src={Star} className="star1"></img>
         <img src={Star} className="star2"></img>

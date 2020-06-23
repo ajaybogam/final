@@ -10,10 +10,25 @@ import PageProcessView from "./shared/PageProccessView";
 import ProcessThrough from "./shared/ProcessThrough";
 
 const whyChooseOptionsList = [
-  { image: Simple, title: "SIMPLE PROCESS", description: "Finish your entire application process in a few simple steps. Apply from the comfort of your home" },
-  { image: Understand, title: "UNDERSTANDING YOU NEEDS", description: "We analyse your requirements and suggest a credit card that fits perfectly for your needs" },
-  { image: Cards, title: "VARIETY OF CREDIT CARDS", description: "From shopping to travel and dining to rewards, we process cards that fits you the best" },
-]
+  {
+    image: Simple,
+    title: "SIMPLE PROCESS",
+    description:
+      "Finish your entire application process in a few simple steps. Apply from the comfort of your home",
+  },
+  {
+    image: Understand,
+    title: "UNDERSTANDING YOU NEEDS",
+    description:
+      "We analyse your requirements and suggest a credit card that fits perfectly for your needs",
+  },
+  {
+    image: Cards,
+    title: "VARIETY OF CREDIT CARDS",
+    description:
+      "From shopping to travel and dining to rewards, we process cards that fits you the best",
+  },
+];
 
 const CreditCard = (props) => {
   return (
@@ -21,7 +36,8 @@ const CreditCard = (props) => {
       <PageIntroView
         title="We will help you pick the best credit card for you"
         description="After a thorough analysis of your requirements, our experts will choose the credit card that your needs. It will not just help you spend but also earn money"
-        image={Credit} />
+        image={Credit}
+      />
 
       <PageSecondaryInfo
         title="credit cards through dr. finance"
@@ -51,9 +67,8 @@ const CreditCard = (props) => {
         title=" why process credit cards through dr. finance?"
         options={whyChooseOptionsList}
       />
-
     </React.Fragment>
   );
-}
+};
 
 export default CreditCard;
