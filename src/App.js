@@ -19,7 +19,7 @@ import Faqs from "./Components/Faqs";
 import "./App.css";
 import AppTheme from "./app.theme";
 import HomePage from "./Components/containers/home/HomePage";
-
+import FotterUpdate from './Components/FooterUpdate'
 const routes = [
   { path: "/", component: HomePage, exact: true },
   { path: "/loans", component: LoansPage, },
@@ -43,7 +43,7 @@ function App() {
           <Switch>
             {routes.map((route, idx) => <Route key={idx} {...route} />)}
           </Switch>
-          <Footer />
+          <FotterUpdate />
         </div>
       </Router>
     </ThemeProvider>
