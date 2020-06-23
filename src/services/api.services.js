@@ -11,6 +11,8 @@ const product = {
     apply: payload => API.post('applyProduct', payload)
 }
 
-export default {
+const ApiServices = {
     product
 }
+
+export default ApiServices

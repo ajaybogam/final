@@ -26,7 +26,7 @@ function FooterUpdate(){
     
     return(
 
-        <Flex  pb={20} bg="rgba(9,47,75,1)" color="white" justifyContent="space-around" pt={20} flexDir={{ base: "column-reverse", md: "row" }}>
+        <Flex  pb={20} bg="blue.700" color="white" justifyContent="space-around" pt={20} flexDir={{ base: "column-reverse", md: "row" }}>
             <Box display={{ base: "none", md: "block" }} >
             <TitleView title="QUICK LINKS"/>
             {quickLinks.map((data,idx)=>(
@@ -39,7 +39,7 @@ function FooterUpdate(){
             ))}
             <Flex >
             <Box as="img" mr={2} src={copyright} />
-            <Box fontSize="md" fontWeight="300" color="rgba(208,208,208,1)">2020 Dr. Finance</Box>
+            <Box fontSize="md" fontWeight="300" color="custom.100">2020 Dr. Finance</Box>
             </Flex>
            </Box>
            <Box display={{ base: "none", md: "inline" }}>

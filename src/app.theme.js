@@ -10,6 +10,18 @@ const AppTheme = {
         ...theme.zIndices,
         modal: 99999,
         overlay: 99998,
+    },
+    colors: {
+        ...theme.colors,
+        "blue" : {
+            ...theme.colors.blue,
+            700: "rgba(9,47,75,1)"
+        },
+        custom: {
+            100: 'red'
+        }
+
+        
     }
 }
 

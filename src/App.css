@@ -467,3 +467,9 @@
     background-color: transparent;
   }
 }
+
+
+*:focus,
+*:active {
+  box-shadow: none !important;
+}
