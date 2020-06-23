@@ -131,7 +131,7 @@ class FooterForm extends React.Component {
        borderBottom:"1px solid rgba(161,161,161,1)",
      }
     return (
-          <Box bg="rgba(9,47,75,1)" color="white">
+          <Box bg="blue.700" color="white">
               <Box fontSize="3xl">Got any questions?</Box>
               <Box fontSize="lg" pb={6} color=" #A1A1A1">Please fill the below details</Box>
               <form onSubmit={this.submitHandler} >
@@ -143,7 +143,7 @@ class FooterForm extends React.Component {
                   required
                   onChange={this.changeHandler}
                   placeholder="Name*"
-                  bg="rgba(9,47,75,1)"
+                  bg="blue.700"
                   {...input_style} 
             
             
@@ -164,7 +164,7 @@ class FooterForm extends React.Component {
                   required
                   onChange={this.changeHandler}
                   placeholder="Mobile Number*"
-                  bg="rgba(9,47,75,1)"
+                  bg="blue.700"
                   {...input_style} 
                 
                 />
@@ -178,7 +178,7 @@ class FooterForm extends React.Component {
                   value={email}
                   onChange={this.changeHandler}
                   placeholder="Email"
-                  bg="rgba(9,47,75,1)"
+                  bg="blue.700"
                   {...input_style} 
         
                 />
@@ -193,7 +193,7 @@ class FooterForm extends React.Component {
                   required
                   onChange={this.changeHandler}
                   placeholder="Subject*"
-                  bg="rgba(9,47,75,1)"
+                  bg="blue.700"
                   {...input_style} 
                 
                 ></Input>
@@ -208,7 +208,7 @@ class FooterForm extends React.Component {
                   required
                   onChange={this.changeHandler}
                   placeholder="Message*"
-                  bg="rgba(9,47,75,1)"
+                  bg="blue.700"
                   {...input_style} 
                 ></Input>
                 </FormControl>

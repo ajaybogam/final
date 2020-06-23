@@ -18,7 +18,7 @@ import Faqs from "./Components/Faqs";
 import "./App.css";
 import AppTheme from "./app.theme";
 import HomePage from "./Components/containers/home/HomePage";
-import FotterUpdate from './Components/FooterUpdate'
+import FotterUpdate from "./Components/FooterUpdate";
 const routes = [
   { path: "/", component: HomePage, exact: true },
   { path: "/loans", component: LoansPage },
