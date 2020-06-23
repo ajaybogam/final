@@ -467,15 +467,10 @@
     background-color: transparent;
   }
 }
-<<<<<<< HEAD
 *:focus {
   box-shadow: none !important;
 }
-=======
-
-
 *:focus,
 *:active {
   box-shadow: none !important;
 }
->>>>>>> 8ff8c7e95d85c0e49747eeed8c579552c9d83e1e

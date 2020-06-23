@@ -9,15 +9,8 @@ const API = axios.create({
 const product = {
   apply: (payload) => API.post("applyProduct", payload),
 };
-
-<<<<<<< HEAD
-export default {
+const ApiServices = {
   product,
 };
-=======
-const ApiServices = {
-    product
-}
 
-export default ApiServices
->>>>>>> 8ff8c7e95d85c0e49747eeed8c579552c9d83e1e
+export default ApiServices;
