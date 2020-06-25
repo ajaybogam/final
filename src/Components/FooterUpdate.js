@@ -48,7 +48,7 @@ function FooterUpdate() {
         ))}
         <Flex>
           <Box as="img" mr={2} src={copyright} />
-          <Box fontSize="md" fontWeight="300" color="custom.100">
+          <Box fontSize="md" fontWeight="300">
             2020 Dr. Finance
           </Box>
         </Flex>

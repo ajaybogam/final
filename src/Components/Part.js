@@ -47,41 +47,42 @@ function Part() {
           title="want to be a part of dr. finance?"
           color="red.300"
           mb={1}
+          px={{base: 8, md:0}}
         />
         <Text fontSize="2xl">Join as referral partner now!</Text>
         <Flex
           flexDirection={{ base: "column", md: "row" }}
           alignItems={{ base: "center", md: "stretch" }}
         >
-          <Box flex="1" my={{ base: 4, md: 16 }}>
-            <SimpleGrid columns={{ base: 1, md: 3 }}>
+          <Box flex="1" my={{ base: 4, md: 16 }} maxW="100%">
+            <Flex justifyContent="space-between" maxW="100%" overflow="hidden" overflowX="auto">
               {list.map(({ title, image, description }, idx) => (
-                <Box key={idx} mt={12}>
+                <Box key={idx} mt={12} textAlign="center" m={4} flexShrink="0">
                   <Box
                     as="img"
                     height="70px"
                     src={image}
-                    mx={{ base: "auto", md: 0 }}
+                    mx={{ base: "auto" }}
                   ></Box>
-                  <Text fontWeight="bold" color="red.300" mt={4} fontSize="2xl">
+                  <Text fontWeight="bold" color="red.300" mt={4} fontSize="xl">
                     {title}
                   </Text>
-                  <Text maxW="160px" mx={{ base: "auto", md: 0 }}>
+                  <Text maxW="160px" mx={{ base: "auto" }}>
                     {description}
                   </Text>
                 </Box>
               ))}
-            </SimpleGrid>
+            </Flex>
 
             <Flex
               as={Link}
               alignItems="center"
               to="/joinasreferral"
-              mt={8}
-              mb={2}
+              mt={24}
+              mb={8}
               justifyContent={{ base: "center", md: "flex-start" }}
             >
-              <Text mr={2} color="blue.400" fontSize="2xl">
+              <Text mr={2} color="blue.400" fontSize="xl">
                 Learn More
               </Text>
               <Box as="img" src={LearnMore} />
@@ -92,10 +93,10 @@ function Part() {
               <Box as="img" ml={4} src={AppStore}></Box>
             </Flex>
           </Box>
-          <Box as="img" src={Main} ml={{ base: 0, md: 6 }}></Box>
+          <Box as="img" src={Main} ml={{ base: 0, md: 16 }}></Box>
         </Flex>
       </PageWrapper>
-      <BgStar stars={16} />
+      <BgStar stars={10} />
     </Box>
   );
 }

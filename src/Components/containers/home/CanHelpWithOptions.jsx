@@ -15,20 +15,22 @@ function CanHelpWithOptions(props) {
     <PageContainer>
       <PageWrapper>
         <MainTitle title="dr. finance can help you with" />
-        <SimpleGrid columns={{ base: 2, md: 4 }}>
-          {keys.map((key) => (
-            <HelpYouLink
-              key={key}
-              active={activeLink === key}
-              link={helpYouOptions[key]}
-              onClick={() => setActiveLink(key)}
-            />
-          ))}
-        </SimpleGrid>
+        <Box >
+          <Flex w="100%" overflow="hidden" overflowX="auto" justifyContent={{ base: "flex-start", md: "space-around" }}>
+            {keys.map((key) => (
+              <HelpYouLink
+                key={key}
+                active={activeLink === key}
+                link={helpYouOptions[key]}
+                onClick={() => setActiveLink(key)}
+              />
+            ))}
+          </Flex>
+        </Box>
         <ProcessList list={helpYouOptions[activeLink].list} />
         <Box textAlign="center">
           <Link to={helpYouOptions[activeLink].link}>
-            <Button variantColor="orange">View More</Button>
+            <Button variantColor="orange">Learn More</Button>
           </Link>
         </Box>
       </PageWrapper>
@@ -37,7 +39,7 @@ function CanHelpWithOptions(props) {
 }
 
 const HelpYouLink = ({ link, active = false, onClick }) => (
-  <Flex justifyContent={{ base: "flex-state", md: "center" }} mb={4}>
+  <Flex justifyContent={{ base: "flex-state", md: "center" }} m={4} flexShrink="0">
     <Flex
       key={link.title}
       alignItems="center"

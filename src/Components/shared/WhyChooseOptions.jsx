@@ -1,32 +1,51 @@
 import React from "react";
-import { SimpleGrid, Box, Text } from "@chakra-ui/core";
+import { Flex, Box, Text } from "@chakra-ui/core";
+import styled from "@emotion/styled";
 
 function WhyChooseOptions(props) {
   const { list = [] } = props;
   return (
-    <SimpleGrid
-      columns={{ base: 1, md: 3 }}
+    <PageContainer
       spacingY={16}
-      justifyItems="center"
+      justifyItems="space-around"
     >
       {list.map((option) => (
-        <Box key={option.title}>
+        <Box className="ui__choose_option" key={option.title}>
           <Box
             mb={8}
             as="img"
             mx="auto"
-            maxW="80%"
+            maxW={{ base: "160px", md: "225px" }}
             src={option.image}
             alt={option.title}
           />
-          <Text my={2} fontWeight="bold" textTransform="uppercase">
+          <Text my={2} fontSize="lg" fontWeight="bold" textTransform="uppercase">
             {option.title}
           </Text>
           <Text px={{ base: 4, md: 8 }}>{option.description}</Text>
         </Box>
       ))}
-    </SimpleGrid>
+    </PageContainer>
   );
 }
+
+
+const PageContainer = styled(Flex)`
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .ui__choose_option {
+    width: calc(100% / 3);
+    flex-shrink: 0;
+    margin: 2rem 0;
+  }
+
+  @media (max-width: 768px) {
+   .ui__choose_option {
+      width: calc(100% / 1);
+    }
+  }
+`
+
 
 export default WhyChooseOptions;

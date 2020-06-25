@@ -116,7 +116,7 @@ const ApplyForProduct = props => {
         <Button onClick={onOpen} variantColor="orange">Apply</Button>
         <Modal isOpen={isOpen} onClose={onClose} size="xl">
             <ModalOverlay />
-            <ModalContent>
+            <ModalContent my={4}>
                 <ModalHeader>
                     <Text as="h3" fontSize="2xl" color="blue.400" lineHeight={1}>Apply for a product</Text>
                     <Text as="small" color="gray.400" fontWeight="normal">Please fill the below details</Text>
