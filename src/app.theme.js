@@ -25,6 +25,10 @@ const AppTheme = {
     custom: {
     100: "red",
     },
+    gray: {
+      ...theme.colors.gray,
+      600: "#343434"
+    }
   },
 };
 

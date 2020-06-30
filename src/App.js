@@ -19,6 +19,7 @@ import "./App.css";
 import AppTheme from "./app.theme";
 import HomePage from "./Components/containers/home/HomePage";
 import FotterUpdate from "./Components/FooterUpdate";
+import TncPage from "./Components/TncPage";
 const routes = [
   { path: "/", component: HomePage, exact: true },
   { path: "/loans", component: LoansPage },
@@ -29,7 +30,7 @@ const routes = [
   { path: "/about", component: AboutPage },
   { path: "/contact", component: ContactPage },
   { path: "/faqs", component: Faqs },
-  { path: "/termsandconditions", component: TandC },
+  { path: "/termsandconditions", component: TncPage },
 ];
 
 function App() {

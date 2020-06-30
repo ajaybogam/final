@@ -17,6 +17,7 @@ import img2 from "../mobile/Phone.svg";
 import join_img from "../mobile/Lead Gen.svg";
 import mobilecross from "../mobile/Close_Blue.svg";
 import TopHeader from "./header/TopHeader";
+import ApiServices from "../services/api.services";
 
 const validEmailRegex = RegExp(
   /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
@@ -65,6 +66,8 @@ class AppHeader extends React.Component {
       console.log(this.state);
       axios
         .post("http://52.73.189.181/applyproduct", this.state)
+        
+        // ApiServices.product.apply(this.state)
         .then((response) => {
           console.log(response);
           if (response.status == 200) {

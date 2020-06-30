@@ -467,10 +467,10 @@
     background-color: transparent;
   }
 }
-*:focus {
+*:not(div):focus {
   box-shadow: none !important;
 }
-*:focus,
-*:active {
+*:not(div):focus,
+*:not(div):active {
   box-shadow: none !important;
 }
