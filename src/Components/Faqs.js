@@ -15,14 +15,15 @@ import {
 import BgStar from "../Components/shared/BgStar";
 import Collapsible from "react-collapsible";
 import ApiServices from "../../src/services/product.services";
-
+import Faqs_up from "../Assets/FAQ Up Arrow.svg";
+import Faqs_down from "../Assets/FAQ Down Arrow.svg";
 export class Faqs extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
       posts: [],
-      activeFaq: -1,
+      activeFaq: 0,
     };
   }
   componentDidMount() {
@@ -40,7 +41,7 @@ export class Faqs extends Component {
   }
   setCurrentFaq = (activeFaq) => {
     this.setState({
-      activeFaq: this.state.activeFaq === activeFaq ? -1 : activeFaq,
+      activeFaq: this.state.activeFaq === activeFaq ? 0 : activeFaq,
     });
   };
   render() {
@@ -53,55 +54,36 @@ export class Faqs extends Component {
             fontSize="6xl"
             fontWeight="700"
             color="#1E9ED2"
+            mb={4}
           >
             FAQs
           </Text>
           <BgStar stars={10} />
           {posts.map((post, idx) => (
             <Box key={idx}>
-              <Text
-                cursor="pointer"
-                fontSize="2xl"
-                onClick={() => this.setCurrentFaq(idx)}
-                py={6}
-                fontWeight="700"
-                color="#1E9ED2"
-              >
-                {post.title}
-              </Text>
-              <Collapse isOpen={activeFaq === idx}>{post.content}</Collapse>
-              <Divider border="1px solid #D0D0D0" />
+              <Flex alignItems="baseline">
+                <img src={activeFaq === idx ? Faqs_up : Faqs_down} alt="" />
+                <Text
+                  cursor="pointer"
+                  fontSize="2xl"
+                  onClick={() => this.setCurrentFaq(idx)}
+                  pb={6}
+                  ml={4}
+                  fontWeight="600"
+                  color={activeFaq === idx ? "#1E9ED2" : "black"}
+                >
+                  {post.title}
+                </Text>
+              </Flex>
+
+              <Collapse isOpen={activeFaq === idx} ml={10}>
+                {post.content}
+              </Collapse>
+              <Divider borderBottom="2px solid #D0D0D0" my={8} />
             </Box>
           ))}
         </Flex>
       </Box>
-      // <div>
-      //   <div>
-      //     <div>
-      //       <div className="faqs">FAQs</div>
-      //       <div className="faqsLists">
-      //         {posts.length
-      //           ? posts.map((post) => (
-      //               <div key={post.id}>
-      //                 <Collapsible
-      //                   trigger={post.title}
-      //                   className="faqTitle"
-      //                   openedClassName="faqTitle"
-      //                   transitionTime="150"
-      //                 >
-      //                   <div className="faqContent">{post.content}</div>
-      //                 </Collapsible>
-      //                 <div className="faqDivider"></div>
-      //                 {/* <div className="faqTitle">{post.title}</div>
-      //                 <div className="faqContent">{post.content}</div>
-      //                 <div className="faqDivider"></div> */}
-      //               </div>
-      //             ))
-      //           : null}
-      //       </div>
-      //     </div>
-      //   </div>
-      // </div>
     );
   }
 }
