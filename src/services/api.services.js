@@ -1,16 +1,9 @@
-import axios from "axios";
+import productApis from "./product.services";
+import userApis from "./user.services";
 
-const BASE_URL = `http://52.73.189.181`;
-
-const API = axios.create({
-  baseURL: BASE_URL,
-});
-
-const product = {
-  apply: (payload) => API.post("applyProduct", payload),
-};
 const ApiServices = {
-  product,
+  product: productApis,
+  user: userApis,
 };
 
 export default ApiServices;
