@@ -96,7 +96,7 @@ function TermsCondition() {
   };
 
   return (
-    <Box>
+    <Box ref={sectionRef}>
       <PageWrapper className="" my={16}>
         <Box py={8}>
           <Text
@@ -133,7 +133,6 @@ function TermsCondition() {
             </Box>
           </Box>
           <Box
-            ref={sectionRef}
             w={{ base: "100%", md: "70%" }}
             p={8}
             mt={{ base: 16, md: 2 }}

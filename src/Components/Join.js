@@ -29,6 +29,7 @@ function Join() {
               <MainTitle
                 title="Join us as a referral partner now?"
                 color="blue.400"
+                pl={0}
                 mb={4}
               />
               <Text fontSize={{ base: "xl", md: "2xl" }}>

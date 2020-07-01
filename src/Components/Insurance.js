@@ -63,24 +63,23 @@ const Insurance = (props) => {
 
       <PageProcessView
         title="policies processed"
-        list={[
-          "Life",
-          "Term",
-          "Retirement",
-          "Pension",
-          "Health Insurance Policies",
-          "Individual",
-          "Family",
-          "Diabetic",
-          "Senior Citizen",
-          "Cardiac",
-          "Cancer",
-          "Special Children Health",
-          "Accidental",
-          "Overseas Medical Insurance",
-          "Travel Insurance",
-          "Group Health",
-        ]}
+        list={["Life", "Term", "Retirement", "Pension"]}
+        secondary={{
+          title: "Health Insurance Policies",
+          list: [
+            "Individual",
+            "Family",
+            "Diabetic",
+            "Senior Citizen",
+            "Cardiac",
+            "Cancer",
+            "Special Children Health",
+            "Accidental",
+            "Overseas Medical Insurance",
+            "Travel Insurance",
+            "Group Health",
+          ],
+        }}
       />
 
       <ProcessThrough
