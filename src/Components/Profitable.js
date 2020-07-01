@@ -29,6 +29,7 @@ function Profitable() {
   return (
     <ProcessThrough
       title="it’s simple & profitable"
+      b_g="blue.600"
       options={whyChooseOptionsList}
     />
   );

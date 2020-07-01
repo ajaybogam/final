@@ -20,8 +20,13 @@ const AppTheme = {
     blue: {
       ...theme.colors.blue,
       400: "#1E9ED2",
+      600:'rgba(38,81,130,1)',
       700: "rgba(9,47,75,1)",
     },
+    // orange:{...theme.color.orange,
+    //   varientcolor:"rgba(235,167,31,1)"
+    // }
+    // ,
     custom: {
     100: "red",
     },

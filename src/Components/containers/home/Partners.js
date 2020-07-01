@@ -16,7 +16,7 @@ function Partners() {
       <PageWrapper>
         <MainTitle
           title="our financial partners"
-          color="blue.400"
+          color="blue.600"
           textAlign="center"
           pt={8}
         />

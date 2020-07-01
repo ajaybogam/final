@@ -25,11 +25,15 @@ function Join() {
           alignItems={{ base: "center", md: "stretch" }}
         >
           <Box flex="1" my={{ base: 4, md: 16 }}>
-            <Box maxW="480px">
+            <Box maxW="480px" >
               <MainTitle
                 title="Join us as a referral partner now?"
-                color="blue.400"
+                color="blue.600"
+                f_size='6xl'
                 mb={4}
+                p_x="0"
+                w="685px"
+
               />
               <Text fontSize={{ base: "xl", md: "2xl" }}>
                 Download the referral tracking app, send us your referrals and

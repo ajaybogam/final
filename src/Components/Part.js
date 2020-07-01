@@ -46,6 +46,7 @@ function Part() {
         <MainTitle
           title="want to be a part of dr. finance?"
           color="red.300"
+          f_size="5xl"
           mb={1}
           px={{base: 8, md:0}}
         />

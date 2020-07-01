@@ -27,7 +27,7 @@ class ContactPage extends React.Component {
                   <Box as="img" src={EmailBig} />
                   <Text fontSize="2xl" ml={4}>support@drfinance.com</Text>
                 </Flex>
-                <Flex alignItems="center" >
+                <Flex  alignItems="center" >
                   <Box as="img" src={Location} />
                   <Text fontSize="2xl" ml={4}>Door No. 2, 2-186/18/6, Ramakrishna Nagar, Amberpet, Hyderabad, Telangana 500013</Text>
                 </Flex>
