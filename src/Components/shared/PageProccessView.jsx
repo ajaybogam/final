@@ -28,7 +28,7 @@ function PageProcessView(props) {
   const { list, title, secondary = {} } = props;
 
   return (
-    <Box zIndex="1" position="relative" py={16} {...props}>
+    <Box zIndex="1" position="relative" py={0} {...props} my={{base:20,md:0}}>
       <PageWrapper>
         <Flex
           flexDirection={{ base: "column", md: "row" }}

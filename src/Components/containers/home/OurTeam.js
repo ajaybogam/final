@@ -12,7 +12,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 
 function OurTeam() {
-  return <Box zIndex="1" position="relative" py={16} bg="blue.700" textAlign={{ base: "center" }}>
+  return <Box zIndex="1" position="relative" py={16} bg="blue.400" textAlign={{ base: "center" }}>
     <PageWrapper >
       <MainTitle title="Our Team" color="white" />
       <SimpleGrid display={{ base: "none", md: "grid" }} columns={{ base: 1, md: 3 }} spacingY={16} >

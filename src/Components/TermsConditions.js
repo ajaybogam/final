@@ -109,7 +109,7 @@ function TermsCondition() {
             {" "}
             Terms & Conditions
           </Text>
-          <Text maxW="480px" mt="16px" fontSize="xl">
+          <Text maxW="480px" mt="16px" fontSize="xl" color="#A1A1A1 ">
             {" "}
             Last updated on 24 Jan 2020
           </Text>

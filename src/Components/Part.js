@@ -14,7 +14,7 @@ import MainTitle from "./shared/MainTitle";
 import { Text, Flex, Box, SimpleGrid } from "@chakra-ui/core";
 import PageWrapper from "./shared/PageWrapper";
 import BgStar from "./shared/BgStar";
-
+import largeimg from '../Assets/Large.png'
 const list = [
   {
     title: "Add Referrals",
@@ -46,18 +46,19 @@ function Part() {
         <MainTitle
           title="want to be a part of dr. finance?"
           color="red.300"
+          f_size="5xl"
           mb={1}
-          px={{base: 8, md:0}}
+          px={0}
         />
-        <Text fontSize="2xl">Join as referral partner now!</Text>
+        <Text fontSize={{ base: "xl", md: "3xl" }}>Join as referral partner now!</Text>
         <Flex
           flexDirection={{ base: "column", md: "row" }}
           alignItems={{ base: "center", md: "stretch" }}
         >
           <Box flex="1" my={{ base: 4, md: 16 }} maxW="100%">
-            <Flex justifyContent="space-between" maxW="100%" overflow="hidden" overflowX="auto">
+            <Flex justifyContent maxW="100%" overflow="hidden" overflowX="auto" > 
               {list.map(({ title, image, description }, idx) => (
-                <Box key={idx} mt={12} textAlign="center" m={4} flexShrink="0">
+                <Box key={idx} mt={12} textAlign="center" flexShrink="0" mr={16}>
                   <Box
                     as="img"
                     height="70px"
@@ -67,7 +68,7 @@ function Part() {
                   <Text fontWeight="bold" color="red.300" mt={4} fontSize="xl">
                     {title}
                   </Text>
-                  <Text maxW="160px" mx={{ base: "auto" }}>
+                  <Text maxW={idx===0?"150px":"160px"} mx={{ base: "auto" }}>
                     {description}
                   </Text>
                 </Box>
@@ -78,7 +79,7 @@ function Part() {
               as={Link}
               alignItems="center"
               to="/joinasreferral"
-              mt={24}
+              mt={{base:10,md:24}}
               mb={8}
               justifyContent={{ base: "center", md: "flex-start" }}
             >
@@ -88,12 +89,12 @@ function Part() {
               <Box as="img" src={LearnMore} />
             </Flex>
 
-            <Flex>
+            <Flex  alignItems="center" justifyContent={{base:"space-around",md:"start"}} mb={{base:10,md:"none"}}>
               <Box as="img" src={PlayStore}></Box>
               <Box as="img" ml={4} src={AppStore}></Box>
             </Flex>
           </Box>
-          <Box as="img" src={Main} ml={{ base: 0, md: 16 }}></Box>
+          <Box as="img" src={largeimg} ml={{ base: 0, md: 16 }}></Box>
         </Flex>
       </PageWrapper>
       <BgStar stars={10} />

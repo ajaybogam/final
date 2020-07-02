@@ -6,12 +6,14 @@ import TrackActive from "../Assets/Track Active.svg";
 import PageWrapper from "./shared/PageWrapper";
 import MainTitle from "./shared/MainTitle";
 import BgStar from "./shared/BgStar";
+import styled from "@emotion/styled";
+
 const Tracking = (props) => {
 
   return (
     <Box zIndex="1" position="relative" pt={16} textAlign="center">
       <PageWrapper >
-        <MainTitle title="referral tracking app" />
+        <MainTitle title="referral tracking app" color="blue.600"/>
         <Box overflow="hidden" overflowX="auto" w="100%">
           <TrackingOptions />
         </Box>
@@ -37,11 +39,14 @@ const TrackingOptions = (props) => {
       p={{ base: 4 }}
       pb={0}
       onClick={() => setActiveIdx(idx)}>
-      <Text fontSize="xl" fontWeight="bold">{item.title}</Text>
-      <Text px={8} my={4}>{item.description}</Text>
+      <Text  fontWeight="bold" fontSize={["xl","2xl"]}>{item.title}</Text>
+      <Text px={8} my={4} w="330px" mx="auto"  fontSize={["md","xl"]}>{item.description}</Text>
       <Box as="img" mt={8} src={item.image} mx="auto" />
     </Box>)}
   </SimpleGrid>
+  
 }
+
+
 
 export default Tracking;

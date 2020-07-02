@@ -126,7 +126,7 @@ class FooterForm extends React.Component {
           Please fill the below details
         </Box>
         <form onSubmit={this.submitHandler}>
-          <FormControl mb={6}>
+          <FormControl mb={8}>
             <Input
               type="text"
               name="name"
@@ -144,7 +144,7 @@ class FooterForm extends React.Component {
             )}
           </FormControl>
 
-          <FormControl mb={6}>
+          <FormControl mb={8}>
             <Input
               type="number"
               name="phone"
@@ -164,7 +164,7 @@ class FooterForm extends React.Component {
               </Box>
             )}
           </FormControl>
-          <FormControl mb={6}>
+          <FormControl mb={8}>
             <Input
               type="text"
               name="email"
@@ -180,7 +180,7 @@ class FooterForm extends React.Component {
               </Box>
             )}
           </FormControl>
-          <FormControl mb={6}>
+          <FormControl mb={8}>
             <Input
               type="text"
               value={subject}
@@ -202,7 +202,7 @@ class FooterForm extends React.Component {
               {this.state.errors.subject}
             </Box>
           )}
-          <FormControl mb={6}>
+          <FormControl mb={8}>
             <Input
               type="text"
               name="message"

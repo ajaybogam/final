@@ -20,7 +20,7 @@ function Contact() {
             <div>support@drfinance.com</div>
           </div>
           <div className="contactSub">
-            <img src={Location} style={{ paddingRight: "16px" }}></img>
+           <div> <img src={Location} style={{ paddingRight: "16px" }}></img></div>
             <div>
               Door No. 2, 2-186/18/6, Ramakrishna Nagar, Amberpet, Hyderabad,
               Telangana 500013

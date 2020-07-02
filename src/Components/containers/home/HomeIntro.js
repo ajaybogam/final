@@ -22,7 +22,8 @@ function HomeIntro() {
         >
           At the centre of your financial needs
         </Text>
-        <Text maxW="480px" mt="16px" fontSize="xl">
+        <Text maxW={{ base: "350px", md: "580px" }} mt="16px"  mx={{base:"auto",md:"0"}} 
+          fontSize={{ base: "xl", md: "2xl" }} >
           Dr. Finance connects you with lenders & insurers to get you the best
           possible deals
         </Text>

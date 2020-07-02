@@ -7,22 +7,25 @@ function WhyChooseOptions(props) {
   return (
     <PageContainer
       spacingY={16}
-      justifyItems="space-around"
+      justifyItems="space-between"
     >
       {list.map((option) => (
         <Box className="ui__choose_option" key={option.title}>
           <Box
-            mb={8}
+            mb={{base:4,md:8}}
             as="img"
             mx="auto"
             maxW={{ base: "160px", md: "225px" }}
             src={option.image}
             alt={option.title}
           />
-          <Text my={2} fontSize="lg" fontWeight="bold" textTransform="uppercase">
-            {option.title}
-          </Text>
-          <Text px={{ base: 4, md: 8 }}>{option.description}</Text>
+          <Box maxW={props.maxW} mx="auto">
+            <Text my={2} fontSize={{ base: "xl", md: "2xl" }} fontWeight="bold" textTransform="uppercase">
+              {option.title}
+            </Text>
+            <Text fontSize={{ base: "lg", md: "xl" }} px={{ base: 1 }}
+            mx="auto">{option.description}</Text>
+          </Box>
         </Box>
       ))}
     </PageContainer>
