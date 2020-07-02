@@ -20,6 +20,7 @@ import AppTheme from "./app.theme";
 import HomePage from "./Components/containers/home/HomePage";
 import FotterUpdate from "./Components/FooterUpdate";
 import TncPage from "./Components/TncPage";
+import PrivacyPolicy from "./Components/PrivacyPolicy";
 const routes = [
   { path: "/", component: HomePage, exact: true },
   { path: "/loans", component: LoansPage },
@@ -31,6 +32,7 @@ const routes = [
   { path: "/contact", component: ContactPage },
   { path: "/faqs", component: Faqs },
   { path: "/termsandconditions", component: TncPage },
+  { path: "/privacypolicy", component: PrivacyPolicy },
 ];
 
 function App() {

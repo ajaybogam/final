@@ -14,6 +14,7 @@ function FooterUpdate() {
     { title: "Join as referral Partner", link: "/joinasreferral" },
     { title: "Contact", link: "/contact" },
     { title: "Terms and conditions", link: "/termsandconditions" },
+    { title: "Privacy Policy", link: "/privacypolicy" },
     { title: "FAQs", link: "/faqs" },
   ];
   const product = [
