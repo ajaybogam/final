@@ -141,14 +141,14 @@ const ApplyForProductForm = (props) => {
 
 const ApplyForProduct = (props) => {
   const { isOpen, onOpen, onClose } = props;
-  const [isSuccess, setIsSuccess] = React.useState(true);
+  const [isSuccess, setIsSuccess] = React.useState(false);
   const onSuccess = () => setIsSuccess(true);
   return (
     <React.Fragment>
-      <Button onClick={onOpen} variantColor="orange" >
+      <Button onClick={onOpen} variantColor="orange">
         Apply
       </Button>
-      <Modal isOpen={isOpen} onClose={onClose} size="xl" >
+      <Modal isOpen={isOpen} onClose={onClose} size="xl">
         <ModalOverlay />
         <ModalContent>
           <ModalHeader>
