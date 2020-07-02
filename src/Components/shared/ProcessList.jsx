@@ -21,7 +21,7 @@ function ProcessList(props) {
   return (
     <PageContainer my={16}>
       {rows.map((row, idx) => (
-        <React.Fragment>
+        <React.Fragment key={idx}>
           <Flex
             className="ui__process_row"
             w="100%"
