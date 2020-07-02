@@ -18,6 +18,7 @@ import {
   Flex,
   Box,
 } from "@chakra-ui/core";
+import Success from "../../Assets/Success.svg";
 
 import { useForm } from "react-hook-form";
 import GotAnyQuestions from "./GotAnyQuestions";
@@ -43,19 +44,35 @@ const validator = {
     return !value ? "Instrument is required" : true;
   },
 };
-
+const ApplyFormSuccess = (props) => {
+  return (
+    <React.Fragment>
+      <Box>
+        <Flex direction="column" align="center" py={12}>
+          <img src={Success} alt="Success" />
+          <Text color="#4ED489" fontSize="lg" fontWeight="700">
+            Application Submitted
+          </Text>
+          <Text textAlign="center" maxW="256px">
+            We will get in touch with you soon to get the process started
+          </Text>
+        </Flex>
+      </Box>
+    </React.Fragment>
+  );
+};
 const ApplyForProductForm = (props) => {
   const { handleSubmit, errors, register, formState } = useForm();
   console.log({ errors, formState });
   function onSubmit(values) {
     setTimeout(() => {
-      alert(JSON.stringify(values, null, 2));
+      // alert(JSON.stringify(values, null, 2));
       ApiServices.product
         .apply(values)
         .then((resp) => resp.data)
         .then((response) => {
           props.onSuccess();
-          props.onClose();
+          // props.onClose();
         })
         .catch((err) => {});
     }, 1000);
@@ -124,7 +141,7 @@ const ApplyForProductForm = (props) => {
 
 const ApplyForProduct = (props) => {
   const { isOpen, onOpen, onClose } = props;
-  const [isSuccess, setIsSuccess] = React.useState(false);
+  const [isSuccess, setIsSuccess] = React.useState(true);
   const onSuccess = () => setIsSuccess(true);
   return (
     <React.Fragment>
@@ -144,9 +161,9 @@ const ApplyForProduct = (props) => {
           </ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <Box maxW="280px">
+            <Box maxW="520px">
               {isSuccess ? (
-                <React.Fragment>Success</React.Fragment>
+                <ApplyFormSuccess />
               ) : (
                 <ApplyForProductForm onClose={onClose} onSuccess={onSuccess} />
               )}
