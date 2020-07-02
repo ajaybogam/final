@@ -23,21 +23,24 @@ const TopHeader = (props) => {
 
   const activeColor = "orange.400";
 
-  React.useEffect(() => {
-    window.addEventListener("scroll", (event) => {
-      setShadow(window.pageYOffset > 80 ? "md" : "");
-    });
+  const onResize = (event) => {
+    setShadow(window.innerWidth);
+  };
 
-    window.addEventListener("resize", (event) => {
-      setShadow(window.innerWidth);
-      console.log(window.innerWidth);
-    });
+  const onScroll = (event) => {
+    setShadow(window.pageYOffset > 80 ? "md" : "");
+  };
+
+  React.useEffect(() => {
+    window.addEventListener("scroll", onScroll);
+
+    window.addEventListener("resize", onResize);
 
     window.openApplyForm = onOpen;
 
     return () => {
-      window.removeEventListener("scroll");
-      window.removeEventListener("resize");
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onResize);
     };
   }, []);
 

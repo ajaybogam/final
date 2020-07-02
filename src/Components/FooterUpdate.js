@@ -6,6 +6,7 @@ import PhoneImage from "../Assets/Phone_White.svg";
 import EmailImage from "../Assets/Email_White.svg";
 import copyright from "../Assets/Copyright.svg";
 import Footerform from "./FooterForm";
+import PageWrapper from "./shared/PageWrapper";
 function FooterUpdate() {
   const quickLinks = [
     { title: "Home", link: "/" },
@@ -24,11 +25,12 @@ function FooterUpdate() {
   const head = [{ title: "QUICK LINKS" }, { title: "PRODUCT" }];
 
   return (
+    <Box  bg="blue.700"
+    color="white">
+    <PageWrapper>
     <Flex
       pb={20}
-      bg="blue.700"
-      color="white"
-      justifyContent="space-around"
+      justifyContent="space-between"
       pt={20}
       flexDir={{ base: "column-reverse", md: "row" }}
     >
@@ -37,7 +39,7 @@ function FooterUpdate() {
         {quickLinks.map((data, idx) => (
           <Flex
             as={Link}
-            fontWeight="bold"
+            // fontWeight="bold"
             key={data.link}
             to={data.link}
             fontSize="sm"
@@ -46,7 +48,7 @@ function FooterUpdate() {
             {data.title}
           </Flex>
         ))}
-        <Flex>
+        <Flex mt={16}>
           <Box as="img" mr={2} src={copyright} />
           <Box fontSize="md" fontWeight="300">
             2020 Dr. Finance
@@ -58,7 +60,7 @@ function FooterUpdate() {
         {product.map((data, idx) => (
           <Flex
             as={Link}
-            fontWeight="bold"
+            // fontWeight="bold"
             key={data.link}
             to={data.link}
             fontSize="sm"
@@ -73,18 +75,18 @@ function FooterUpdate() {
 
         <Flex fontSize="sm" mb={6}>
           <Box as="img" mr={2} src={PhoneImage} />
-          <div>+91 95814 76948</div>
+          <Box>+91 95814 76948</Box>
         </Flex>
         <Flex>
           <Box as="img" mr={2} src={EmailImage} />
-          <div>support@drfinance.com</div>
+          <Box>support@drfinance.com</Box>
         </Flex>
         <Flex
           display={{ base: "flex", md: "none" }}
           mt={{ base: "40px", md: "0" }}
         >
           <Box as="img" mr={2} src={copyright} />
-          <Box fontSize="md" fontWeight="300" color="rgba(208,208,208,1)">
+          <Box fontSize="md" fontWeight='300' color="rgba(208,208,208,1)">
             2020 Dr. Finance
           </Box>
         </Flex>
@@ -93,11 +95,11 @@ function FooterUpdate() {
         border={{ base: "none", md: "1px solid" }}
         p={{ base: "0", md: "3%" }}
         px={{ base: "24px", md: "3%" }}
-        mr={{ base: "0", md: "150px" }}
+        // mr={{ base: "0", md: "150px" }}
       >
         <Footerform />
       </Box>
-    </Flex>
+    </Flex></PageWrapper></Box>
   );
 }
 const TitleView = ({ title }) => (

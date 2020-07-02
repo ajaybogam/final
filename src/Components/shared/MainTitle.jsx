@@ -4,9 +4,11 @@ import { Text } from '@chakra-ui/core';
 function MainTitle(props) {
     const { title = "" } = props || {};
     return <Text
+        maxW={{base:props.max_titleW,md:props.w||"100%"}}
+        mx={{base:"auto"}}
         mb={{ base: 8, md: 16 }}
-        fontSize={{ base: "3xl", md: props.f_size|| "5xl"  }}
-        px={{base: 12, md: props.p_x||16}}
+        fontSize={{ base: props.base_fontSize||"4xl", md: props.f_size||"6xl"}}
+        px={{base: 0, md: props.p_x||16}}
         lineHeight={1.25}
         fontWeight="bold"
         {...props}>

@@ -85,6 +85,7 @@ const Loans = () => {
           financial doctor for all your family needs like home renovation,
           property purchase, vacation, education and business needs. Your data
           is safe with us and will not be shared with anyone."
+          max_titleW="250px"
       />
 
       <PageProcessView
@@ -102,11 +103,14 @@ const Loans = () => {
           "Education",
           "Equipment",
         ]}
+        
       />
 
       <ProcessThrough
         title="why process loans through dr. finance?"
         options={whyChooseOptionsList}
+        maxw="350px"
+        max_titleW_md="900px"
       />
     </React.Fragment>
   );

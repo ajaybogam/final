@@ -7,6 +7,7 @@ import PageWrapper from "./shared/PageWrapper";
 import MainTitle from "./shared/MainTitle";
 import BgStar from "./shared/BgStar";
 import styled from "@emotion/styled";
+
 const Tracking = (props) => {
 
   return (

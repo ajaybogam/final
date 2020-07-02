@@ -54,6 +54,7 @@ const ApplyForProductForm = (props) => {
         .apply(values)
         .then((resp) => resp.data)
         .then((response) => {
+          props.onSuccess();
           props.onClose();
         })
         .catch((err) => {});
@@ -123,12 +124,14 @@ const ApplyForProductForm = (props) => {
 
 const ApplyForProduct = (props) => {
   const { isOpen, onOpen, onClose } = props;
+  const [isSuccess, setIsSuccess] = React.useState(false);
+  const onSuccess = () => setIsSuccess(true);
   return (
     <React.Fragment>
-      <Button onClick={onOpen} variantColor="orange">
+      <Button onClick={onOpen} variantColor="orange" >
         Apply
       </Button>
-      <Modal isOpen={isOpen} onClose={onClose} size="xl">
+      <Modal isOpen={isOpen} onClose={onClose} size="xl" >
         <ModalOverlay />
         <ModalContent>
           <ModalHeader>
@@ -142,7 +145,11 @@ const ApplyForProduct = (props) => {
           <ModalCloseButton />
           <ModalBody>
             <Box maxW="280px">
-              <ApplyForProductForm onClose={onClose} />
+              {isSuccess ? (
+                <React.Fragment>Success</React.Fragment>
+              ) : (
+                <ApplyForProductForm onClose={onClose} onSuccess={onSuccess} />
+              )}
             </Box>
           </ModalBody>
           <hr />

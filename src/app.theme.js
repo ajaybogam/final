@@ -8,7 +8,7 @@ const AppTheme = {
     body: '"Nunito", sans-serif',
   },
   fontSizes: {
-      ...theme.fontSizes,
+    ...theme.fontSizes,
   },
   zIndices: {
     ...theme.zIndices,
@@ -20,15 +20,17 @@ const AppTheme = {
     blue: {
       ...theme.colors.blue,
       400: "#1E9ED2",
-      600:'rgba(38,81,130,1)',
+      600: 'rgba(38,81,130,1)',
       700: "rgba(9,47,75,1)",
     },
-    // orange:{...theme.color.orange,
-    //   varientcolor:"rgba(235,167,31,1)"
-    // }
-    // ,
-    custom: {
-    100: "red",
+    orange: {
+      ...theme.colors.orange,
+      500: "#EBA71F",
+      600: "#EBA71F"
+    },
+    red: {
+      ...theme.colors.red,
+      300: "#F3726A"
     },
     gray: {
       ...theme.colors.gray,

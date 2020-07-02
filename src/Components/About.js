@@ -25,7 +25,8 @@ function About() {
         Telangana, Andhra Pradesh, Tamil Nadu and Karnataka states. Through
         our association with leading banks across the country, we keep
         expanding our reach."
-        image={India} />
+        image={India}
+       />
     </React.Fragment>
   );
 }

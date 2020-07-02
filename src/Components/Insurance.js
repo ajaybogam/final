@@ -59,33 +59,35 @@ const Insurance = (props) => {
         You would not have to worry about the clauses and conditions that
         are in fine print as our team would educate you about every nuance
         and share the necessary documentation for further reference."
+        max_titleW="170px"
       />
 
       <PageProcessView
         title="policies processed"
-        list={[
-          "Life",
-          "Term",
-          "Retirement",
-          "Pension",
-          "Health Insurance Policies",
-          "Individual",
-          "Family",
-          "Diabetic",
-          "Senior Citizen",
-          "Cardiac",
-          "Cancer",
-          "Special Children Health",
-          "Accidental",
-          "Overseas Medical Insurance",
-          "Travel Insurance",
-          "Group Health",
-        ]}
+        list={["Life", "Term", "Retirement", "Pension"]}
+        secondary={{
+          title: "Health Insurance Policies",
+          list: [
+            "Individual",
+            "Family",
+            "Diabetic",
+            "Senior Citizen",
+            "Cardiac",
+            "Cancer",
+            "Special Children Health",
+            "Accidental",
+            "Overseas Medical Insurance",
+            "Travel Insurance",
+            "Group Health",
+          ],
+        }}
       />
 
       <ProcessThrough
         title="why process insurance through dr. finance?"
         options={whyChooseOptionsList}
+        maxw="350px"
+        max_titleW_md="1000px"
       />
     </React.Fragment>
   );

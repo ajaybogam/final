@@ -96,7 +96,7 @@ function TermsCondition() {
   };
 
   return (
-    <Box>
+    <Box ref={sectionRef}>
       <PageWrapper className="" my={16}>
         <Box py={8}>
           <Text
@@ -109,7 +109,7 @@ function TermsCondition() {
             {" "}
             Terms & Conditions
           </Text>
-          <Text maxW="480px" mt="16px" fontSize="xl">
+          <Text maxW="480px" mt="16px" fontSize="xl" color="#A1A1A1 ">
             {" "}
             Last updated on 24 Jan 2020
           </Text>
@@ -133,7 +133,6 @@ function TermsCondition() {
             </Box>
           </Box>
           <Box
-            ref={sectionRef}
             w={{ base: "100%", md: "70%" }}
             p={8}
             mt={{ base: 16, md: 2 }}

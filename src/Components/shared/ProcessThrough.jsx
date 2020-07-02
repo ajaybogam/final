@@ -11,9 +11,9 @@ function ProcessThrough(props) {
         <PageWrapper>
             <Flex flexDirection={{ base: "column", md: "row" }} alignItems="center" minH="80vh">
                 <Box flex={1} textAlign={{ base: "center" }} px={{ base: 4 }}>
-                    <MainTitle title={title} />
+                    <MainTitle title={title}  maxW={{base:"full",md:props.max_titleW_md||"full"}} />
                     <Text mt={8} fontSize={{ base: "md", md: "2xl" }}>{description}</Text>
-                    <WhyChooseOptions list={options} />
+                    <WhyChooseOptions list={options} maxW={props.maxw}/>
                 </Box>
             </Flex>
         </PageWrapper>

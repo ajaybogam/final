@@ -12,7 +12,7 @@ import "./Partner.css";
 
 function Partners() {
   return (
-    <Box>
+    <Box my={20}>
       <PageWrapper>
         <MainTitle
           title="our financial partners"
