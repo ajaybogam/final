@@ -137,7 +137,11 @@ function TermsCondition() {
               ))}
             </Box>
           </Box>
-          <Box pt={{ base: 24, md: 0 }} id="terms__content" w={{ base: "100%", md: "70%" }}>
+          <Box
+            pt={{ base: 24, md: 0 }}
+            id="terms__content"
+            w={{ base: "100%", md: "70%" }}
+          >
             <Box
               p={{ base: 1 }}
               height="560px"
