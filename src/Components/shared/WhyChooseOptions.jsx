@@ -19,7 +19,7 @@ function WhyChooseOptions(props) {
             src={option.image}
             alt={option.title}
           />
-          <Box maxW={props.maxW} mx="auto">
+          <Box maxW={{base:"250px",md:props.maxW}} mx="auto">
             <Text my={2} fontSize={{ base: "xl", md: "2xl" }} fontWeight="bold" textTransform="uppercase">
               {option.title}
             </Text>

@@ -3,6 +3,10 @@ import { Text } from '@chakra-ui/core';
 
 function MainTitle(props) {
     const { title = "" } = props || {};
+
+    // max_titleW --->  title maxW in lans, investments, insurance, credit card
+    //base_fontSize--->for font size in join
+    // f_size --->md font size for getstartednow, join
     return <Text
         maxW={{base:props.max_titleW,md:props.w||"100%"}}
         mx={{base:"auto"}}

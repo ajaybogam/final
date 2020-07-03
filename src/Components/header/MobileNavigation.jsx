@@ -22,7 +22,21 @@ import { JoinAsReferral, navigation } from "./TopHeader";
 import EmailImage from "../../mobile/Email.svg";
 import PhoneImage from "../../mobile/Phone.svg";
 import JoinAsReferralImage from "../../mobile/Lead Gen.svg";
+// <<<<<<< HEAD
+// import ApplyForProduct from "./ApplyForProduct";
+
+// const quickLinks = [
+//   { title: "Home", link: "/" },
+//   { title: "About", link: "/about" },
+//   { title: "Join as referral", link: "/joinasreferral" },
+//   { title: "Contact", link: "/contact" },
+//   { title: "Terms and conditions", link: "/termsandconditions" },
+//   { title: "Privacy Policy", link: "/privacypolicy" },
+//   { title: "FAQs", link: "/faqs" },
+// ];
+// =======
 import ApplyForProduct from "./ApplyForProduct";
+import Close_blue from "../../mobile/Close_Blue.svg";
 
 const quickLinks = [
   { title: "Home", link: "/" },
@@ -33,6 +47,7 @@ const quickLinks = [
   { title: "Privacy Policy", link: "/privacypolicy" },
   { title: "FAQs", link: "/faqs" },
 ];
+// >>>>>>> aa70cad64b9cd484eb79f485f627dd8ef3afb2d5
 
 const MobileNavigation = (props) => {
   let location = useLocation();
@@ -48,18 +63,95 @@ const MobileNavigation = (props) => {
     props.onApply();
   };
 
+  // <<<<<<< HEAD
+  //   return (
+  //     <React.Fragment>
+  //       <img src={hamburger} onClick={onOpen} alt="Menu" />
+  //       <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
+  //         <DrawerOverlay />
+  //         <DrawerContent bg="blue.700" overflowY="auto">
+  //           <DrawerHeader>
+  //             <Flex>
+  //               <Button onClick={onApply} variantColor="orange" ml="auto">
+  //                 Apply{" "}
+  //               </Button>
+  //               <DrawerCloseButton fontSize="xl" left={4} top={2} color="white" />
+  //             </Flex>
+  //           </DrawerHeader>
+
+  //           <DrawerBody color="white" fontSize=".9rem">
+  //             <Box mb={6}>
+  //               <JoinAsReferral
+  //                 img={JoinAsReferralImage}
+  //                 fontSize="1rem"
+  //                 color="white"
+  //               />
+  //             </Box>
+  //             <hr />
+  //             <Box my={6}>
+  //               <TitleView title="Products" />
+  //               <Stack spacing={4} as="nav" flexDirection="column">
+  //                 {navigation.map((menu, idx) => (
+  //                   <Box
+  //                     color="white"
+  //                     as={Link}
+  //                     fontWeight="bold"
+  //                     key={menu.link}
+  //                     to={menu.link}
+  //                   >
+  //                     {menu.title}
+  //                   </Box>
+  //                 ))}
+  //               </Stack>
+  //             </Box>
+
+  //             <hr />
+  //             <Box my={6}>
+  //               <TitleView title="Got any questions?" />
+  //               <Stack spacing={4} as="nav" flexDirection="column">
+  //                 <Flex>
+  //                   <Box as="img" mr={2} src={PhoneImage} />
+  //                   <div>+91 95814 76948</div>
+  //                 </Flex>
+  //                 <Flex>
+  //                   <Box as="img" mr={2} src={EmailImage} />
+  //                   <div>support@drfinance.com</div>
+  //                 </Flex>
+  //               </Stack>
+  //             </Box>
+
+  //             <hr />
+  //             <Box my={6}>
+  //               <TitleView title="Quick Links?" />
+  //               <Stack spacing={4} as="nav" flexDirection="column">
+  //                 {quickLinks.map((menu, idx) => (
+  //                   <Box
+  //                     color="white"
+  //                     as={Link}
+  //                     fontWeight="bold"
+  //                     key={menu.link}
+  //                     to={menu.link}
+  //                   >
+  //                     {menu.title}
+  //                   </Box>
+  //                 ))}
+  //               </Stack>
+  //             </Box>
+  //           </DrawerBody>
+  // =======
   return (
     <React.Fragment>
       <img src={hamburger} onClick={onOpen} alt="Menu" />
-      <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
+      <Drawer isOpen={isOpen} placement="left" onClose={onClose} size="full">
         <DrawerOverlay />
         <DrawerContent bg="blue.700" overflowY="auto">
           <DrawerHeader>
             <Flex>
+              <img src={Close_blue} alt="close" onClick={onClose} />
               <Button onClick={onApply} variantColor="orange" ml="auto">
                 Apply{" "}
               </Button>
-              <DrawerCloseButton fontSize="xl" left={4} top={2} color="white" />
+              {/* <DrawerCloseButton fontSize="lg" left={4} top={2} color="white" /> */}
             </Flex>
           </DrawerHeader>
 
@@ -79,7 +171,7 @@ const MobileNavigation = (props) => {
                   <Box
                     color="white"
                     as={Link}
-                    fontWeight="bold"
+                    // fontWeight="bold"
                     key={menu.link}
                     to={menu.link}
                   >
@@ -91,15 +183,15 @@ const MobileNavigation = (props) => {
 
             <hr />
             <Box my={6}>
-              <TitleView title="Got any questions?" />
+              <TitleView title="Get in Touch" />
               <Stack spacing={4} as="nav" flexDirection="column">
                 <Flex>
                   <Box as="img" mr={2} src={PhoneImage} />
-                  <div>+91 95814 76948</div>
+                  <Box>+91 95814 76948</Box>
                 </Flex>
                 <Flex>
                   <Box as="img" mr={2} src={EmailImage} />
-                  <div>support@drfinance.com</div>
+                  <Box>support@drfinance.com</Box>
                 </Flex>
               </Stack>
             </Box>
@@ -112,7 +204,7 @@ const MobileNavigation = (props) => {
                   <Box
                     color="white"
                     as={Link}
-                    fontWeight="bold"
+                    // fontWeight="bold"
                     key={menu.link}
                     to={menu.link}
                   >
@@ -122,6 +214,7 @@ const MobileNavigation = (props) => {
               </Stack>
             </Box>
           </DrawerBody>
+          {/* >>>>>>> aa70cad64b9cd484eb79f485f627dd8ef3afb2d5 */}
 
           <DrawerFooter>
             {/* <Button variant="outline" mr={3} onClick={onClose}>Cancel</Button>

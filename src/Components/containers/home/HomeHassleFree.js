@@ -5,7 +5,7 @@ import HassleFreeOptions from "./HassleFreeOptions";
 import CanHelpWithOptions from "./CanHelpWithOptions";
 import MainTitle from "../../shared/MainTitle";
 
-const HomeHassleFree = (props) => <Box bg="blue.400" textAlign="center" color="white" pt={{ base: 0, md: 16 }}>
+const HomeHassleFree =  (props) => <Box bg="blue.400" textAlign="center" color="white" pt={{ base: 0, md: 16 }}>
   <MainTitle title="hassle-free process" display={{ base: 'none', md: 'block' }} />
   <PageContainer className="container__hassleOptions">
     <HassleFreeOptions />
