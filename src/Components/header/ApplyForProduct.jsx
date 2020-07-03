@@ -74,7 +74,7 @@ const ApplyForProductForm = (props) => {
           props.onSuccess();
           // props.onClose();
         })
-        .catch((err) => {});
+        .catch((err) => { });
     }, 1000);
   }
 
@@ -112,7 +112,7 @@ const ApplyForProductForm = (props) => {
           </FormErrorMessage>
         </FormControl>
         <FormControl isInvalid={errors.instrument} mb={4}>
-          <Select name="instrument" defaultValue={""}  ref={register({ validate: validator.instrument })}>
+          <Select name="instrument" defaultValue={""} ref={register({ validate: validator.instrument })}>
             <option value="" disabled>
               Select Instrument
             </option>
@@ -162,7 +162,7 @@ const ApplyForProduct = (props) => {
       <Modal blockScrollOnMount isOpen={isOpen} onClose={onClose} size="xl">
         {/* >>>>>>> aa70cad64b9cd484eb79f485f627dd8ef3afb2d5 */}
         <ModalOverlay />
-        <ModalContent maxW={{base: "90%", md: "420px"}} borderRadius={8} my={{base: 4 }}>
+        <ModalContent maxW={{ base: "90%", md: "420px" }} borderRadius={8} my={{ base: 4 }}>
           <ModalHeader display="Flex" justifyContent="space-between" mt={4}>
             <Box>
               <Text as="h3" fontSize="2xl" color="blue.400" lineHeight={1}>
@@ -182,8 +182,8 @@ const ApplyForProduct = (props) => {
               {isSuccess ? (
                 <ApplyFormSuccess />
               ) : (
-                <ApplyForProductForm onClose={onClose} onSuccess={onSuccess} />
-              )}
+                  <Box maxW={{base: "100%", md: "280px"}}>  <ApplyForProductForm onClose={onClose} onSuccess={onSuccess} /> </Box>
+                )}
             </Box>
           </ModalBody>
           <hr />

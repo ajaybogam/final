@@ -4,6 +4,7 @@ import { Box, Text, Flex, Divider, Stack } from "@chakra-ui/core";
 // import Scrollspy from 'react-scrollspy'
 import PageWrapper from "./shared/PageWrapper";
 import { Link } from "react-router-dom";
+import constants from "../utils/constants";
 
 const terms = [
   {
@@ -90,7 +91,11 @@ function TermsCondition() {
       const view = sectionRef.current.querySelector(sectionId);
       // sectionRef.current.scrollTop = view.offsetTop;
       view.scrollIntoView();
-      sectionRef.current.scrollIntoView();
+      if (window.innerWidth <= constants.MOBILE_VIEW) {
+        sectionRef.current.querySelector("#terms__content").scrollIntoView();
+      } else {
+        sectionRef.current.scrollIntoView();
+      }
     }
     setActive(idx);
   };
@@ -132,33 +137,33 @@ function TermsCondition() {
               ))}
             </Box>
           </Box>
-          <Box
-            w={{ base: "100%", md: "70%" }}
-            p={8}
-            mt={{ base: 16, md: 2 }}
-            height="560px"
-            overflow="hidden"
-            overflowY="auto"
-          >
-            {terms.map((term, idx) => (
-              <Box
-                key={idx}
-                id={`section-${idx}`}
-                p={{ base: 2, md: 8 }}
-                pt={0}
-                color="gray.600"
-              >
-                <Text fontWeight="bold" fontSize="xl" mb={idx === 0 ? 0 : 4}>
-                  {term.section}
-                </Text>
-                <Stack spacing={4}>
-                  {term.heading.map((content, index) => (
-                    <Text key={index}>{content}</Text>
-                  ))}
-                </Stack>
-                {idx < terms.length - 1 && <Divider mt={8} />}
-              </Box>
-            ))}
+          <Box pt={{ base: 24, md: 0 }} id="terms__content" w={{ base: "100%", md: "70%" }}>
+            <Box
+              p={{ base: 1 }}
+              height="560px"
+              overflow="hidden"
+              overflowY="auto"
+            >
+              {terms.map((term, idx) => (
+                <Box
+                  key={idx}
+                  id={`section-${idx}`}
+                  p={{ base: 2, md: 6 }}
+                  pt={0}
+                  color="gray.600"
+                >
+                  <Text fontWeight="bold" fontSize="xl" mb={idx === 0 ? 0 : 4}>
+                    {term.section}
+                  </Text>
+                  <Stack spacing={4}>
+                    {term.heading.map((content, index) => (
+                      <Text key={index}>{content}</Text>
+                    ))}
+                  </Stack>
+                  {idx < terms.length - 1 && <Divider mt={8} />}
+                </Box>
+              ))}
+            </Box>
           </Box>
         </Flex>
       </PageWrapper>

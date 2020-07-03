@@ -94,7 +94,7 @@ function Part() {
               <Box as="img" ml={4} src={AppStore}></Box>
             </Flex>
           </Box>
-          <Box as="img" src={largeimg} ml={{ base: 0, md: 16 }}></Box>
+          <Box as="img" src={largeimg} ml={{ base: 0, md: 2 }}></Box>
         </Flex>
       </PageWrapper>
       <BgStar stars={10} />

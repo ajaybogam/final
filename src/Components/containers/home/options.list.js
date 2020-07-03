@@ -49,26 +49,31 @@ export const helpYouOptions = {
         link: '/investments'
     },
     insurance: {
-        image: Insurance1, activeImage: Insurance2, title: "Insurance", list: [
+        image: Insurance1, activeImage: Insurance2, title: "Insurance",
+        list: [
             "Life",
             "Term",
             "Child",
             "Education",
             "Retirement",
-            "Pension",
-            "Health Insurance Policies",
-            "Individual",
-            "Family",
-            "Diabetic",
-            "Senior Citizen",
-            "Cardiac",
-            "Cancer",
-            "Special Children Health",
-            "Accidental",
-            "Overseas Medical Insurance",
-            "Travel Insurance",
-            "Group Health"
+            "Pension"
         ],
+        secondary: {
+            title: "Health Insurance Policies",
+            list: [
+                "Individual",
+                "Family",
+                "Diabetic",
+                "Senior Citizen",
+                "Cardiac",
+                "Cancer",
+                "Special Children Health",
+                "Accidental",
+                "Overseas Medical Insurance",
+                "Travel Insurance",
+                "Group Health",
+            ],
+        },
         link: '/insurance'
     },
     creditCard: {
