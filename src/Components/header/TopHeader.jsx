@@ -94,6 +94,7 @@ const TopHeader = (props) => {
               isOpen={isOpen}
               onOpen={onOpen}
               onClose={onClose}
+            
             />
           </Box>
           <JoinAsReferral currentPage={currentPage} activeColor={activeColor} />
@@ -108,7 +109,7 @@ export const JoinAsReferral = (props) => {
   return (
     <Flex alignItems="center" as={Link} Link to="/joinasreferral" {...props}>
       <img src={img || referral} alt="Referral" />
-      <Box ml={1} lineHeight={1}>
+      <Box ml={2} lineHeight={1}>
         <Box
           m={0}
           fontWeight="bold"

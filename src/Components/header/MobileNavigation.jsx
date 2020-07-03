@@ -23,6 +23,7 @@ import EmailImage from "../../mobile/Email.svg";
 import PhoneImage from "../../mobile/Phone.svg";
 import JoinAsReferralImage from "../../mobile/Lead Gen.svg";
 import ApplyForProduct from './ApplyForProduct';
+import Close_blue from "../../mobile/Close_Blue.svg"
 
 const quickLinks = [
     { title: "Home", link: "/", },
@@ -30,6 +31,7 @@ const quickLinks = [
     { title: "Join as referral", link: "/joinasreferral", },
     { title: "Contact", link: "/contact", },
     { title: "Terms and conditions", link: "/termsandconditions", },
+    {title:"Privacy Policy",link:"/privacypolicy"},
     { title: "FAQs", link: "/faqs", },
 ]
 
@@ -53,13 +55,16 @@ const MobileNavigation = (props) => {
             isOpen={isOpen}
             placement="left"
             onClose={onClose}
+            size="full"
         >
             <DrawerOverlay />
             <DrawerContent bg="blue.700" overflowY="auto">
                 <DrawerHeader>
                     <Flex>
+                        <img src={Close_blue} alt="close" onClick={onClose}/>
                         <Button onClick={onApply} variantColor="orange" ml="auto">Apply </Button>
-                        <DrawerCloseButton fontSize="xl" left={4} top={2} color="white" />
+                        {/* <DrawerCloseButton fontSize="lg" left={4} top={2} color="white" /> */}
+
                     </Flex>
                 </DrawerHeader>
 
@@ -74,7 +79,7 @@ const MobileNavigation = (props) => {
                             {navigation.map((menu, idx) => (<Box
                                 color="white"
                                 as={Link}
-                                fontWeight="bold"
+                                // fontWeight="bold"
                                 key={menu.link}
                                 to={menu.link}>
                                 {menu.title}
@@ -85,15 +90,15 @@ const MobileNavigation = (props) => {
 
                     <hr />
                     <Box my={6}>
-                        <TitleView title="Got any questions?" />
+                        <TitleView title="Get in Touch" />
                         <Stack spacing={4} as="nav" flexDirection="column">
                             <Flex>
                                 <Box as="img" mr={2} src={PhoneImage} />
-                                <div>+91 95814 76948</div>
+                                <Box>+91 95814 76948</Box>
                             </Flex>
                             <Flex>
                                 <Box as="img" mr={2} src={EmailImage} />
-                                <div>support@drfinance.com</div>
+                                <Box>support@drfinance.com</Box>
                             </Flex>
                         </Stack>
                     </Box>
@@ -101,11 +106,11 @@ const MobileNavigation = (props) => {
                     <hr />
                     <Box my={6}>
                         <TitleView title="Quick Links?" />
-                        <Stack spacing={4} as="nav" flexDirection="column">
+                        <Stack spacing={4} as="nav" flexDirection="column" >
                             {quickLinks.map((menu, idx) => (<Box
                                 color="white"
                                 as={Link}
-                                fontWeight="bold"
+                                // fontWeight="bold"
                                 key={menu.link}
                                 to={menu.link}>
                                 {menu.title}

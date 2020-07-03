@@ -23,7 +23,7 @@ import Success from "../../Assets/Success.svg";
 import { useForm } from "react-hook-form";
 import GotAnyQuestions from "./GotAnyQuestions";
 import ApiServices from "../../services/api.services";
-
+import CloseImg from '../../Assets/Close.svg'
 const validEmailRegex = RegExp(
   /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
 );
@@ -144,22 +144,26 @@ const ApplyForProduct = (props) => {
   const [isSuccess, setIsSuccess] = React.useState(true);
   const onSuccess = () => setIsSuccess(true);
   return (
-    <React.Fragment>
+    <React.Fragment >
       <Button onClick={onOpen} variantColor="orange" >
         Apply
       </Button>
-      <Modal isOpen={isOpen} onClose={onClose} size="xl" >
+      
+      <Modal  blockScrollOnMount isOpen={isOpen} onClose={onClose} size="xl">
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>
+          <ModalHeader display="Flex" justifyContent="space-between" mt={4}>
+            <Box>
             <Text as="h3" fontSize="2xl" color="blue.400" lineHeight={1}>
               Apply for a product
             </Text>
             <Text as="small" color="gray.400" fontWeight="normal">
               Please fill the below details
             </Text>
+            </Box>
+            <Box cursor="pointer"><img src={CloseImg} alt="close" onClick={onClose} /></Box>
           </ModalHeader>
-          <ModalCloseButton />
+          {/* <ModalCloseButton /> */}
           <ModalBody>
             <Box maxW="520px">
               {isSuccess ? (
