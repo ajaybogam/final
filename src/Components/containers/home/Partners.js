@@ -56,33 +56,69 @@ const PartnersMobileView = (props) => {
     });
   console.log({ rowsIndexes });
   return (
-    <Box {...props}>
+    <MobileBox {...props}>
       <Carousel>
         {rowsIndexes.map((row, key) => (
           <SimpleGrid key={key} columns={1}>
             {row.map((partnerIdx, idx) => (
-              <PartnerImage
-                key={idx}
-                as="img"
-                mx="auto"
-                my={{ base: 2, md: 4 }}
-                src={partnerList[partnerIdx]}
-              />
+              <PartnerImage>
+                <Box
+                  key={idx}
+                  as="img"
+                  mx="auto"
+                  my={{ base: 2, md: 4 }}
+                  src={partnerList[partnerIdx]}
+                />
+              </PartnerImage>
             ))}
           </SimpleGrid>
         ))}
       </Carousel>
-    </Box>
+    </MobileBox>
   );
 };
+
+
+const MobileBox = styled(Box)`
+  border-radius: 8px;
+  overflow: hidden;
+
+  .carousel .control-dots .dot {
+    background: transparent;
+    border: 1px solid #1E9ED2;
+    opacity: 1;
+    height: 10px;
+    width: 10px;
+    box-shadow: none;
+  }
+
+  .carousel .control-dots .dot.selected,
+  .carousel .control-dots .dot:focus,
+  .carousel .control-dots .dot:active,
+  .carousel .control-dots .dot:hover {
+    background: #1E9ED2;
+  }
+
+`
 
 const PartnerImage = styled(Box)`
   filter: grayscale(1);
   transition: all 0.3s;
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:active
+   {
     filter: grayscale(0);
   }
+
+  @media(hover: hover) and (pointer: fine) {
+    &:hover {
+      filter: grayscale(0);
+    }
+}
 `;
+
+
 
 export default Partners;

@@ -24,7 +24,7 @@ const TopHeader = (props) => {
   const activeColor = "orange.400";
 
   const onResize = (event) => {
-    setShadow(window.innerWidth);
+    setWindowSize(window.innerWidth);
   };
 
   const onScroll = (event) => {
@@ -57,24 +57,25 @@ const TopHeader = (props) => {
       zIndex={9}
       bg="white"
       boxShadow={shadow}
-      p={[2, 2, 4]}
-      px={[2, 2, 6]}
+      alignItems="center"
+      p={[4,4, 6]}
+      px={[4, 4, 12]}
     >
       {windowSize <= 480 && <MobileNavigation onApply={onOpen} />}
       <Box as={Link} to="/" ml={[2, 2, 0, 0]} mr="auto">
-        <img src={logo} alt="logo" />
+        <Box as="img" src={logo} alt="logo" maxW={{base: "160px", md: "220px"}}  />
       </Box>
       {windowSize <= 480 ? (
         <Box ml={2}>
           <ApplyForProduct isOpen={isOpen} onOpen={onOpen} onClose={onClose} />
         </Box>
       ) : (
-        <Flex ml="auto" alignItems="center">
+        <Flex ml="auto" alignItems="center" mr={4}>
           {navigation.map((menu, idx) => (
             <Box
               color={currentPage === menu.link ? activeColor : ""}
               as={Link}
-              ml={4}
+              ml={12}
               fontWeight="bold"
               key={menu.link}
               to={menu.link}
@@ -83,8 +84,8 @@ const TopHeader = (props) => {
             </Box>
           ))}
           <Box
-            px={4}
-            mx={4}
+            px={8}
+            mx={8}
             border="2px solid"
             borderTop="0"
             borderBottom="0"

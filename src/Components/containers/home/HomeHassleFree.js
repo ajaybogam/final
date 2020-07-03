@@ -5,8 +5,8 @@ import HassleFreeOptions from "./HassleFreeOptions";
 import CanHelpWithOptions from "./CanHelpWithOptions";
 import MainTitle from "../../shared/MainTitle";
 
-const HomeHassleFree =  (props) => <Box bg="blue.400" textAlign="center" color="white" pt={{ base: 0, md: 16 }}>
-  <MainTitle title="hassle-free process" display={{ base: 'none', md: 'block' }} />
+const HomeHassleFree = (props) => <Box bg="blue.400" textAlign="center" color="white" pt={{ base: 0, md: 16 }}>
+  <MainTitle title="hassle-free process" />
   <PageContainer className="container__hassleOptions">
     <HassleFreeOptions />
     <CanHelpWithOptions />
@@ -20,7 +20,7 @@ const PageContainer = styled(Box)`
   padding-top: 10em;
   overflow: hidden;
   &:before {
-    width: 250%;
+    width: 200%;
     height: 150%;
     background: #265182;
     border-radius: 100%;
@@ -46,13 +46,25 @@ const PageContainer = styled(Box)`
   }
 
   @media (max-width: 768px) {
-    padding-top: 0;
+    padding-top: 5em;
     &:before {
-      display: none;
+      transform: translateY(4.5em) translateX(-50%);
+      width: 450%;
+      height: 150%;
     }
 
     .ui__hassleOptions {
-      display: none;
+      position: relative;
+      transform: translateY(-3em);
+    }
+
+    .ui__hassleOptions__item:nth-child(even) {
+      position: relative;
+      transform: translateY(-.5em);
+    }
+  
+    .ui__hassleOptions__item:nth-child(3) {
+      transform: translateY(-1em) ;
     }
   }
 

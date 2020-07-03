@@ -35,12 +35,12 @@ const TrackingOptions = (props) => {
     {items.map((item, idx) => <Box
       key={idx}
       cursor="pointer"
-      opacity={activeIdx === idx ? 1 : .3}
-      p={{ base: 4 }}
-      pb={0}
+      opacity={activeIdx === idx ? 1 : window.innerWidth < 560 ? 1 : .3}
+      p={{ base: 1, md: 4 }}
+      pb={{base: 0, md: 0}}
       onClick={() => setActiveIdx(idx)}>
       <Text  fontWeight="bold" fontSize={["xl","2xl"]}>{item.title}</Text>
-      <Text px={8} my={4} w="330px" mx="auto"  fontSize={["md","xl"]}>{item.description}</Text>
+      <Text px={{base: 2, md: 8}} my={4} w="330px" mx="auto"  fontSize={["md","xl"]}>{item.description}</Text>
       <Box as="img" mt={8} src={item.image} mx="auto" />
     </Box>)}
   </SimpleGrid>

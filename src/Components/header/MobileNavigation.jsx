@@ -63,85 +63,9 @@ const MobileNavigation = (props) => {
     props.onApply();
   };
 
-  // <<<<<<< HEAD
-  //   return (
-  //     <React.Fragment>
-  //       <img src={hamburger} onClick={onOpen} alt="Menu" />
-  //       <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
-  //         <DrawerOverlay />
-  //         <DrawerContent bg="blue.700" overflowY="auto">
-  //           <DrawerHeader>
-  //             <Flex>
-  //               <Button onClick={onApply} variantColor="orange" ml="auto">
-  //                 Apply{" "}
-  //               </Button>
-  //               <DrawerCloseButton fontSize="xl" left={4} top={2} color="white" />
-  //             </Flex>
-  //           </DrawerHeader>
-
-  //           <DrawerBody color="white" fontSize=".9rem">
-  //             <Box mb={6}>
-  //               <JoinAsReferral
-  //                 img={JoinAsReferralImage}
-  //                 fontSize="1rem"
-  //                 color="white"
-  //               />
-  //             </Box>
-  //             <hr />
-  //             <Box my={6}>
-  //               <TitleView title="Products" />
-  //               <Stack spacing={4} as="nav" flexDirection="column">
-  //                 {navigation.map((menu, idx) => (
-  //                   <Box
-  //                     color="white"
-  //                     as={Link}
-  //                     fontWeight="bold"
-  //                     key={menu.link}
-  //                     to={menu.link}
-  //                   >
-  //                     {menu.title}
-  //                   </Box>
-  //                 ))}
-  //               </Stack>
-  //             </Box>
-
-  //             <hr />
-  //             <Box my={6}>
-  //               <TitleView title="Got any questions?" />
-  //               <Stack spacing={4} as="nav" flexDirection="column">
-  //                 <Flex>
-  //                   <Box as="img" mr={2} src={PhoneImage} />
-  //                   <div>+91 95814 76948</div>
-  //                 </Flex>
-  //                 <Flex>
-  //                   <Box as="img" mr={2} src={EmailImage} />
-  //                   <div>support@drfinance.com</div>
-  //                 </Flex>
-  //               </Stack>
-  //             </Box>
-
-  //             <hr />
-  //             <Box my={6}>
-  //               <TitleView title="Quick Links?" />
-  //               <Stack spacing={4} as="nav" flexDirection="column">
-  //                 {quickLinks.map((menu, idx) => (
-  //                   <Box
-  //                     color="white"
-  //                     as={Link}
-  //                     fontWeight="bold"
-  //                     key={menu.link}
-  //                     to={menu.link}
-  //                   >
-  //                     {menu.title}
-  //                   </Box>
-  //                 ))}
-  //               </Stack>
-  //             </Box>
-  //           </DrawerBody>
-  // =======
   return (
     <React.Fragment>
-      <img src={hamburger} onClick={onOpen} alt="Menu" />
+      <Box as="img" mr={2} src={hamburger} onClick={onOpen} alt="Menu" />
       <Drawer isOpen={isOpen} placement="left" onClose={onClose} size="full">
         <DrawerOverlay />
         <DrawerContent bg="blue.700" overflowY="auto">

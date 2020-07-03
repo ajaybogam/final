@@ -9,6 +9,7 @@ import teamList from "./team.list";
 import BgStar from "../../shared/BgStar";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import styled from "@emotion/styled";
 
 
 function OurTeam() {
@@ -36,13 +37,13 @@ const OurTeamMobileView = (props) => {
         .map((i, childIdx) => ((n * perRowCount) + childIdx))
         .filter(idx => idx < totalPartners)
     });
-  return <Box {...props}>
+  return <MobileBox {...props} maxW={{ base: "280px" }} mx={{ base: "auto" }}>
     <Carousel>
       {rowsIndexes.map((row, key) => <SimpleGrid key={key} columns={1}>
         {row.map((partnerIdx, idx) => <TeamView team={teamList[partnerIdx]} key={idx} />)}
       </SimpleGrid>)}
     </Carousel>
-  </Box>
+  </MobileBox>
 }
 
 
@@ -55,6 +56,28 @@ const TeamView = ({ team }) => <Flex alignItems="center" justifyContent="center"
     </Box>
   </Box>
 </Flex>
+
+const MobileBox = styled(Box)`
+  border-radius: 8px;
+  overflow: hidden;
+
+  .carousel .control-dots .dot {
+    background: transparent;
+    border: 1px solid white;
+    opacity: 1;
+    height: 10px;
+    width: 10px;
+    box-shadow: none;
+  }
+
+  .carousel .control-dots .dot.selected,
+  .carousel .control-dots .dot:focus,
+  .carousel .control-dots .dot:active,
+  .carousel .control-dots .dot:hover {
+    background: #fff;
+  }
+
+`
 
 
 export default OurTeam;

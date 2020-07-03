@@ -111,8 +111,8 @@ const ApplyForProductForm = (props) => {
             {errors.email && errors.email.message}
           </FormErrorMessage>
         </FormControl>
-        <FormControl mb={4}>
-          <Select name="instrument" defaultValue={""} ref={register}>
+        <FormControl isInvalid={errors.instrument} mb={4}>
+          <Select name="instrument" defaultValue={""}  ref={register({ validate: validator.instrument })}>
             <option value="" disabled>
               Select Instrument
             </option>
@@ -121,6 +121,9 @@ const ApplyForProductForm = (props) => {
             <option value="Investments">Investments</option>
             <option value="Credit Cards">Credit Cards</option>
           </Select>
+          <FormErrorMessage>
+            {errors.instrument && errors.instrument.message}
+          </FormErrorMessage>
         </FormControl>
         <Flex my={4}>
           <Button type="submit" variantColor="orange" mr={3}>
@@ -159,7 +162,7 @@ const ApplyForProduct = (props) => {
       <Modal blockScrollOnMount isOpen={isOpen} onClose={onClose} size="xl">
         {/* >>>>>>> aa70cad64b9cd484eb79f485f627dd8ef3afb2d5 */}
         <ModalOverlay />
-        <ModalContent>
+        <ModalContent maxW={{base: "90%", md: "420px"}} borderRadius={8} my={{base: 4 }}>
           <ModalHeader display="Flex" justifyContent="space-between" mt={4}>
             <Box>
               <Text as="h3" fontSize="2xl" color="blue.400" lineHeight={1}>
