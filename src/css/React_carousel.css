@@ -22,7 +22,6 @@ padding: 60px 64px 40px 64px;
 }
 .carousel .control-dots {
     position: inherit;
-    margin:40px 0px;
 }
 /* .mobile-row>.carousel .control-dots .dot {
     background-color:white;
@@ -44,16 +43,6 @@ padding: 60px 64px 40px 64px;
     background-color: white;
 }
 
-.mobile-row .carousel .slide img {
-    width: 60%;
-    vertical-align: top;
-    border: 0;
-    /* filter: grayscale(100); */
-}
-/* .mobile-row .carousel .slide img:hover {
-    filter: none;
-    transform: scale(1.01);
-  } */
 
 .carousel .carousel-status {
     display: none;

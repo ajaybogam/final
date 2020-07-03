@@ -5,6 +5,7 @@ import { Link, useLocation } from "react-router-dom";
 
 import logo from "../../Assets/Logo.svg";
 import referral from "../../Assets/Referral Partner_Default.svg";
+import ActiveReferral from "../../Assets/Referral Partner_Selected.svg";
 import MobileNavigation from "./MobileNavigation";
 
 export const navigation = [
@@ -21,10 +22,10 @@ const TopHeader = (props) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [shadow, setShadow] = React.useState();
 
-  const activeColor = "orange.400";
+  const activeColor = "orange.500";
 
   const onResize = (event) => {
-    setShadow(window.innerWidth);
+    setWindowSize(window.innerWidth);
   };
 
   const onScroll = (event) => {
@@ -57,58 +58,66 @@ const TopHeader = (props) => {
       zIndex={9}
       bg="white"
       boxShadow={shadow}
-      p={[2, 2, 4]}
-      px={[2, 2, 6]}
+      alignItems="center"
+      p={[4, 4, 6]}
+      px={[4, 4, 12]}
     >
       {windowSize <= 480 && <MobileNavigation onApply={onOpen} />}
       <Box as={Link} to="/" ml={[2, 2, 0, 0]} mr="auto">
-        <img src={logo} alt="logo" />
+        <Box as="img" src={logo} alt="logo" maxW={{ base: "160px", md: "220px" }} />
       </Box>
       {windowSize <= 480 ? (
         <Box ml={2}>
           <ApplyForProduct isOpen={isOpen} onOpen={onOpen} onClose={onClose} />
         </Box>
       ) : (
-        <Flex ml="auto" alignItems="center">
-          {navigation.map((menu, idx) => (
+          <Flex ml="auto" alignItems="center" mr={4}>
+            {navigation.map((menu, idx) => (
+              <Box
+                color={currentPage === menu.link ? activeColor : ""}
+                borderBottom={currentPage === menu.link ? "1px" : ""}
+                as={Link}
+                ml={12}
+                fontWeight="bold"
+                key={menu.link}
+                to={menu.link}
+              >
+                {menu.title}
+              </Box>
+            ))}
             <Box
-              color={currentPage === menu.link ? activeColor : ""}
-              as={Link}
-              ml={4}
-              fontWeight="bold"
-              key={menu.link}
-              to={menu.link}
+              px={8}
+              mx={8}
+              border="2px solid"
+              borderTop="0"
+              borderBottom="0"
+              borderColor="gray.200"
             >
-              {menu.title}
+              <ApplyForProduct
+                isOpen={isOpen}
+                onOpen={onOpen}
+                onClose={onClose}
+
+              />
             </Box>
-          ))}
-          <Box
-            px={4}
-            mx={4}
-            border="2px solid"
-            borderTop="0"
-            borderBottom="0"
-            borderColor="gray.200"
-          >
-            <ApplyForProduct
-              isOpen={isOpen}
-              onOpen={onOpen}
-              onClose={onClose}
-            
-            />
-          </Box>
-          <JoinAsReferral currentPage={currentPage} activeColor={activeColor} />
-        </Flex>
-      )}
+            <JoinAsReferral toggle={true} currentPage={currentPage} activeColor={activeColor} />
+          </Flex>
+        )}
     </Flex>
   );
 };
 
 export const JoinAsReferral = (props) => {
-  const { currentPage, activeColor, color, img } = props || {};
+  let { currentPage, activeColor, color, img, toggle = false } = props || {};
+  if (toggle) {
+    img = currentPage === "/joinasreferral" ? ActiveReferral : referral
+  } else {
+    img = img || referral;
+  }
+
   return (
     <Flex alignItems="center" as={Link} Link to="/joinasreferral" {...props}>
-      <img src={img || referral} alt="Referral" />
+      <img src={img} alt="Referral" />
       <Box ml={2} lineHeight={1}>
         <Box
           m={0}
@@ -117,8 +126,8 @@ export const JoinAsReferral = (props) => {
             currentPage === "/joinasreferral"
               ? activeColor
               : !!color
-              ? color
-              : ""
+                ? color
+                : ""
           }
         >
           Join

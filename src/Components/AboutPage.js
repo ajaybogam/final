@@ -6,7 +6,6 @@ import Team from "../Components/Team";
 import Partners from "./containers/home/Partners";
 
 class AboutPage extends React.Component {
- 
   render() {
     return (
       <div>

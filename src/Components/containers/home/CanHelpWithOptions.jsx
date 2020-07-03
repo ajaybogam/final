@@ -27,7 +27,16 @@ function CanHelpWithOptions(props) {
             ))}
           </Flex>
         </Box>
-        <ProcessList list={helpYouOptions[activeLink].list} />
+        {/* <ProcessList list={helpYouOptions[activeLink].list} /> */}
+        <ProcessList {...helpYouOptions[activeLink]} />
+        {!!helpYouOptions[activeLink].secondary && !!helpYouOptions[activeLink].secondary.title && (
+          <Box my={4}>
+            <Text>{helpYouOptions[activeLink].secondary.title}</Text>
+            <ProcessList
+              list={helpYouOptions[activeLink].secondary.list || []}
+            />
+          </Box>
+        )}
         <Box textAlign="center">
           <Link to={helpYouOptions[activeLink].link}>
             <Button variantColor="orange">Learn More</Button>
@@ -52,6 +61,8 @@ const HelpYouLink = ({ link, active = false, onClick }) => (
         as="img"
         src={!active ? link.activeImage : link.image}
         alt={link.title}
+        maxW={{base: "36px"}}
+        mr={1}
       />
       <Text
         fontWeight="bold"

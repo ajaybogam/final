@@ -23,7 +23,7 @@ import Success from "../../Assets/Success.svg";
 import { useForm } from "react-hook-form";
 import GotAnyQuestions from "./GotAnyQuestions";
 import ApiServices from "../../services/api.services";
-import CloseImg from '../../Assets/Close.svg'
+import CloseImg from "../../Assets/Close.svg";
 const validEmailRegex = RegExp(
   /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
 );
@@ -74,7 +74,7 @@ const ApplyForProductForm = (props) => {
           props.onSuccess();
           // props.onClose();
         })
-        .catch((err) => {});
+        .catch((err) => { });
     }, 1000);
   }
 
@@ -111,8 +111,8 @@ const ApplyForProductForm = (props) => {
             {errors.email && errors.email.message}
           </FormErrorMessage>
         </FormControl>
-        <FormControl mb={4}>
-          <Select name="instrument" defaultValue={""} ref={register}>
+        <FormControl isInvalid={errors.instrument} mb={4}>
+          <Select name="instrument" defaultValue={""} ref={register({ validate: validator.instrument })}>
             <option value="" disabled>
               Select Instrument
             </option>
@@ -121,6 +121,9 @@ const ApplyForProductForm = (props) => {
             <option value="Investments">Investments</option>
             <option value="Credit Cards">Credit Cards</option>
           </Select>
+          <FormErrorMessage>
+            {errors.instrument && errors.instrument.message}
+          </FormErrorMessage>
         </FormControl>
         <Flex my={4}>
           <Button type="submit" variantColor="orange" mr={3}>
@@ -141,27 +144,37 @@ const ApplyForProductForm = (props) => {
 
 const ApplyForProduct = (props) => {
   const { isOpen, onOpen, onClose } = props;
-  const [isSuccess, setIsSuccess] = React.useState(true);
+  const [isSuccess, setIsSuccess] = React.useState(false);
   const onSuccess = () => setIsSuccess(true);
   return (
-    <React.Fragment >
-      <Button onClick={onOpen} variantColor="orange" >
+    // <<<<<<< HEAD
+    //     <React.Fragment>
+    //       <Button onClick={onOpen} variantColor="orange">
+    //         Apply
+    //       </Button>
+    //       <Modal isOpen={isOpen} onClose={onClose} size="xl">
+    // =======
+    <React.Fragment>
+      <Button onClick={onOpen} variantColor="orange">
         Apply
       </Button>
-      
-      <Modal  blockScrollOnMount isOpen={isOpen} onClose={onClose} size="xl">
+
+      <Modal blockScrollOnMount isOpen={isOpen} onClose={onClose} size="xl">
+        {/* >>>>>>> aa70cad64b9cd484eb79f485f627dd8ef3afb2d5 */}
         <ModalOverlay />
-        <ModalContent>
+        <ModalContent maxW={{ base: "90%", md: "420px" }} borderRadius={8} my={{ base: 4 }}>
           <ModalHeader display="Flex" justifyContent="space-between" mt={4}>
             <Box>
-            <Text as="h3" fontSize="2xl" color="blue.400" lineHeight={1}>
-              Apply for a product
-            </Text>
-            <Text as="small" color="gray.400" fontWeight="normal">
-              Please fill the below details
-            </Text>
+              <Text as="h3" fontSize="2xl" color="blue.400" lineHeight={1}>
+                Apply for a product
+              </Text>
+              <Text as="small" color="gray.400" fontWeight="normal">
+                Please fill the below details
+              </Text>
             </Box>
-            <Box cursor="pointer"><img src={CloseImg} alt="close" onClick={onClose} /></Box>
+            <Box cursor="pointer">
+              <img src={CloseImg} alt="close" onClick={onClose} />
+            </Box>
           </ModalHeader>
           {/* <ModalCloseButton /> */}
           <ModalBody>
@@ -169,8 +182,8 @@ const ApplyForProduct = (props) => {
               {isSuccess ? (
                 <ApplyFormSuccess />
               ) : (
-                <ApplyForProductForm onClose={onClose} onSuccess={onSuccess} />
-              )}
+                  <Box maxW={{base: "100%", md: "280px"}}>  <ApplyForProductForm onClose={onClose} onSuccess={onSuccess} /> </Box>
+                )}
             </Box>
           </ModalBody>
           <hr />

@@ -1,9 +1,26 @@
 import React from "react";
 import { Flex, Divider } from "@chakra-ui/core";
 import styled from "styled-components";
+import constants from "../../utils/constants";
 
 function ProcessList(props) {
-  const { list = [], isMobileView = false } = props;
+  const MOBILE_WIDTH = constants.MOBILE_VIEW;
+  const [isMobileView, setIsMobile] = React.useState(
+    window.innerWidth <= MOBILE_WIDTH
+  );
+  const onResize = (event) => {
+    setIsMobile(window.innerWidth <= MOBILE_WIDTH);
+  };
+  React.useEffect(() => {
+    window.addEventListener("resize", onResize);
+
+    return () => {
+      window.removeEventListener("resize", onResize);
+    };
+  }, []);
+
+
+  const { list = [] } = props;
   const desktopViews = 6;
   const mobileViews = 2;
   const perRow = isMobileView ? mobileViews : desktopViews;
@@ -66,8 +83,15 @@ const PageContainer = styled(Flex)`
 
   @media screen and (max-width: 640px) {
     .ui__process_row:last-child {
-      .ui__process_list:last-child:not(:nth-child(even)) {
+      .ui__process_list:first-child {
         border-right: 1px solid;
+      }
+      .ui__process_list:last-child:not(:first-child) {
+        border-right: 0 !important;
+      }
+
+      .ui__process_list:last-child:first-child {
+        border-right: 0;
       }
     }
   }
