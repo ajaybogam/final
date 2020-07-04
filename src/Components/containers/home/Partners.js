@@ -61,7 +61,7 @@ const PartnersMobileView = (props) => {
         {rowsIndexes.map((row, key) => (
           <SimpleGrid key={key} columns={1}>
             {row.map((partnerIdx, idx) => (
-              <PartnerImage>
+              <PartnerImage  key={idx}>
                 <Box
                   key={idx}
                   as="img"

@@ -17,9 +17,9 @@ function CanHelpWithOptions(props) {
         <MainTitle title="dr. finance can help you with" />
         <Box >
           <Flex w="100%" overflow="hidden" overflowX="auto" justifyContent={{ base: "flex-start", md: "space-around" }}>
-            {keys.map((key) => (
+            {keys.map((key,idx) => (
               <HelpYouLink
-                key={key}
+                key={idx}
                 active={activeLink === key}
                 link={helpYouOptions[key]}
                 onClick={() => setActiveLink(key)}

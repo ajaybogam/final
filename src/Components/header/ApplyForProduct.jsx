@@ -24,12 +24,33 @@ import { useForm } from "react-hook-form";
 import GotAnyQuestions from "./GotAnyQuestions";
 import ApiServices from "../../services/api.services";
 import CloseImg from "../../Assets/Close.svg";
+import { useState } from "react";
 const validEmailRegex = RegExp(
   /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
 );
+const validateName = (name) => {
+  var letter = /^[a-zA-Z\s]*$/;
+  if (name.match(letter) && name.length > 2) {
+    return false;
+  } else {
+    return true;
+  }
+};
+const validateNumber=(num)=>{
+  var letter= /^[0-9]*$/;
+  if(num.match(letter)){
+    return false
+  }
+  else{
+    return true
+  }
+}
 
 const validator = {
   name: (value) => {
+    if(validateName(value)){
+      return "Enter a valid Name"
+    }
     return !value ? "Name is required" : true;
   },
   email: (value) => {
@@ -38,22 +59,45 @@ const validator = {
       : true;
   },
   phone: (value) => {
+    if(validateNumber(value)){
+      return "Enter only numbers"
+    }
     return !!value && value.length === 10 ? true : "Enter a valid number";
   },
   instrument: (value) => {
     return !value ? "Instrument is required" : true;
   },
 };
+
+// const changeHandler = (e) => {
+  
+  // const { name, value } = e.target;
+  // switch (e) {
+  //   case "name":
+  //    return  !validateName(e) ? setName_error("Enter a valid Name") : "";
+  //     break;
+    // case "insturment":
+    //   errors.subject = !validateSubject(e) ? "Enter a valid subject" : "";
+    //   break;
+    // case "email":
+    //   errors.email = validEmailRegex.test(e) ? "" : "Email is not valid!";
+    //   break;
+    // case "phone":
+    //   errors.phone = e.length === 10 ? "" : "Enter a valid number";
+//     default:
+//       break;
+//   }
+// };
 const ApplyFormSuccess = (props) => {
   return (
     <React.Fragment>
       <Box>
         <Flex direction="column" align="center" py={12}>
           <img src={Success} alt="Success" />
-          <Text color="#4ED489" fontSize="lg" fontWeight="700">
+          <Text color="#4ED489" fontSize="xl" fontWeight="700">
             Application Submitted
           </Text>
-          <Text textAlign="center" maxW="256px">
+          <Text textAlign="center" maxW="256px " fontSize="lg">
             We will get in touch with you soon to get the process started
           </Text>
         </Flex>
@@ -63,6 +107,7 @@ const ApplyFormSuccess = (props) => {
 };
 const ApplyForProductForm = (props) => {
   const { handleSubmit, errors, register, formState } = useForm();
+  // const [name_error,setName_error]=useState('')
   console.log({ errors, formState });
   function onSubmit(values) {
     setTimeout(() => {
@@ -77,6 +122,9 @@ const ApplyForProductForm = (props) => {
         .catch((err) => { });
     }, 1000);
   }
+  const Validator=(val)=>{
+    return (console.log(val))
+  }
 
   return (
     <React.Fragment>
@@ -86,6 +134,7 @@ const ApplyForProductForm = (props) => {
             placeholder="Name*"
             name="name"
             ref={register({ validate: validator.name })}
+            onChange={()=>(Validator())}
           />
           <FormErrorMessage>
             {errors.name && errors.name.message}
@@ -133,6 +182,7 @@ const ApplyForProductForm = (props) => {
             variantColor="orange"
             variant="outline"
             onClick={props.onClose}
+            
           >
             Cancel
           </Button>

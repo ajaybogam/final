@@ -75,12 +75,13 @@ const TopHeader = (props) => {
             {navigation.map((menu, idx) => (
               <Box
                 color={currentPage === menu.link ? activeColor : ""}
-                borderBottom={currentPage === menu.link ? "1px" : ""}
+                borderBottom={currentPage === menu.link ? "2px" : ""}
                 as={Link}
                 ml={12}
                 fontWeight="bold"
                 key={menu.link}
                 to={menu.link}
+                fontSize="md"
               >
                 {menu.title}
               </Box>

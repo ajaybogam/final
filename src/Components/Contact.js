@@ -12,15 +12,15 @@ function Contact() {
         <div>
           <div className="contactTitle">Contact Us</div>
           <div className="contactSub">
-            <img src={PhoneBig} style={{ paddingRight: "16px" }}></img>
+            <img src={PhoneBig} style={{ paddingRight: "16px" }} alt=""></img>
             <div>+91 95814 76948</div>
           </div>
           <div className="contactSub">
-            <img src={EmailBig} style={{ paddingRight: "16px" }}></img>
+            <img src={EmailBig} style={{ paddingRight: "16px" }}  alt=""></img>
             <div>support@drfinance.com</div>
           </div>
           <div className="contactSub">
-           <div> <img src={Location} style={{ paddingRight: "16px" }}></img></div>
+           <div> <img src={Location} style={{ paddingRight: "16px" }} alt=""></img></div>
             <div>
               Door No. 2, 2-186/18/6, Ramakrishna Nagar, Amberpet, Hyderabad,
               Telangana 500013

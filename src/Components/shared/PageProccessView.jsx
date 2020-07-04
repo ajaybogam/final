@@ -28,7 +28,7 @@ function PageProcessView(props) {
   const { list, title, secondary = {} } = props;
 
   return (
-    <Box zIndex="1" position="relative" py={0} {...props} my={{base:20,md:0}}>
+    <Box zIndex="1" position="relative"  {...props} my={{base:20,md:0}} py={{base:"0px", md:props.PY||"0"}}>
       <PageWrapper>
         <Flex
           flexDirection={{ base: "column", md: "row" }}
@@ -40,7 +40,7 @@ function PageProcessView(props) {
             <ProcessList list={list || []} isMobileView={isMobile} />
             {!!secondary && !!secondary.title && (
               <Box my={4}>
-                <Text>{secondary.title}</Text>
+                <Text fontSize="md">{secondary.title}</Text>
                 <ProcessList
                   list={secondary.list || []}
                   isMobileView={isMobile}

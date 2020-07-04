@@ -58,7 +58,7 @@ function Part() {
           <Box flex="1" my={{ base: 4, md: 16 }} maxW="100%">
             <Flex justifyContent maxW="100%" overflow="hidden" overflowX="auto" > 
               {list.map(({ title, image, description }, idx) => (
-                <Box key={idx} mt={12} textAlign="center" flexShrink="0" mr={16}>
+                <Box key={idx} mt={12} textAlign="center" flexShrink="0" mr={idx<2?16:0}>
                   <Box
                     as="img"
                     height="70px"

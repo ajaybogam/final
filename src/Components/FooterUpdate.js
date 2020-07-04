@@ -11,16 +11,16 @@ function FooterUpdate() {
   const quickLinks = [
     { title: "Home", link: "/" },
     { title: "About Dr.Finance", link: "/about" },
-    { title: "Join as referral Partner", link: "/joinasreferral" },
+    { title: "Join as Referral Partner", link: "/joinasreferral" },
     { title: "Contact", link: "/contact" },
-    { title: "Terms and conditions", link: "/termsandconditions" },
+    { title: "Terms and Conditions", link: "/termsandconditions" },
     { title: "Privacy Policy", link: "/privacypolicy" },
     { title: "FAQs", link: "/faqs" },
   ];
   const product = [
     { title: "Loans", link: "/loans" },
     { title: "Investments", link: "/investments" },
-    { title: "insurance", link: "/insurance" },
+    { title: "Insurance", link: "/insurance" },
     { title: "Credit Cards", link: "/creditcards" },
   ];
   const head = [{ title: "QUICK LINKS" }, { title: "PRODUCT" }];
@@ -97,6 +97,7 @@ function FooterUpdate() {
         p={{ base: "0", md: "3%" }}
         px={{ base: "24px", md: "3%" }}
         // mr={{ base: "0", md: "150px" }}
+        maxW="392px"
       >
         <Footerform />
       </Box>
