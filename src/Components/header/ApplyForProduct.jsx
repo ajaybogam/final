@@ -94,10 +94,10 @@ const ApplyFormSuccess = (props) => {
       <Box>
         <Flex direction="column" align="center" py={12}>
           <img src={Success} alt="Success" />
-          <Text color="#4ED489" fontSize="lg" fontWeight="700">
+          <Text color="#4ED489" fontSize="xl" fontWeight="700">
             Application Submitted
           </Text>
-          <Text textAlign="center" maxW="256px">
+          <Text textAlign="center" maxW="256px " fontSize="lg">
             We will get in touch with you soon to get the process started
           </Text>
         </Flex>
