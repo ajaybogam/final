@@ -53,8 +53,7 @@ export const helpYouOptions = {
         list: [
             "Life",
             "Term",
-            "Child",
-            "Education",
+            "Child Education",
             "Retirement",
             "Pension"
         ],

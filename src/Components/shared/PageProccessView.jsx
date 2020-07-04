@@ -40,7 +40,7 @@ function PageProcessView(props) {
             <ProcessList list={list || []} isMobileView={isMobile} />
             {!!secondary && !!secondary.title && (
               <Box my={4}>
-                <Text>{secondary.title}</Text>
+                <Text fontSize="md">{secondary.title}</Text>
                 <ProcessList
                   list={secondary.list || []}
                   isMobileView={isMobile}

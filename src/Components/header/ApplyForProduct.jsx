@@ -182,6 +182,7 @@ const ApplyForProductForm = (props) => {
             variantColor="orange"
             variant="outline"
             onClick={props.onClose}
+            
           >
             Cancel
           </Button>
