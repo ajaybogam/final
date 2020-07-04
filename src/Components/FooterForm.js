@@ -105,7 +105,7 @@ class FooterForm extends React.Component {
         errors.email = validEmailRegex.test(value) ? "" : "Email is not valid!";
         break;
       case "phone":
-        errors.phone = value.length == 10 ? "" : "Enter a valid number";
+        errors.phone = value.length === 10 ? "" : "Enter a valid number";
       default:
         break;
     }

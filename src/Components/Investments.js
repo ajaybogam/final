@@ -10,6 +10,7 @@ import PageSecondaryInfo from "./shared/PageSecondaryInfo";
 import PageProcessView from "./shared/PageProccessView";
 import ProcessThrough from "./shared/ProcessThrough";
 
+
 const whyChooseOptionsList = [
   {
     image: Back,
@@ -61,14 +62,15 @@ const Investments = (props) => {
           "Special saving schemes",
         ]}
       />
-
-      <ProcessThrough
-        title="why process investments through dr. finance?"
-        options={whyChooseOptionsList}
-        maxw="300px"
-        max_titleW_md="1000px"
-        
-      />
+   <ProcessThrough
+  
+      title="why process investments through dr. finance?"
+      options={whyChooseOptionsList}
+      maxw="300px"
+      max_titleW_md="1000px"
+      max_title_base="250px"
+      
+    />
     </React.Fragment>
   );
 };

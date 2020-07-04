@@ -14,8 +14,8 @@ function HomeIntro() {
     <Flex className="view__intro">
       <PageWrapper position="relative" bottom={{ base: 12, md: 0 }}>
         <Text
-          maxW="580px"
-          fontSize={{ base: "4xl", md: "6xl" }} 
+          maxW="685px"
+          fontSize={{ base: "4xl", md: "74px"||"6xl" }} 
           fontWeight="bold"
           color="blue.400"
           lineHeight="1"

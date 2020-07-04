@@ -11,7 +11,7 @@ function MainTitle(props) {
         maxW={{base:props.max_titleW,md:props.w||"100%"}}
         mx={{base:"auto"}}
         mb={{ base: 8, md: 16 }}
-        fontSize={{ base: props.base_fontSize||"4xl", md: props.f_size||"6xl"}}
+        fontSize={{ base: props.base_fontSize||"4xl",sm:"5xl", md: props.f_size||"6xl"}}
         px={{base: 0, md: props.p_x||16}}
         lineHeight={1.25}
         fontWeight="bold"

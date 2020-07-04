@@ -7,9 +7,9 @@ function HassleFreeOptions(props) {
     return <PageWrapper>
         <SimpleGrid columns={5} className="ui__hassleOptions">
             {hassleFreeOptions.map((option, idx) => <Box className="ui__hassleOptions__item" key={idx}>
-                <Text>{idx + 1}</Text>
+                <Text fontSize={{md:"lg"}}>{idx + 1}</Text>
                 <Box mx="auto" my={{ base: 1, md: 4 }} maxW={{base: "80%", md: "100%"}} as="img" src={option.image} alt={option.title}></Box>
-                <Text lineHeight="1" fontSize={{ base: "9px", md: "md" }} mx="auto" maxW={{ base: "100%", md: "50%" }}>{option.title}</Text>
+                <Text lineHeight="1" fontSize={{ base: "9px", md: "2xl" }} mx="auto" maxW={{ base: "100%", md: "60%" }}>{option.title}</Text>
             </Box>)}
         </SimpleGrid>
 

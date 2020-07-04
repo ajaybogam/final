@@ -19,6 +19,7 @@ function OurTeam() {
       <SimpleGrid display={{ base: "none", md: "grid" }} columns={{ base: 1, md: 3 }} spacingY={16} >
         {teamList.map((team, idx) => <TeamView team={team} key={idx} />)}
       </SimpleGrid>
+      
       <OurTeamMobileView display={{ base: "block", md: "none" }} />
     </PageWrapper>
     <BgStar stars={4} />
@@ -47,8 +48,8 @@ const OurTeamMobileView = (props) => {
 }
 
 
-const TeamView = ({ team }) => <Flex alignItems="center" justifyContent="center">
-  <Box bg="white" maxW="280px" rounded={8} overflow="hidden" >
+const TeamView = ({ team }) => <Flex alignItems="center" justifyContent="center" >
+  <Box bg="white" maxW="280px" rounded={8} overflow="hidden">
     <Box as="img" w="100%" src={team.image} className="person"></Box>
     <Box p={4}>
       <Text fontSize="xl" fontWeight="bold" color="blue.700" >{team.title}</Text>

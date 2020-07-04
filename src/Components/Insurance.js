@@ -81,6 +81,7 @@ const Insurance = (props) => {
             "Group Health",
           ],
         }}
+        PY={10}
       />
 
       <ProcessThrough

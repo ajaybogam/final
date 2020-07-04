@@ -97,6 +97,7 @@ function FooterUpdate() {
         p={{ base: "0", md: "3%" }}
         px={{ base: "24px", md: "3%" }}
         // mr={{ base: "0", md: "150px" }}
+        maxW="392px"
       >
         <Footerform />
       </Box>
