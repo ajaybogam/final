@@ -36,7 +36,7 @@ function PageProcessView(props) {
           minH="80vh"
         >
           <Box flex={1} textAlign={{ base: "center" }} px={{ base: 4, md: 16 }}>
-            <MainTitle title={title} color="blue.400" />
+            <MainTitle title={title} color="blue.600" />
             <ProcessList list={list || []} isMobileView={isMobile} />
             {!!secondary && !!secondary.title && (
               <Box my={4}>

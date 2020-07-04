@@ -103,13 +103,14 @@ function TermsCondition() {
   return (
     <Box ref={sectionRef}>
       <PageWrapper className="" my={16}>
-        <Box py={8}>
+        <Box py={8} textAlign={{base:"center",md:"left"}}>
           <Text
-            maxW="580px"
+            maxW={{base:"240px", md:"580px"}}
             fontSize={{ base: "4xl", md: "6xl" }}
             fontWeight="bold"
             color="blue.400"
             lineHeight="1"
+            mx={{base:'auto',md:"0"}}
           >
             {" "}
             Terms & Conditions

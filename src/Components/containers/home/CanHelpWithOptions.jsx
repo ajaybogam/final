@@ -14,7 +14,7 @@ function CanHelpWithOptions(props) {
   return (
     <PageContainer>
       <PageWrapper>
-        <MainTitle title="dr. finance can help you with" />
+        <MainTitle  max_titleW="272px" title="dr. finance can help you with" />
         <Box >
           <Flex w="100%" overflow="hidden" overflowX="auto" justifyContent={{ base: "flex-start", md: "space-around" }}>
             {keys.map((key,idx) => (
