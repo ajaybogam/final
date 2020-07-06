@@ -93,10 +93,10 @@ function FooterUpdate() {
         </Flex>
       </Box>
       <Box
-        border={{ base: "none", md: "1px solid" }}
+        border={{ base: "none", md: "1px solid rgba(255,255,255,.3)" }}
+        rounded="8px"
         p={{ base: "0", md: "3%" }}
         px={{ base: "24px", md: "3%" }}
-        // mr={{ base: "0", md: "150px" }}
         maxW="392px"
       >
         <Footerform />

@@ -35,7 +35,7 @@ function PageProcessView(props) {
           alignItems="center"
           minH="80vh"
         >
-          <Box flex={1} textAlign={{ base: "center" }} px={{ base: 4, md: 16 }}>
+          <Box flex={1} textAlign={{ base: "center" }} px={{ base: 4, lg: 16 }}>
             <MainTitle title={title} color="blue.600" />
             <ProcessList list={list || []} isMobileView={isMobile} />
             {!!secondary && !!secondary.title && (

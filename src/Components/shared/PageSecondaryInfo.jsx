@@ -6,7 +6,7 @@ import MainTitle from './MainTitle';
 
 function PageSecondaryInfo(props) {
     const { image, title, description } = props
-    return <Box zIndex="1" position="relative" py={{base:16,md:"0"}} bg="blue.400" color="white" {...props} >
+    return <Box zIndex="1" position="relative" py={{base:16,lg:"0"}} bg="blue.400" color="white" {...props} >
         <PageWrapper>
             <Flex flexDirection={{ base: "column", md: "row" }} alignItems="center" minH="80vh">
                 <Box flex={1} textAlign={{ base: "center" }} px={{ base: 4, md: 16 }}>

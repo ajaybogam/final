@@ -8,7 +8,7 @@ function MainTitle(props) {
     //base_fontSize--->for font size in join
     // f_size --->md font size for getstartednow, join
     return <Text
-        maxW={{base:props.max_titleW,md:props.w||"100%"}}
+        maxW={{base:props.max_titleW,md:"100%",lg:props.w||"100%"}}
         mx={{base:"auto"}}
         mb={{ base: 8, md: 16 }}
         fontSize={{ base: props.base_fontSize||"4xl",sm:"5xl", md: props.f_size||"6xl"}}
