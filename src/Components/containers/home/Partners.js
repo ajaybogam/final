@@ -19,6 +19,7 @@ function Partners() {
           color="blue.600"
           textAlign="center"
           pt={8}
+          max_titleW="232px"
         />
         <SimpleGrid
           display={{ base: "none", md: "grid" }}
@@ -66,6 +67,7 @@ const PartnersMobileView = (props) => {
                   key={idx}
                   as="img"
                   mx="auto"
+                  maxW="210px"
                   my={{ base: 2, md: 4 }}
                   src={partnerList[partnerIdx]}
                 />

@@ -40,10 +40,10 @@ import Close_blue from "../../mobile/Close_Blue.svg";
 
 const quickLinks = [
   { title: "Home", link: "/" },
-  { title: "About", link: "/about" },
-  { title: "Join as referral", link: "/joinasreferral" },
+  { title: "About Dr. Finance", link: "/about" },
+  { title: "Join as Referral Partner", link: "/joinasreferral" },
   { title: "Contact", link: "/contact" },
-  { title: "Terms and conditions", link: "/termsandconditions" },
+  { title: "Terms and Conditions", link: "/termsandconditions" },
   { title: "Privacy Policy", link: "/privacypolicy" },
   { title: "FAQs", link: "/faqs" },
 ];
@@ -68,7 +68,7 @@ const MobileNavigation = (props) => {
       <Box as="img" mr={2} src={hamburger} onClick={onOpen} alt="Menu" />
       <Drawer isOpen={isOpen} placement="left" onClose={onClose} size="full">
         <DrawerOverlay />
-        <DrawerContent bg="blue.700" overflowY="auto">
+        <DrawerContent bg="#265182" overflowY="auto">
           <DrawerHeader>
             <Flex>
               <img src={Close_blue} alt="close" onClick={onClose} />

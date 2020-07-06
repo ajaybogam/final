@@ -17,7 +17,7 @@ function ProcessThrough(props) {
                 </Box>
             </Flex>
         </PageWrapper>
-        <BgStar stars={10} />
+        <BgStar stars={4} />
     </Box>
 }
 

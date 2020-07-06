@@ -19,9 +19,9 @@ function Join() {
       pb={0}
       borderTop="1px solid rgba(0,0,0,.1)"
     >
-      <PageWrapper textAlign={{ base: "center", md: "left" }}>
+      <PageWrapper textAlign={{ base: "center", lg: "left" }}>
         <Flex
-          flexDirection={{ base: "column", md: "row" }}
+          flexDirection={{ base: "column", lg: "row" }}
           alignItems={{ base: "center", md: "stretch" }}
         >
           <Box flex="1" my={{ base: 4, md: 16 }}>
@@ -29,10 +29,9 @@ function Join() {
               <MainTitle
                 title="Join us as a referral partner now"
                 color="blue.600"
-                f_size="74px"
+                f_size="6xl"
                 mb={4}
                 p_x="0"
-                
                 base_fontSize="5xl"
 
               />
@@ -41,7 +40,7 @@ function Join() {
                 get paid for them
               </Text>
             </Box>
-            <Flex my={8} justifyContent={{ base: "center", md: "flex-start" }} mb={{base:10,md:"none"}}>
+            <Flex my={8} justifyContent={{ base: "center", lg: "flex-start" }} mb={{base:10,lg:"none"}}>
               <Box as="img" src={PlayStore}></Box>
               <Box as="img" ml={4} src={AppStore}></Box>
             </Flex>
@@ -49,7 +48,7 @@ function Join() {
           <Box as="img" src={largeimg} ml={{ base: 0, md: 6 }}></Box>
         </Flex>
       </PageWrapper>
-      <BgStar stars={16} />
+      <BgStar stars={6} />
     </Box>
   );
 }
