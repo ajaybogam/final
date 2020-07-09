@@ -19,11 +19,11 @@ function WhyChooseOptions(props) {
             src={option.image}
             alt={option.title}
           />
-          <Box maxW={{base:"250px",md:props.maxW}} mx="auto">
-            <Text my={2} fontSize={{ base: "xl", md: "2xl" }} fontWeight="bold" textTransform="uppercase">
+          <Box className="ui__choose_option__box" maxW={{base:"250px",md:props.maxW}} mx="auto">
+            <Text className="ui__choose_option__title" my={2} fontSize={{ base: "xl", md: "2xl" }} fontWeight="bold" textTransform="uppercase">
               {option.title}
             </Text>
-            <Text fontSize={{ base: "lg", md: "xl" }} px={{ base: 1 }}
+            <Text className="ui__choose_option__info" fontSize={{ base: "lg", md: "xl" }} px={{ base: 1 }}
             mx="auto">{option.description}</Text>
           </Box>
         </Box>
@@ -43,9 +43,26 @@ const PageContainer = styled(Flex)`
     margin: 2rem 0;
   }
 
+  @media (max-width: 1024px) {
+
+    .ui__choose_option__box {
+      padding: 0 16px;
+    }
+    .ui__choose_option__title {
+      font-size: 1.25rem;
+    }
+    .ui__choose_option__info {
+      font-size: 1rem;
+    }
+  }
+
   @media (max-width: 768px) {
    .ui__choose_option {
       width: calc(100% / 1);
+    }
+
+    .ui__choose_option__box {
+      padding: 0 8px;
     }
   }
 `

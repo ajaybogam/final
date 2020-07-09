@@ -7,6 +7,7 @@
   justify-content: center;
   align-items: flex-start;
   position: relative;
+  background-size: 50%;
 }
 
 .view__intro__bg {
@@ -27,9 +28,7 @@
     min-height: 80vh;
     text-align: center;
     background-position: bottom;
-    /* background-position: center 100%; */
     background-size: contain;
-    
   }
 }
 @media screen and (max-width: 640px) {
