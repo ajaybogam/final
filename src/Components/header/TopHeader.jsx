@@ -1,6 +1,6 @@
 import React from "react";
 import ApplyForProduct from "./ApplyForProduct";
-import { Flex, Box, useTheme, useDisclosure } from "@chakra-ui/core";
+import { Flex, Box, useDisclosure } from "@chakra-ui/core";
 import { Link, useLocation } from "react-router-dom";
 
 import logo from "../../Assets/Logo.svg";
@@ -43,7 +43,7 @@ const TopHeader = (props) => {
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", onResize);
     };
-  }, []);
+  }, [onOpen]);
 
   React.useEffect(() => {
     setCurrentPage(location.pathname);

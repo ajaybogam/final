@@ -1,5 +1,4 @@
 import React from "react";
-import Contact from "../Components/Contact";
 import { Box, Flex, Text, Stack } from "@chakra-ui/core";
 import PageWrapper from "./shared/PageWrapper";
 import BgStar from "./shared/BgStar";
@@ -27,13 +26,13 @@ class ContactPage extends React.Component {
                   <Box as="img" src={EmailBig} />
                   <Text fontSize="2xl" ml={4}>support@drfinance.com</Text>
                 </Flex>
-                <Flex  alignItems="center" >
+                <Flex alignItems="center" >
                   <Box as="img" src={Location} />
                   <Text fontSize="2xl" ml={4}>Door No. 2, 2-186/18/6, Ramakrishna Nagar, Amberpet, Hyderabad, Telangana 500013</Text>
                 </Flex>
               </Stack>
             </Box>
-            <Box p={{ base: 8, md: 16 }}  flex={1} position="relative">
+            <Box p={{ base: 8, md: 16 }} flex={1} position="relative">
               <Box as="iframe"
                 width="100%"
                 height="60vh"

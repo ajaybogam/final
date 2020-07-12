@@ -1,11 +1,8 @@
 import React from "react";
-// import "../css/Choose.css";
-// import "../css/Stars.css";
 import Setback from "../Assets/Set Back.svg";
 import Bestdeal from "../Assets/Best Deals.svg";
 import Safe from "../Assets/Safe Secure.svg";
-import Star from "../Assets/Star.svg";
-import { Text, Box, Flex, Stack, SimpleGrid } from "@chakra-ui/core";
+import { Box } from "@chakra-ui/core";
 import PageWrapper from "./shared/PageWrapper";
 import BgStar from "./shared/BgStar";
 import MainTitle from "./shared/MainTitle";
@@ -33,7 +30,7 @@ function Choose() {
   return (
     <Box zIndex="1" position="relative" bg="blue.400" py={16}>
       <PageWrapper color="white" textAlign="center">
-        <MainTitle title="why choose dr. finance" mb={{ base: "4rem", md: "7rem" }} width={{base:"200px",md:"auto"}}/>
+        <MainTitle title="why choose dr. finance" mb={{ base: "4rem", md: "7rem" }} width={{ base: "200px", md: "auto" }} />
         <WhyChooseOptions list={whyChooseOptions} maxW="300px" />
       </PageWrapper>
       <BgStar stars={10} />

@@ -1,5 +1,4 @@
 import { theme } from "@chakra-ui/core";
-import { ThemeConsumer } from "styled-components";
 
 const AppTheme = {
   ...theme,
