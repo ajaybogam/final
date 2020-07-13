@@ -1,17 +1,17 @@
 import React from "react";
-import { Flex, Divider } from "@chakra-ui/core";
+import { Flex } from "@chakra-ui/core";
 import styled from "styled-components";
 import constants from "../../utils/constants";
 
 function ProcessList(props) {
-  const MOBILE_WIDTH = constants.MOBILE_VIEW;
   const [isMobileView, setIsMobile] = React.useState(
-    window.innerWidth <= MOBILE_WIDTH
+    window.innerWidth <= constants.MOBILE_VIEW
   );
-  const onResize = (event) => {
-    setIsMobile(window.innerWidth <= MOBILE_WIDTH);
-  };
+
   React.useEffect(() => {
+    const onResize = (event) => {
+      setIsMobile(window.innerWidth <= constants.MOBILE_VIEW);
+    };
     window.addEventListener("resize", onResize);
 
     return () => {

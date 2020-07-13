@@ -3,7 +3,6 @@ import Refferal from "../Assets/Referrals_Big.svg";
 import Track from "../Assets/Track_Big.svg";
 import Payout from "../Assets/Payouts_Big.svg";
 import "../css/Stars.css";
-import Star from "../Assets/Star.svg";
 import "../css/Profit.css";
 import ProcessThrough from "./shared/ProcessThrough";
 

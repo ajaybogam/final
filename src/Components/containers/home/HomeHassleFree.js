@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
-import { Box, Text } from "@chakra-ui/core";
+import { Box } from "@chakra-ui/core";
 import HassleFreeOptions from "./HassleFreeOptions";
 import CanHelpWithOptions from "./CanHelpWithOptions";
 import MainTitle from "../../shared/MainTitle";

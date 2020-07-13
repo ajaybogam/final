@@ -1,11 +1,9 @@
 import React from "react";
 import AppStore from "../Assets/App Store.svg";
 import PlayStore from "../Assets/Google Play.svg";
-import Main from "../Assets/Main.svg";
 import "../css/Join.css";
 import "../css/Stars.css";
-import Star from "../Assets/Star.svg";
-import { Box, Text, Flex, SimpleGrid } from "@chakra-ui/core";
+import { Box, Text, Flex } from "@chakra-ui/core";
 import PageWrapper from "./shared/PageWrapper";
 import MainTitle from "./shared/MainTitle";
 import BgStar from "./shared/BgStar";
@@ -40,7 +38,7 @@ function Join() {
                 get paid for them
               </Text>
             </Box>
-            <Flex my={8} justifyContent={{ base: "center", lg: "flex-start" }} mb={{base:10,lg:"none"}}>
+            <Flex my={8} justifyContent={{ base: "center", lg: "flex-start" }} mb={{ base: 10, lg: "none" }}>
               <Box as="img" src={PlayStore}></Box>
               <Box as="img" ml={4} src={AppStore}></Box>
             </Flex>

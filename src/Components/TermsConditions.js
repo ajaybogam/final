@@ -1,9 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../css/TermsCondition.css";
 import { Box, Text, Flex, Divider, Stack } from "@chakra-ui/core";
-// import Scrollspy from 'react-scrollspy'
 import PageWrapper from "./shared/PageWrapper";
-import { Link } from "react-router-dom";
 import constants from "../utils/constants";
 
 const terms = [

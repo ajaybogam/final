@@ -5,15 +5,9 @@ import {
   Flex,
   Text,
   Divider,
-  Collapse,
-  Accordion,
-  AccordionItem,
-  AccordionHeader,
-  AccordionPanel,
-  AccordionIcon,
+  Collapse
 } from "@chakra-ui/core";
 import BgStar from "../Components/shared/BgStar";
-import Collapsible from "react-collapsible";
 import ApiServices from "../../src/services/product.services";
 import Faqs_up from "../Assets/FAQ Up Arrow.svg";
 import Faqs_down from "../Assets/FAQ Down Arrow.svg";

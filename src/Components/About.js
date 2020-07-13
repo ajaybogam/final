@@ -3,15 +3,9 @@ import "../css/about.css";
 import Finance from "../Assets/Dr Finance.svg";
 import India from "../Assets/India.svg";
 import "../css/Stars.css";
-import Star from "../Assets/Star.svg";
 import '../css/loans.css'
 import PageIntroView from "./shared/PageIntroView";
 function About() {
-  // const meta={meta:{charset: 'utf-8',
-  // name: {
-  //   keywords: 'react,meta,document,html,tags'
-  // },name:"viewport",
-  // content:'width=device-width'}}
   return (
     <React.Fragment>
       <PageIntroView
