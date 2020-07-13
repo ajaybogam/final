@@ -187,13 +187,48 @@ const terms = [
     ],
   },
 ];
-
 const headings = terms.map((term) => term.section);
 headings[0] = "Introduction";
 
 function PrivacyPolicy() {
   const [active, setActive] = React.useState(0);
   const sectionRef = React.useRef();
+
+  let heights = [];
+
+  React.useEffect(() => {
+    const listener = document.addEventListener(
+      "scroll",
+      function (event) {
+        const element = event.target;
+        if (element.id === "ui__scroll") {
+          if (heights.length === 0 && element.childElementCount > 0) {
+            const count = element.childElementCount;
+            for (let i = 0; i < count; i++) {
+              const childElement = element.children[i];
+              heights[i] = [i === 0 ? 0 : heights[i - 1][1] + 1, 0];
+              heights[i][1] =
+                i === 0
+                  ? childElement.offsetHeight
+                  : childElement.offsetHeight + heights[i][0];
+            }
+          }
+
+          heights.forEach((values, index) => {
+            const [min, max] = values;
+            if (element.scrollTop >= min && element.scrollTop <= max) {
+              setActive(index);
+            }
+          });
+          console.log("scrolling", element.scrollTop, { heights });
+        }
+      },
+      true // Capture event
+    );
+    return () => {
+      document.removeEventListener("scroll", listener);
+    };
+  }, []);
 
   const onClick = (event, idx) => {
     const sectionId = `#section-${idx}`;
@@ -213,14 +248,14 @@ function PrivacyPolicy() {
   return (
     <Box ref={sectionRef}>
       <PageWrapper className="" my={16}>
-        <Box py={8}  textAlign={{base:"center",md:"left"}}>
+        <Box py={8} textAlign={{ base: "center", md: "left" }}>
           <Text
-             maxW={{base:"240px", md:"580px"}}
+            maxW={{ base: "240px", md: "580px" }}
             fontSize={{ base: "4xl", md: "6xl" }}
             fontWeight="bold"
             color="blue.400"
             lineHeight="1"
-            mx={{base:'auto', md:"0"}}
+            mx={{ base: "auto", md: "0" }}
           >
             {" "}
             Privacy Policy
@@ -254,8 +289,9 @@ function PrivacyPolicy() {
             w={{ base: "100%", md: "70%" }}
           >
             <Box
+              id="ui__scroll"
               p={{ base: 1 }}
-              height="1260px"
+              height="1250px"
               overflow="hidden"
               overflowY="auto"
             >

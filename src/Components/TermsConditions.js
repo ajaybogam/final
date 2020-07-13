@@ -85,41 +85,41 @@ function TermsCondition() {
   const [active, setActive] = React.useState(0);
   const sectionRef = React.useRef();
 
-  let heights = []
+  let heights = [];
 
   React.useEffect(() => {
     const listener = document.addEventListener(
-      'scroll',
+      "scroll",
       function (event) {
         const element = event.target;
         if (element.id === "ui__scroll") {
           if (heights.length === 0 && element.childElementCount > 0) {
             const count = element.childElementCount;
-            for(let i=0; i < count; i++) {
+            for (let i = 0; i < count; i++) {
               const childElement = element.children[i];
-              heights[i] = [
-                i === 0 ? 0 :  heights[i-1][1] + 1,
-                0
-              ];
-              heights[i][1] = i === 0 ? childElement.offsetHeight : childElement.offsetHeight + heights[i][0]
+              heights[i] = [i === 0 ? 0 : heights[i - 1][1] + 1, 0];
+              heights[i][1] =
+                i === 0
+                  ? childElement.offsetHeight
+                  : childElement.offsetHeight + heights[i][0];
             }
           }
 
           heights.forEach((values, index) => {
-              const [min, max] = values;
-              if(element.scrollTop >= min && element.scrollTop <= max) {
-                setActive(index);
-              }
-          })
-          console.log('scrolling', element.scrollTop ,{ heights });
+            const [min, max] = values;
+            if (element.scrollTop >= min && element.scrollTop <= max) {
+              setActive(index);
+            }
+          });
+          console.log("scrolling", element.scrollTop, { heights });
         }
       },
       true // Capture event
     );
     return () => {
-      document.removeEventListener("scroll", listener)
-    }
-  }, [])
+      document.removeEventListener("scroll", listener);
+    };
+  }, []);
 
   const onClick = (event, idx) => {
     const sectionId = `#section-${idx}`;
@@ -146,7 +146,7 @@ function TermsCondition() {
             fontWeight="bold"
             color="blue.400"
             lineHeight="1"
-            mx={{ base: 'auto', md: "0" }}
+            mx={{ base: "auto", md: "0" }}
           >
             {" "}
             Terms & Conditions
