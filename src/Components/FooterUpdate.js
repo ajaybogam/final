@@ -24,8 +24,7 @@ function FooterUpdate() {
     { title: "Credit Cards", link: "/creditcards" },
   ];
   return (
-    <Box bg="blue.700"
-      color="white">
+    <Box bg="blue.700" color="white">
       <PageWrapper>
         <Flex
           pb={20}
@@ -51,7 +50,7 @@ function FooterUpdate() {
               <Box as="img" mr={2} src={copyright} />
               <Box fontSize="md" fontWeight="300">
                 2020 Dr. Finance
-          </Box>
+              </Box>
             </Flex>
           </Box>
           <Box display={{ base: "none", md: "inline" }}>
@@ -78,16 +77,16 @@ function FooterUpdate() {
             </Flex>
             <Flex>
               <Box as="img" mr={2} src={EmailImage} />
-              <Box>support@drfinance.com</Box>
+              <Box>support@drfinance.in</Box>
             </Flex>
             <Flex
               display={{ base: "flex", md: "none" }}
               mt={{ base: "40px", md: "0" }}
             >
               <Box as="img" mr={2} src={copyright} />
-              <Box fontSize="md" fontWeight='300' color="rgba(208,208,208,1)">
+              <Box fontSize="md" fontWeight="300" color="rgba(208,208,208,1)">
                 2020 Dr. Finance
-          </Box>
+              </Box>
             </Flex>
           </Box>
           <Box
@@ -99,7 +98,9 @@ function FooterUpdate() {
           >
             <Footerform />
           </Box>
-        </Flex></PageWrapper></Box>
+        </Flex>
+      </PageWrapper>
+    </Box>
   );
 }
 const TitleView = ({ title }) => (

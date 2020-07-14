@@ -36,17 +36,16 @@ const validateName = (name) => {
 const validateNumber = (num) => {
   var letter = /^[0-9]*$/;
   if (num.match(letter)) {
-    return false
+    return false;
+  } else {
+    return true;
   }
-  else {
-    return true
-  }
-}
+};
 
 const validator = {
   name: (value) => {
     if (validateName(value)) {
-      return "Enter a valid Name"
+      return "Enter a valid Name";
     }
     return !value ? "Name is required" : true;
   },
@@ -57,11 +56,11 @@ const validator = {
   },
   phone: (value) => {
     if (validateNumber(value)) {
-      return "Enter only numbers"
+      return "Enter only numbers";
     }
     return !!value && value.length === 10 ? true : "Enter a valid number";
   },
-  product: (value) => {
+  instrument: (value) => {
     return !value ? "Please select Product" : true;
   },
   category: (value) => {
@@ -89,23 +88,30 @@ const ApplyFormSuccess = (props) => {
 const ApplyForProductForm = (props) => {
   const { handleSubmit, errors, register, formState, watch } = useForm();
   console.log({ errors, formState });
-  const productsList = Object.keys(helpYouOptions).map(key => helpYouOptions[key]);
-  const watchProductSelection = watch("product")
-  const productCategories = (productsList.filter(product => product.title === watchProductSelection)[0] || {}).list || [];
+  const productsList = Object.keys(helpYouOptions).map(
+    (key) => helpYouOptions[key]
+  );
+  const watchProductSelection = watch("instrument");
+  const productCategories =
+    (
+      productsList.filter(
+        (instrument) => instrument.title === watchProductSelection
+      )[0] || {}
+    ).list || [];
   function onSubmit(values) {
     setTimeout(() => {
-      ApiServices.product
-        .apply({ ...values, dataTime: (new Date()).getTime() })
+      ApiServices.instrument
+        .apply({ ...values, dataTime: new Date().getTime() })
         .then((resp) => resp.data)
         .then((response) => {
           props.onSuccess();
         })
-        .catch((err) => { });
+        .catch((err) => {});
     }, 1000);
   }
   const Validator = (val) => {
-    return (console.log(val))
-  }
+    return console.log(val);
+  };
 
   return (
     <React.Fragment>
@@ -115,7 +121,7 @@ const ApplyForProductForm = (props) => {
             placeholder="Name*"
             name="name"
             ref={register({ validate: validator.name })}
-            onChange={() => (Validator())}
+            onChange={() => Validator()}
           />
           <FormErrorMessage>
             {errors.name && errors.name.message}
@@ -141,25 +147,39 @@ const ApplyForProductForm = (props) => {
             {errors.email && errors.email.message}
           </FormErrorMessage>
         </FormControl>
-        <FormControl isInvalid={errors.product} mb={4}>
-          <Select name="product" defaultValue={""} ref={register({ validate: validator.product })}>
+        <FormControl isInvalid={errors.instrument} mb={4}>
+          <Select
+            name="instrument"
+            defaultValue={""}
+            ref={register({ validate: validator.instrument })}
+          >
             <option value="" disabled>
-              Select Product
+              Select instrument
             </option>
-            {productsList.map(product => <option key={product.title} value={product.title}>{product.title}</option>)}
+            {productsList.map((instrument) => (
+              <option key={instrument.title} value={instrument.title}>
+                {instrument.title}
+              </option>
+            ))}
           </Select>
           <FormErrorMessage>
-            {errors.product && errors.product.message}
+            {errors.instrument && errors.instrument.message}
           </FormErrorMessage>
         </FormControl>
         <FormControl isInvalid={errors.category} mb={4}>
-          <Select name="category" defaultValue={""} ref={register({ validate: validator.category })}>
+          <Select
+            name="category"
+            defaultValue={""}
+            ref={register({ validate: validator.category })}
+          >
             <option value="" disabled>
               Select Category
             </option>
-            {productCategories.map(category => <option value={category} key={category}>
-              {category}
-            </option>)}
+            {productCategories.map((category) => (
+              <option value={category} key={category}>
+                {category}
+              </option>
+            ))}
           </Select>
           <FormErrorMessage>
             {errors.category && errors.category.message}
@@ -173,7 +193,6 @@ const ApplyForProductForm = (props) => {
             variantColor="orange"
             variant="outline"
             onClick={props.onClose}
-
           >
             Cancel
           </Button>
@@ -203,7 +222,11 @@ const ApplyForProduct = (props) => {
       <Modal blockScrollOnMount isOpen={isOpen} onClose={onClose} size="xl">
         {/* >>>>>>> aa70cad64b9cd484eb79f485f627dd8ef3afb2d5 */}
         <ModalOverlay />
-        <ModalContent maxW={{ base: "90%", md: "420px" }} borderRadius={8} my={{ base: 4 }}>
+        <ModalContent
+          maxW={{ base: "90%", md: "420px" }}
+          borderRadius={8}
+          my={{ base: 4 }}
+        >
           <ModalHeader display="Flex" justifyContent="space-between" mt={4}>
             <Box>
               <Text as="h3" fontSize="2xl" color="blue.400" lineHeight={1}>
@@ -223,8 +246,14 @@ const ApplyForProduct = (props) => {
               {isSuccess ? (
                 <ApplyFormSuccess />
               ) : (
-                  <Box maxW={{ base: "100%", md: "280px" }}>  <ApplyForProductForm onClose={onClose} onSuccess={onSuccess} /> </Box>
-                )}
+                <Box maxW={{ base: "100%", md: "280px" }}>
+                  {" "}
+                  <ApplyForProductForm
+                    onClose={onClose}
+                    onSuccess={onSuccess}
+                  />{" "}
+                </Box>
+              )}
             </Box>
           </ModalBody>
           <hr />
