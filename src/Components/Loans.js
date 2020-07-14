@@ -109,7 +109,7 @@ const Loans = () => {
       <ProcessThrough
         title="why process loans through dr. finance?"
         options={whyChooseOptionsList}
-        maxw="350px"
+        maxW="350px"
         max_title_base="250px"
         max_titleW_md="900px"
       />

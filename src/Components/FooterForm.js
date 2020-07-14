@@ -197,11 +197,11 @@ class FooterForm extends React.Component {
               </Box>
             )}
           </FormControl>
-          {this.state.errors.subject.length > 0 && (
+          {/* {this.state.errors.subject.length > 0 && (
             <Box color="Red" fontWeight="700">
               {this.state.errors.subject}
             </Box>
-          )}
+          )} */}
           <FormControl mb={8}>
             <Input
               type="text"

@@ -1,7 +1,7 @@
 import React from "react";
 
-import { Flex, Box, useTheme, useDisclosure, Text } from "@chakra-ui/core";
-import { useLocation, Link } from "react-router-dom";
+import { Flex, Box, Text } from "@chakra-ui/core";
+import { Link } from "react-router-dom";
 import PhoneImage from "../Assets/Phone_White.svg";
 import EmailImage from "../Assets/Email_White.svg";
 import copyright from "../Assets/Copyright.svg";
@@ -80,7 +80,7 @@ function FooterUpdate() {
         </Flex>
         <Flex>
           <Box as="img" mr={2} src={EmailImage} />
-          <Box>support@drfinance.com</Box>
+          <Box>support@drfinance.in</Box>
         </Flex>
         <Flex
           display={{ base: "flex", md: "none" }}

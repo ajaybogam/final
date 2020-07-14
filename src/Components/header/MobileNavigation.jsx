@@ -22,19 +22,6 @@ import { JoinAsReferral, navigation } from "./TopHeader";
 import EmailImage from "../../mobile/Email.svg";
 import PhoneImage from "../../mobile/Phone.svg";
 import JoinAsReferralImage from "../../mobile/Lead Gen.svg";
-// <<<<<<< HEAD
-// import ApplyForProduct from "./ApplyForProduct";
-
-// const quickLinks = [
-//   { title: "Home", link: "/" },
-//   { title: "About", link: "/about" },
-//   { title: "Join as referral", link: "/joinasreferral" },
-//   { title: "Contact", link: "/contact" },
-//   { title: "Terms and conditions", link: "/termsandconditions" },
-//   { title: "Privacy Policy", link: "/privacypolicy" },
-//   { title: "FAQs", link: "/faqs" },
-// ];
-// =======
 import ApplyForProduct from "./ApplyForProduct";
 import Close_blue from "../../mobile/Close_Blue.svg";
 
@@ -75,7 +62,6 @@ const MobileNavigation = (props) => {
               <Button onClick={onApply} variantColor="orange" ml="auto">
                 Apply{" "}
               </Button>
-              {/* <DrawerCloseButton fontSize="lg" left={4} top={2} color="white" /> */}
             </Flex>
           </DrawerHeader>
 
@@ -115,7 +101,7 @@ const MobileNavigation = (props) => {
                 </Flex>
                 <Flex>
                   <Box as="img" mr={2} src={EmailImage} />
-                  <Box>support@drfinance.com</Box>
+                  <Box>support@drfinance.in</Box>
                 </Flex>
               </Stack>
             </Box>
@@ -138,7 +124,7 @@ const MobileNavigation = (props) => {
               </Stack>
             </Box>
           </DrawerBody>
-          {/* >>>>>>> aa70cad64b9cd484eb79f485f627dd8ef3afb2d5 */}
+        
 
           <DrawerFooter>
             {/* <Button variant="outline" mr={3} onClick={onClose}>Cancel</Button>

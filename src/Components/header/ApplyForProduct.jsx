@@ -113,7 +113,7 @@ const ApplyForProductForm = (props) => {
     setTimeout(() => {
       // alert(JSON.stringify(values, null, 2));
       ApiServices.product
-        .apply(values)
+        .apply({...values})
         .then((resp) => resp.data)
         .then((response) => {
           props.onSuccess();

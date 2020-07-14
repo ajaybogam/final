@@ -22,7 +22,7 @@ import FotterUpdate from "./Components/FooterUpdate";
 import TncPage from "./Components/TncPage";
 import PrivacyPolicy from "./Components/PrivacyPolicy";
 const routes = [
-  { path: "/", component: HomePage, exact: true },
+  { path: "/", component: HomePage, exact: true }, 
   { path: "/loans", component: LoansPage },
   { path: "/investments", component: InvestmentsPage },
   { path: "/insurance", component: InsurancePage },
