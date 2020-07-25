@@ -15,7 +15,7 @@ function PageIntroView(props) {
                     <Text my={8} fontSize={{ base: "sm",md:"xl", lg: "2xl" }} mx={{base:"auto"}}color={invert ? 'white' : "black"}>{description}</Text>
                 </Box>
                 <Box p={{ md: 4 }}>
-                    <Box as="img" maxW={{md:"240px", lg: "360px"}} ml={{ base: 0, md: 6 }}  src={image} />
+                    <Box as="img" maxW={{base: "180px", md:"240px", lg: "360px"}} ml={{ base: 0, md: 6 }}  src={image} />
                 </Box>
             </Flex>
         </PageWrapper>

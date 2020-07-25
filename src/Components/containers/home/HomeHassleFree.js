@@ -46,25 +46,31 @@ const PageContainer = styled(Box)`
   }
 
   @media (max-width: 768px) {
-    padding-top: 5em;
+    padding-top: 0em;
     &:before {
-      transform: translateY(4.5em) translateX(-50%);
-      width: 450%;
-      height: 150%;
+      transform: translateY(8em) translateX(0);
+      width: 100%;
+      height: 100%;
+      left: 0;
+      border-radius: 0%;
     }
 
     .ui__hassleOptions {
       position: relative;
-      transform: translateY(-3em);
+      transform: translateY(0);
+      display: flex;
+      overflow: hidden;
+      overflow-x: auto;
+      width: 100%;
     }
 
     .ui__hassleOptions__item:nth-child(even) {
       position: relative;
-      transform: translateY(-.5em);
+      transform: translateY(0);
     }
-  
+
     .ui__hassleOptions__item:nth-child(3) {
-      transform: translateY(-1em) ;
+      transform: translateY(0) ;
     }
   }
 

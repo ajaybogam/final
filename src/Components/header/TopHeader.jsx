@@ -7,6 +7,7 @@ import logo from "../../Assets/Logo.svg";
 import referral from "../../Assets/Referral Partner_Default.svg";
 import ActiveReferral from "../../Assets/Referral Partner_Selected.svg";
 import MobileNavigation from "./MobileNavigation";
+import styled from "styled-components";
 
 export const navigation = [
   { title: "Loans", link: "/loans" },
@@ -51,44 +52,42 @@ const TopHeader = (props) => {
   }, [location]);
 
   return (
-    <Flex
-      as="header"
+    <HeaderBar
       position="sticky"
       top={0}
       zIndex={9}
       bg="white"
       boxShadow={shadow}
       alignItems="center"
-      p={[4, 4, 6]}
-      px={[4, 4, 12]}
     >
       {windowSize <= 480 && <MobileNavigation onApply={onOpen} />}
       <Box as={Link} to="/" ml={[2, 2, 0, 0]} mr="auto">
-        <Box as="img" src={logo} alt="logo" maxW={{ base: "160px", md: "220px" }} />
+        <Box as="img" src={logo} alt="logo" maxW={{ base: "160px", md: "196px" }} />
       </Box>
       {windowSize <= 480 ? (
         <Box ml={2}>
           <ApplyForProduct isOpen={isOpen} onOpen={onOpen} onClose={onClose} />
         </Box>
       ) : (
-          <Flex ml="auto" alignItems="center" mr={4}>
+          <Flex ml="auto" alignItems="center">
             {navigation.map((menu, idx) => (
               <Box
                 color={currentPage === menu.link ? activeColor : ""}
                 borderBottom={currentPage === menu.link ? "2px" : ""}
                 as={Link}
-                ml={12}
+                ml={8}
                 fontWeight="bold"
                 key={menu.link}
                 to={menu.link}
                 fontSize="md"
+                whiteSpace="pre"
               >
                 {menu.title}
               </Box>
             ))}
             <Box
-              px={8}
-              mx={8}
+              px={{sm:2, lg: 4}}
+              mx={4}
               border="2px solid"
               borderTop="0"
               borderBottom="0"
@@ -104,7 +103,7 @@ const TopHeader = (props) => {
             <JoinAsReferral toggle={true} currentPage={currentPage} activeColor={activeColor} />
           </Flex>
         )}
-    </Flex>
+    </HeaderBar>
   );
 };
 
@@ -144,5 +143,13 @@ export const JoinAsReferral = (props) => {
     </Flex>
   );
 };
+
+const HeaderBar = styled(Flex)`
+  padding: .75em 1.5em;
+
+  @media screen and (max-width: 480px) {
+    padding: 12px 1em;
+  }
+`
 
 export default TopHeader;
