@@ -4,10 +4,7 @@ import axios from "axios";
 import {
   Input,
   Button,
-  Flex,
-  Text,
   Box,
-  Stack,
   FormControl,
 } from "@chakra-ui/core";
 const validEmailRegex = RegExp(

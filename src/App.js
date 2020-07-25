@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { ThemeProvider, CSSReset } from "@chakra-ui/core";
 
 import AppHeader from "../src/Components/AppHeader";
-import Footer from "../src/Components/Footer";
 
 import AboutPage from "../src/Components/AboutPage";
 import LoansPage from "../src/Components/LoansPage";
@@ -11,7 +10,6 @@ import ContactPage from "../src/Components/ContactPage";
 import InvestmentsPage from "../src/Components/InvestmentsPage";
 import InsurancePage from "../src/Components/InsurancePage";
 import CreditPage from "../src/Components/CreditCardsPage";
-import TandC from "../src/Components/TandC";
 import JoinasReferral from "../src/Components/JoinasReferral";
 import Faqs from "./Components/Faqs";
 

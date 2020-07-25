@@ -9,13 +9,13 @@ function PageIntroView(props) {
         <PageWrapper>
             {/* removed minH and added my in second text */}
             <Flex flexDirection={{ base: "column", lg: "row" }} alignItems="center"  >
-                <Box flex={1} textAlign={{ base: "center", lg: "left" }} maxW={{lg:"600px"}}>
+                <Box flex={1} textAlign={{ base: "center", lg: "left" }} maxW={{md: "700px"}} mr="auto">
                     <Text fontSize={{ base: "4xl", lg:"6xl" }} fontWeight="bold" lineHeight="1"
                      color={invert ? 'white' : "blue.400"} >{title}</Text>
-                    <Text my={8} fontSize={{ base: "sm",md:"xl", lg: "2xl" }} mx={{base:"auto"}}color={invert ? 'white' : "black"}>{description}</Text>
+                    <Text my={8} fontSize={{ base: "md",md:"xl", lg: "2xl" }} mx={{base:"auto"}}color={invert ? 'white' : "black"}>{description}</Text>
                 </Box>
-                <Box p={{ md: 16 }}>
-                    <Box as="img" maxW={{base:"250px",md:"100%"}} ml={{ base: 0, md: 6 }}  src={image} />
+                <Box p={{ md: 4 }}>
+                    <Box as="img" maxW={{base:"240px", md: "360px"}} ml={{ base: 0, md: 6 }}  src={image} />
                 </Box>
             </Flex>
         </PageWrapper>

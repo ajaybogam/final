@@ -6,8 +6,6 @@ import {
   DrawerHeader,
   DrawerOverlay,
   DrawerContent,
-  DrawerCloseButton,
-  Input,
   Button,
   Flex,
   Text,
@@ -22,7 +20,6 @@ import { JoinAsReferral, navigation } from "./TopHeader";
 import EmailImage from "../../mobile/Email.svg";
 import PhoneImage from "../../mobile/Phone.svg";
 import JoinAsReferralImage from "../../mobile/Lead Gen.svg";
-import ApplyForProduct from "./ApplyForProduct";
 import Close_blue from "../../mobile/Close_Blue.svg";
 
 const quickLinks = [
@@ -34,7 +31,6 @@ const quickLinks = [
   { title: "Privacy Policy", link: "/privacypolicy" },
   { title: "FAQs", link: "/faqs" },
 ];
-// >>>>>>> aa70cad64b9cd484eb79f485f627dd8ef3afb2d5
 
 const MobileNavigation = (props) => {
   let location = useLocation();
@@ -79,6 +75,7 @@ const MobileNavigation = (props) => {
               <Stack spacing={4} as="nav" flexDirection="column">
                 {navigation.map((menu, idx) => (
                   <Box
+                    className={currentPage}
                     color="white"
                     as={Link}
                     // fontWeight="bold"
@@ -124,11 +121,8 @@ const MobileNavigation = (props) => {
               </Stack>
             </Box>
           </DrawerBody>
-        
 
           <DrawerFooter>
-            {/* <Button variant="outline" mr={3} onClick={onClose}>Cancel</Button>
-                    <Button color="blue">Save</Button> */}
           </DrawerFooter>
         </DrawerContent>
       </Drawer>

@@ -1,11 +1,7 @@
 import React from "react";
-import { Flex, Text, Box } from "@chakra-ui/core";
+import { Flex, Text } from "@chakra-ui/core";
 
 import "./Solar.css";
-// import "../css/Stars.css";
-// import Solar from "../Assets/Solar System.svg";
-// import mobilesolar from '../Assets/Illustration.svg'
-import Star from "../../../Assets/Star.svg";
 import PageWrapper from "../../shared/PageWrapper";
 import BgStar from "../../shared/BgStar";
 
@@ -23,7 +19,7 @@ function HomeIntro() {
           At the centre of your financial needs
         </Text>
         <Text maxW={{ base: "350px", md: "580px" }} mt="16px"  mx={{base:"auto",md:"0"}} 
-          fontSize={{ base: "xl", md: "2xl" }} >
+          fontSize={{ base: "md", md: "2xl" }} >
           Dr. Finance connects you with lenders & insurers to get you the best
           possible deals
         </Text>

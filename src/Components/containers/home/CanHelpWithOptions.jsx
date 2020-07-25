@@ -1,6 +1,6 @@
 import React from "react";
 import PageWrapper from "../../shared/PageWrapper";
-import { SimpleGrid, Text, Box, Flex, Button } from "@chakra-ui/core";
+import {  Text, Box, Flex, Button } from "@chakra-ui/core";
 import { helpYouOptions } from "./options.list";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
