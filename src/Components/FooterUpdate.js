@@ -10,9 +10,9 @@ import PageWrapper from "./shared/PageWrapper";
 function FooterUpdate() {
   const quickLinks = [
     { title: "Home", link: "/" },
-    { title: "About Dr.Finance", link: "/about" },
+    { title: "About  dr.finance", link: "/about" },
     { title: "Join as Referral Partner", link: "/joinasreferral" },
-    { title: "Contact", link: "/contact" },
+    { title: "Contact Us", link: "/contact" },
     { title: "Terms and Conditions", link: "/termsandconditions" },
     { title: "Privacy Policy", link: "/privacypolicy" },
     { title: "FAQs", link: "/faqs" },
@@ -49,7 +49,7 @@ function FooterUpdate() {
             <Flex mt={16}>
               <Box as="img" mr={2} src={copyright} />
               <Box fontSize="md" fontWeight="300">
-                2020 Dr. Finance
+                2020 dr.finance
               </Box>
             </Flex>
           </Box>
@@ -77,7 +77,7 @@ function FooterUpdate() {
             </Flex>
             <Flex>
               <Box as="img" mr={2} src={EmailImage} />
-              <Box>support@drfinance.in</Box>
+              <Box> support@dr-finance.in</Box>
             </Flex>
             <Flex
               display={{ base: "flex", md: "none" }}
@@ -85,7 +85,7 @@ function FooterUpdate() {
             >
               <Box as="img" mr={2} src={copyright} />
               <Box fontSize="md" fontWeight="300" color="rgba(208,208,208,1)">
-                2020 Dr. Finance
+                2020 dr.finance
               </Box>
             </Flex>
           </Box>

@@ -27,14 +27,12 @@ function Join() {
               <MainTitle
                 title="Join us as a referral partner now"
                 color="blue.600"
-                f_size="6xl"
+                fontSize={{ base: "4xl", lg:"6xl" }}
                 mb={4}
-                p_x="0"
-                base_fontSize="4xl"
-
+                px="0"
               />
               <Text fontSize={{ base: "md", md: "2xl" }}>
-                Download the referral tracking app, send us your referrals and
+                Download the  referral partner app, send us your referrals and
                 get paid for them
               </Text>
             </Box>

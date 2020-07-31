@@ -30,6 +30,7 @@ function Partners() {
               key={idx}
               as="img"
               mx="auto"
+              maxW={{md:'200px',lg:'100%',xl:"100%"}}
               my={{ base: 2, md: 4 }}
               src={partner}
             />

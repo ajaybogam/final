@@ -24,9 +24,9 @@ class ContactPage extends React.Component {
                 </Flex>
                 <Flex alignItems="center" >
                   <Box as="img" src={EmailBig} />
-                  <Text fontSize="2xl" ml={4}>support@drfinance.in</Text>
+                  <Text fontSize="2xl" ml={4}>support@dr-finance.in</Text>
                 </Flex>
-                <Flex alignItems="center" >
+                <Flex align="center">
                   <Box as="img" src={Location} />
                   <Text fontSize="2xl" ml={4}>Door No. 2, 2-186/18/6, Ramakrishna Nagar, Amberpet, Hyderabad, Telangana 500013</Text>
                 </Flex>
@@ -47,7 +47,7 @@ class ContactPage extends React.Component {
             </Box>
           </Flex>
         </PageWrapper>
-        <BgStar stars={10} />
+        <BgStar stars={5} />
       </Box>
     </React.Fragment>;
   }

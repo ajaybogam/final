@@ -14,6 +14,7 @@ import {
   Text,
   Flex,
   Box,
+  List,
 } from "@chakra-ui/core";
 import Success from "../../Assets/Success.svg";
 
@@ -91,13 +92,22 @@ const ApplyForProductForm = (props) => {
   const productsList = Object.keys(helpYouOptions).map(
     (key) => helpYouOptions[key]
   );
+
   const watchProductSelection = watch("instrument");
-  const productCategories =
-    (
-      productsList.filter(
-        (instrument) => instrument.title === watchProductSelection
-      )[0] || {}
-    ).list || [];
+  // const productCategories =
+  //   (
+  //     productsList.filter(
+  //       (instrument) => instrument.title === watchProductSelection
+  //     )[0] || {}
+  //   ).list || [];
+  const productCategories = () => {
+    const data = productsList.filter((instrument) => instrument.title === watchProductSelection)[0] || []
+    const primary = data['list'] || []
+    const secondary = data['secondary'] || []
+    //  {console.log( primary.concat(secondary['list']))}
+    return primary.concat(secondary['list']) || []
+  }
+
   function onSubmit(values) {
     setTimeout(() => {
       ApiServices.instrument
@@ -106,7 +116,7 @@ const ApplyForProductForm = (props) => {
         .then((response) => {
           props.onSuccess();
         })
-        .catch((err) => {});
+        .catch((err) => { });
     }, 1000);
   }
   const Validator = (val) => {
@@ -175,7 +185,7 @@ const ApplyForProductForm = (props) => {
             <option value="" disabled>
               Select Category
             </option>
-            {productCategories.map((category) => (
+            {productCategories().map((category) => (
               <option value={category} key={category}>
                 {category}
               </option>
@@ -246,14 +256,14 @@ const ApplyForProduct = (props) => {
               {isSuccess ? (
                 <ApplyFormSuccess />
               ) : (
-                <Box maxW={{ base: "100%", md: "280px" }}>
-                  {" "}
-                  <ApplyForProductForm
-                    onClose={onClose}
-                    onSuccess={onSuccess}
-                  />{" "}
-                </Box>
-              )}
+                  <Box maxW={{ base: "100%", md: "280px" }}>
+                    {" "}
+                    <ApplyForProductForm
+                      onClose={onClose}
+                      onSuccess={onSuccess}
+                    />{" "}
+                  </Box>
+                )}
             </Box>
           </ModalBody>
           <hr />

@@ -110,7 +110,7 @@ function TermsCondition() {
             }
           });
           console.log("scrolling", element.scrollTop, { heights });
-        }
+        } 
       },
       true // Capture event
     );

@@ -32,7 +32,7 @@ const whyChooseOptionsList = [
     image: Variety,
     title: "Variety of products",
     description:
-      "Dr. Finance provides a variety of products for various stages of your life and health",
+      "dr.finance provides a variety of products for various stages of your life and health",
   },
 ];
 
@@ -48,7 +48,7 @@ const Insurance = (props) => {
       />
 
       <PageSecondaryInfo
-        title="insurance through dr. finance"
+        title="insurance through dr.finance"
         description="We have partnered with all premier Insurance companies to serve you.
         Our dedicated claims team will handle your claims. We will be having
         one on one call with you to get to know your needs. Upon analysis,
@@ -65,8 +65,9 @@ const Insurance = (props) => {
       <PageProcessView
         title="policies processed"
         list={["Life", "Term","Child Education", "Retirement", "Pension"]}
+        fontWeight="600"
         secondary={{
-          title: "Health Insurance Policies",
+          title: "Life Insurance For Life Products",
           list: [
             "Individual",
             "Family",
@@ -79,13 +80,16 @@ const Insurance = (props) => {
             "Overseas Medical Insurance",
             "Travel Insurance",
             "Group Health",
+            "Top-up Insurance",
+            "Group Life Insurance"
           ],
+          
         }}
         PY={10}
       />
 
       <ProcessThrough
-        title="why process insurance through dr. finance?"
+        title="why process insurance through dr.finance?"
         options={whyChooseOptionsList}
         maxw="350px"
         max_titleW_md="1000px"

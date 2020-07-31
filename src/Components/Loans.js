@@ -43,7 +43,7 @@ const whyChooseOptionsList = [
     image: Status,
     title: "Loan Status Updates",
     description:
-      "Our team will give your constant updates our mobile app until the end of the process",
+      "Our team will give you constant updates regarding loan status till the loan amount gets disbursed",
   },
   {
     image: Safe,
@@ -75,7 +75,7 @@ const Loans = () => {
       />
 
       <PageSecondaryInfo
-        title="loans through dr. finance"
+        title="loans through dr.finance"
         description=" We have a state of art Technology where we can determine possible
           loan amount and loan eligibility in multiple banks within a few
           minutes without affecting your CIBIL score. After deep analysis, we
@@ -102,12 +102,13 @@ const Loans = () => {
           "Gold",
           "Education",
           "Equipment",
+          "Consumer",
         ]}
-        
+        fontWeight="600"
       />
 
       <ProcessThrough
-        title="why process loans through dr. finance?"
+        title="why process loans through dr.finance?"
         options={whyChooseOptionsList}
         maxw="350px"
         max_title_base="250px"

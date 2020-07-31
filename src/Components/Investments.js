@@ -41,9 +41,9 @@ const Investments = (props) => {
       />
 
       <PageSecondaryInfo
-        title="investments through dr. finance"
-        description="Rupee saved is a rupee earned. We totally understand how a goo
-          saving can save you from crises. To serve you, we have tied up with
+        title="investments through dr.finance"
+        description="Rupee saved is a rupee earned. We totally understand how a good
+          saving can save you from crisis. To serve you, we have tied up with
           banks, post offices and NBFC’s to sell saving instruments like fixed
           deposits, tax saving deposits, recurring deposits and special saving
           schemes which are secured and offer good returns. Our expert spends
@@ -55,16 +55,17 @@ const Investments = (props) => {
       <PageProcessView
         title="investments processed"
         list={[
-          "Personal",
+          
           "Fixed Deposits",
           "Tax saving deposits",
           "Recurring deposits",
           "Special saving schemes",
         ]}
+        fontWeight="600"
       />
    <ProcessThrough
   
-      title="why process investments through dr. finance?"
+      title="why process investments through dr.finance?"
       options={whyChooseOptionsList}
       maxw="300px"
       max_titleW_md="1000px"

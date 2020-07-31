@@ -11,7 +11,7 @@ const teamList = [
   { image: Person3, title: "MRK Reddy", designation: "Head-Loans" },
   {
     image: Person5,
-    title: "B. Rupa Devi",
+    title: "Manisha",
     designation: "Customer Service Officer",
   },
 ];

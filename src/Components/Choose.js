@@ -30,7 +30,7 @@ function Choose() {
   return (
     <Box zIndex="1" position="relative" bg="blue.400" py={16}>
       <PageWrapper color="white" textAlign="center">
-        <MainTitle title="why choose dr. finance" mb={{ base: "4rem", md: "7rem" }} width={{ base: "200px", md: "auto" }} />
+        <MainTitle title="why choose dr.finance" mb={{ base: "4rem", md: "7rem" }} width={{ base: "200px", md: "auto" }} />
         <WhyChooseOptions list={whyChooseOptions} maxW="300px" />
       </PageWrapper>
       <BgStar stars={10} />

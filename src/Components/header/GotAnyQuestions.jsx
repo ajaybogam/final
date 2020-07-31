@@ -16,7 +16,7 @@ const GotAnyQuestions = (props) => {
       </Flex>
       <Flex>
         <img src={Email} alt="Email" />
-        <Text ml={4}>support@drfinance.in</Text>
+        <Text ml={4}>support@dr-finance.in</Text>
       </Flex>
     </Box>
   );

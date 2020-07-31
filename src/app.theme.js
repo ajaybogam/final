@@ -25,7 +25,8 @@ const AppTheme = {
     orange: {
       ...theme.colors.orange,
       500: "#EBA71F",
-      600: "#EBA71F"
+      600: "#EBA71F",
+      700:"#EBA71F"
     },
     red: {
       ...theme.colors.red,

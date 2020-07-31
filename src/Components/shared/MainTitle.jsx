@@ -12,7 +12,7 @@ function MainTitle(props) {
         mx={{base:"auto"}}
         mb={{ base: 8, md: 16 }}
         fontSize={{ base: props.base_fontSize||"4xl",sm:"5xl", md: props.f_size||"6xl"}}
-        px={{base: 0, md: props.p_x||16}}
+        px={{base: 0, md: 16}}
         lineHeight={1.25}
         fontWeight="bold"
         {...props}>
