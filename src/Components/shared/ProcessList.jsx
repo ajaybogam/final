@@ -53,6 +53,8 @@ function ProcessList(props) {
                 alignItems="center"
                 justifyContent="center"
                 p={{ base: 8 }}
+                fontSize="md"
+                
               >
                 {list[listIdx]}
               </Flex>

@@ -36,6 +36,7 @@ export const helpYouOptions = {
             "Gold",
             "Education",
             "Equipment",
+            "Consumer "//New entry added
         ],
         link: '/loans'
     },
@@ -58,7 +59,7 @@ export const helpYouOptions = {
             "Pension"
         ],
         secondary: {
-            title: "Health Insurance Policies",
+            title: "Life Insurance For Life Products",//changed title 
             list: [
                 "Individual",
                 "Family",
@@ -71,6 +72,8 @@ export const helpYouOptions = {
                 "Overseas Medical Insurance",
                 "Travel Insurance",
                 "Group Health",
+                "Top-up Insurance",
+                "Group Life Insurance"
             ],
         },
         link: '/insurance'

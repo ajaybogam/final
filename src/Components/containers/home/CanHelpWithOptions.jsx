@@ -14,7 +14,7 @@ function CanHelpWithOptions(props) {
   return (
     <PageContainer>
       <PageWrapper>
-        <MainTitle  max_titleW="272px" title="dr. finance can help you with" />
+        <MainTitle  max_titleW="272px" title="dr.finance can help you with" />
         <Box >
           <Flex w="100%" overflow="hidden" overflowX="auto" justifyContent={{ base: "flex-start", md: "space-around" }}>
             {keys.map((key,idx) => (
@@ -31,7 +31,7 @@ function CanHelpWithOptions(props) {
         <ProcessList {...helpYouOptions[activeLink]} />
         {!!helpYouOptions[activeLink].secondary && !!helpYouOptions[activeLink].secondary.title && (
           <Box my={4}>
-            <Text>{helpYouOptions[activeLink].secondary.title}</Text>
+            <Text fontSize="xl" fontWeight="700">{helpYouOptions[activeLink].secondary.title}</Text>
             <ProcessList
               list={helpYouOptions[activeLink].secondary.list || []}
             />

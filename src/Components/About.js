@@ -21,6 +21,7 @@ function About() {
         expanding our reach."
         image={India}
        />
+       {/*  */}
     </React.Fragment>
   );
 }

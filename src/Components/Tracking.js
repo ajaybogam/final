@@ -14,7 +14,7 @@ const Tracking = (props) => {
   return (
     <Box zIndex="1" position="relative" pt={16} textAlign="center">
       <PageWrapper >
-        <MainTitle title="referral tracking app" color="blue.600" />
+        <MainTitle title="referral partner app" color="blue.600" />
         <Box overflow="hidden" overflowX="auto" w="100%">
           <TrackingOptions />
         </Box>
@@ -28,7 +28,7 @@ const TrackingOptions = (props) => {
   const [activeIdx, setActiveIdx] = React.useState(0);
   const items = [
     { image: DashboardActive, title: "DETAILED DASHBOARD", description: "Get a complete overview of your earnings right when you open the app" },
-    { image: TrackActive, title: "TRACK EVERY STEP", description: "Monitor the progression of the application process at  each step" },
+    { image: TrackActive, title: "TRACK EVERY STEP", description: "Monitor the progress  of the application process at  each step" },
     { image: BreakActive, title: "BREAKDOWN COMMISSIONS", description: "View your pending commissions and how much you earned from each one" },
   ]
 

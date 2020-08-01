@@ -12,7 +12,7 @@ function PageIntroView(props) {
                 <Box flex={1} textAlign={{ base: "center", lg: "left" }} maxW={{md: "700px"}} mr="auto">
                     <Text fontSize={{ base: "4xl", lg:"6xl" }} fontWeight="bold" lineHeight="1"
                      color={invert ? 'white' : "blue.400"} >{title}</Text>
-                    <Text my={8} fontSize={{ base: "sm",md:"xl", lg: "2xl" }} mx={{base:"auto"}}color={invert ? 'white' : "black"}>{description}</Text>
+                    <Text my={8} fontSize={{ base: "md",md:"xl", lg: "2xl" }} mx={{base:"auto"}}color={invert ? 'white' : "black"}>{description}</Text>
                 </Box>
                 <Box p={{ md: 4 }}>
                     <Box as="img" maxW={{base: "180px", md:"240px", lg: "360px"}} ml={{ base: 0, md: 6 }}  src={image} />

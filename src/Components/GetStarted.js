@@ -9,7 +9,7 @@ import BgStar from "./shared/BgStar";
 function GetStarted() {
   return <Box zIndex="1" position="relative" py={16} bg="blue.600" color="white" textAlign={{base: "center", md: "left"}}>
     <PageWrapper >
-      <MainTitle title="Get Started Now!" mb={2} f_size="4xl" p_x="0"/>
+      <MainTitle title="Get Started Now!" mb={2} f_size="4xl" px="0"/>
       <Text fontSize="xl">Download the app</Text>
       <Flex my={8} justifyContent={{ base: "center", md: "flex-start" }}>
         <Box as="img" src={PlayStore}></Box>

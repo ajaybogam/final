@@ -74,6 +74,7 @@ class FooterForm extends React.Component {
         })
         .catch((error) => {
           console.log(error);
+          
         });
     } else {
       console.log("Invalid application");

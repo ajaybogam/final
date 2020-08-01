@@ -17,7 +17,7 @@ function Contact() {
           </div>
           <div className="contactSub">
             <img src={EmailBig} style={{ paddingRight: "16px" }}  alt=""></img>
-            <div>support@drfinance.com</div>
+            <div>support@drfinance.in</div>
           </div>
           <div className="contactSub">
            <div> <img src={Location} style={{ paddingRight: "16px" }} alt=""></img></div>
@@ -28,7 +28,7 @@ function Contact() {
           </div>
         </div>
         <div>
-          <img src={Pin} className="pin"></img>
+          <img src={Pin} alt="" className="pin"></img>
           <div className="mapouter">
             <div className="gmap_canvas">
               <iframe

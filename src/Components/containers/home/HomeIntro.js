@@ -20,8 +20,8 @@ function HomeIntro() {
           At the centre of your financial needs
         </Text>
         <Text className="view__intro__text" maxW={{ base: "350px", md: "580px" }} mt="16px" mx={{ base: "auto", md: "0" }}
-          fontSize={{ base: "xl", md: "2xl" }} >
-          Dr. Finance connects you with lenders & insurers to get you the best
+          fontSize={{ base: "md", md: "2xl" }} >
+          dr.finance connects you with lenders & insurers to get you the best
           possible deals
         </Text>
       </PageWrapper>

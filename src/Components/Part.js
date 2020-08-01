@@ -42,7 +42,7 @@ function Part() {
     >
       <PageWrapper textAlign={{ base: "center", md: "left" }}>
         <MainTitle
-          title="want to be a part of dr. finance?"
+          title="want to be a part of dr.finance?"
           color="red.300"
           f_size="5xl"
           mb={1}

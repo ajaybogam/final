@@ -35,12 +35,12 @@ const CreditCard = (props) => {
     <React.Fragment>
       <PageIntroView
         title="We will help you pick the best credit card for you"
-        description="After a thorough analysis of your requirements, our experts will choose the credit card that your needs. It will not just help you spend but also earn money"
+        description="After a thorough analysis of your requirements, our experts will choose right credit card that suits your needs. It will not just help you spend but also earn money"
         image={Credit}
       />
 
       <PageSecondaryInfo
-        title="credit cards through dr. finance"
+        title="credit cards through dr.finance"
         description="There are a lot of advantages to using a credit card when chosen
         wisely and used responsibly. They offer rewards, protection, and
         convenience. Credit cards can be great for your financial well-being
@@ -62,10 +62,12 @@ const CreditCard = (props) => {
           "Cashback",
           "Professional",
         ]}
+        fontWeight="600"
+
       />
 
       <ProcessThrough
-        title=" why process credit cards through dr. finance?"
+        title=" why process credit cards through dr.finance?"
         options={whyChooseOptionsList}
         maxw="350px"
         max_titleW_md="1000px"

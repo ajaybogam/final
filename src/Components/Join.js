@@ -29,10 +29,10 @@ function Join() {
                 color="blue.600"
                 fontSize={{ base: "4xl", lg:"6xl" }}
                 mb={4}
-                p_x="0"
+                px="0"
               />
-              <Text fontSize={{ base: "xl", md: "2xl" }}>
-                Download the referral tracking app, send us your referrals and
+              <Text fontSize={{ base: "md", md: "2xl" }}>
+                Download the  referral partner app, send us your referrals and
                 get paid for them
               </Text>
             </Box>
