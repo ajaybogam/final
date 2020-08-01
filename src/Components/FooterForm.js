@@ -1,12 +1,7 @@
 import React from "react";
 
 import axios from "axios";
-import {
-  Input,
-  Button,
-  Box,
-  FormControl,
-} from "@chakra-ui/core";
+import { Input, Button, Box, FormControl } from "@chakra-ui/core";
 const validEmailRegex = RegExp(
   /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
 );
@@ -194,11 +189,11 @@ class FooterForm extends React.Component {
               </Box>
             )}
           </FormControl>
-          {this.state.errors.subject.length > 0 && (
+          {/* {this.state.errors.subject.length > 0 && (
             <Box color="Red" fontWeight="700">
               {this.state.errors.subject}
             </Box>
-          )}
+          )} */}
           <FormControl mb={8}>
             <Input
               type="text"
