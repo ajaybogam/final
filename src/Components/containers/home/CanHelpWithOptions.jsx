@@ -13,10 +13,10 @@ function CanHelpWithOptions(props) {
 
   return (
     <PageContainer>
-      <PageWrapper>
+      <PageWrapper  >
         <MainTitle   title="dr.finance can help you with" />
         <Box >
-          <Flex w="100%" overflow="hidden" overflowX="auto" justifyContent={{ base: "flex-start", md: "space-around" }}>
+          <Flex  overflow="hidden" overflowX="auto" justifyContent={{ base: "flex-start", md: "space-around" }} mx={{base:"-16px"}}>
             {keys.map((key,idx) => (
               <HelpYouLink
                 key={idx}
@@ -48,7 +48,7 @@ function CanHelpWithOptions(props) {
 }
 
 const HelpYouLink = ({ link, active = false, onClick }) => (
-  <Flex justifyContent={{ base: "flex-state", md: "center" }} m={4} flexShrink="0">
+  <Flex justifyContent={{ base: "flex-state", md: "center" }} p={4} flexShrink="0">
     <Flex
       key={link.title}
       alignItems="center"
@@ -56,6 +56,7 @@ const HelpYouLink = ({ link, active = false, onClick }) => (
       borderColor="orange.300"
       cursor="pointer"
       onClick={onClick}
+     
     >
       <Box
         as="img"

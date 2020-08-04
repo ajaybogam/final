@@ -12,7 +12,7 @@ import "./Partner.css";
 import BgStar from "../../../Components/shared/BgStar"
 function Partners() {
   return (
-    <Box my={20}>
+    <Box my={{base:10,lg:20}}>
       <PageWrapper>
         <MainTitle
           title="our financial partners"

@@ -25,9 +25,9 @@ function FooterUpdate() {
   ];
   return (
     <Box bg="blue.700" color="white">
-      <PageWrapper >
+      <PageWrapper px={{base:4,md:4,lg:16}}>
         <Flex
-          py={20}
+         py={{base:10,md:20}}
           justifyContent={{base:"center",md:"space-between"}}
           flexDir={{ base: "column-reverse", md: "row" }}
           text-align={{base:"center",lg:"flex-start"}}
