@@ -10,7 +10,7 @@ export default function PageWrapper(props) {
       maxWidth={{ base: "100%", md: "1360px" }}
       width="100%"
       mx="auto"
-      px={{ base: 4, md: 16 }}
+      px={{ base:4, md: 16 }}
       {...props}
     >
       {props.children}
@@ -19,8 +19,8 @@ export default function PageWrapper(props) {
 }
 
 const Wrapper = styled(Box)`
-  @media screen and (max-width: 1024px) {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
+  // @media screen and (max-width: 1024px) {
+  //   padding-left: 16px;
+  //   padding-right: 16px;
+  // }
 `;

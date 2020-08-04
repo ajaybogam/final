@@ -6,6 +6,8 @@ const productApis = {
   // `http://52.73.189.181/products` | METHOD
   getProducts: (userId) => API.get(`products?user=${userId}`),
 
+  inquiries:(payload)=>API.post('inquiries',payload),
+
   faqs: () => API.get("webfaqs"),
 };
 

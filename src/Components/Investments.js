@@ -49,7 +49,7 @@ const Investments = (props) => {
           schemes which are secured and offer good returns. Our expert spends
           time with you to understand your long-term or short-term plans and
           suggest the best instrument to invest in."
-          max_titleW="170px"
+          // max_titleW="170px"
       />
 
       <PageProcessView
@@ -68,8 +68,8 @@ const Investments = (props) => {
       title="why process investments through dr.finance?"
       options={whyChooseOptionsList}
       maxw="300px"
-      max_titleW_md="1000px"
-      max_title_base="250px"
+      // max_titleW_md="1000px"
+      // max_title_base="250px"
       
     />
     </React.Fragment>

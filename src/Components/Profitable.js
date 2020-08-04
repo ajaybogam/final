@@ -10,7 +10,7 @@ const whyChooseOptionsList = [
   {
     image: Refferal,
     title: "ADD REFERRALS",
-    description: "Send your referrals to Dr Finance",
+    description: "Send your referrals to dr.finance",
   },
   {
     image: Track,

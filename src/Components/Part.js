@@ -17,7 +17,7 @@ const list = [
   {
     title: "Add Referrals",
     image: AddLead,
-    description: "Send your leads to Dr Finance",
+    description: "Send your leads to dr.finance",
   },
   {
     title: "Track Progress",
@@ -56,7 +56,10 @@ function Part() {
           <Box flex="1" my={{ base: 4, md: 16 }} maxW="100%">
             <Flex justifyContent maxW="100%" overflow="hidden" overflowX="auto" >
               {list.map(({ title, image, description }, idx) => (
-                <Box key={idx} mt={12} textAlign="center" flexShrink="0" mr={idx < 2 ? 16 : 0}>
+                <Box key={idx} mt={12} textAlign="center" flexShrink="0" 
+                // mr={idx < 2 ? 16 : 0}
+                mr={{md:idx < 2 ? 16 : 0,lg:idx < 2 ? 8 : 0,xl:idx < 2 ? 16 : 0}}
+                >
                   <Box
                     as="img"
                     height="70px"
@@ -92,10 +95,12 @@ function Part() {
               <Box as="img" ml={4} src={AppStore}></Box>
             </Flex>
           </Box>
-          <Box as="img" src={largeimg} ml={{ base: 0, md: 2 }}></Box>
+          <Box as="img" src={largeimg} ml={{ base: 0, md: 1 }} 
+          maxW={{base:"300px",md:"300px",lg:"350px",xl:"438px"}}
+          ></Box>
         </Flex>
       </PageWrapper>
-      <BgStar stars={10} />
+      <BgStar stars={3} />
     </Box>
   );
 }

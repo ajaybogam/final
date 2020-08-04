@@ -1,12 +1,11 @@
 import React from "react";
-
-import axios from "axios";
 import {
   Input,
   Button,
   Box,
   FormControl,
 } from "@chakra-ui/core";
+import ApiServices from "../services/api.services";
 const validEmailRegex = RegExp(
   /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
 );
@@ -55,8 +54,9 @@ class FooterForm extends React.Component {
     e.preventDefault();
     if (validateForm(this.state.errors)) {
       console.log(this.state);
-      axios
-        .post("http://52.73.189.181/inquiries", this.state)
+      
+        // .post("http://52.73.189.181/inquiries", this.state)
+        ApiServices.instrument.inquiries(this.state)
         .then((response) => {
           console.log(response);
           if (response.status == 200) {

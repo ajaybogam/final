@@ -16,8 +16,8 @@ class ContactPage extends React.Component {
         <PageWrapper>
           <Flex flexDirection={{ base: "column", md: "row" }} alignItems="center" minH="80vh">
             <Box flex={1}>
-              <Text fontSize={{ base: "4xl", md: "6xl" }} color="blue.400" fontWeight="bold" lineHeight="1">{"Contact Us"}</Text>
-              <Stack spacing={8} mt={16}>
+              <Text fontSize={{ base: "4xl", md: "6xl" }} color="blue.400" fontWeight="bold" lineHeight="1" textAlign={{base:"center",lg:"left"}}>{"Contact Us"}</Text>
+              <Stack spacing={8} mt={16} maxW={{base:"320px",md:"400px",lg:"500px"}} mx="auto">
                 <Flex alignItems="center" >
                   <Box as="img" src={PhoneBig} />
                   <Text fontSize="2xl" ml={4}>+91 95814 76948</Text>
@@ -26,8 +26,8 @@ class ContactPage extends React.Component {
                   <Box as="img" src={EmailBig} />
                   <Text fontSize="2xl" ml={4}>support@dr-finance.in</Text>
                 </Flex>
-                <Flex align="center">
-                  <Box as="img" src={Location} />
+                <Flex align="flex-start">
+                  <Box as="img" src={Location} mt={1} />
                   <Text fontSize="2xl" ml={4}>Door No. 2, 2-186/18/6, Ramakrishna Nagar, Amberpet, Hyderabad, Telangana 500013</Text>
                 </Flex>
               </Stack>
@@ -47,7 +47,7 @@ class ContactPage extends React.Component {
             </Box>
           </Flex>
         </PageWrapper>
-        <BgStar stars={5} />
+        <BgStar stars={3} />
       </Box>
     </React.Fragment>;
   }

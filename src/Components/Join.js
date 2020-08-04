@@ -20,9 +20,9 @@ function Join() {
       <PageWrapper textAlign={{ base: "center", lg: "left" }}>
         <Flex
           flexDirection={{ base: "column", lg: "row" }}
-          alignItems={{ base: "center", md: "stretch" }}
+          alignItems={{ base: "center", lg: "stretch", }}
         >
-          <Box flex="1" my={{ base: 4, md: 16 }}>
+          <Box flex="1" my={{ base: 4, lg: 16 }}>
             <Box maxW="700px" >
               <MainTitle
                 title="Join us as a referral partner now"
@@ -41,10 +41,11 @@ function Join() {
               <Box as="img" ml={4} src={AppStore}></Box>
             </Flex>
           </Box>
-          <Box as="img" src={largeimg} ml={{ base: 0, md: 6 }}></Box>
+          {/* maxW={{base: "180px", md:"240px", lg: "360px"}} */}
+          <Box as="img" maxW={{base: "200px", md:"280px", lg: "360px"}} src={largeimg} ml={{ base: 0, md: 6 }}></Box>
         </Flex>
       </PageWrapper>
-      <BgStar stars={6} />
+      <BgStar stars={4} />
     </Box>
   );
 }

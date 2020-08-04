@@ -16,6 +16,7 @@ import {
   Box,
   List,
 } from "@chakra-ui/core";
+import './ApplyForProduct.css'
 import Success from "../../Assets/Success.svg";
 
 import { useForm } from "react-hook-form";
@@ -72,7 +73,7 @@ const validator = {
 const ApplyFormSuccess = (props) => {
   return (
     <React.Fragment>
-      <Box>
+      <Box d={props.show ? "block" : "none"}>
         <Flex direction="column" align="center" py={12}>
           <img src={Success} alt="Success" />
           <Text color="#4ED489" fontSize="xl" fontWeight="700">
@@ -104,7 +105,6 @@ const ApplyForProductForm = (props) => {
     const data = productsList.filter((instrument) => instrument.title === watchProductSelection)[0] || []
     const primary = data['list'] || []
     const secondary = data['secondary'] || []
-    //  {console.log( primary.concat(secondary['list']))}
     return primary.concat(secondary['list']) || []
   }
 
@@ -182,11 +182,11 @@ const ApplyForProductForm = (props) => {
             defaultValue={""}
             ref={register({ validate: validator.category })}
           >
-            <option value="" disabled>
+            <option value="" >
               Select Category
             </option>
-            {productCategories().map((category) => (
-              <option value={category} key={category}>
+            {productCategories().map((category,idx) => (
+              <option value={category} key={idx}>
                 {category}
               </option>
             ))}
@@ -212,49 +212,49 @@ const ApplyForProductForm = (props) => {
   );
 };
 
+
 const ApplyForProduct = (props) => {
   const { isOpen, onOpen, onClose } = props;
   const [isSuccess, setIsSuccess] = React.useState(false);
   const onSuccess = () => setIsSuccess(true);
+  const BackTOApply=()=>{
+    onClose();
+    setIsSuccess(false)
+  }
   return (
-    // <<<<<<< HEAD
-    //     <React.Fragment>
-    //       <Button onClick={onOpen} variantColor="orange">
-    //         Apply
-    //       </Button>
-    //       <Modal isOpen={isOpen} onClose={onClose} size="xl">
-    // =======
     <React.Fragment>
       <Button onClick={onOpen} variantColor="orange">
         Apply
       </Button>
-
-      <Modal blockScrollOnMount isOpen={isOpen} onClose={onClose} size="xl">
-        {/* >>>>>>> aa70cad64b9cd484eb79f485f627dd8ef3afb2d5 */}
+      <Modal blockScrollOnMount isOpen={isOpen} onClose={BackTOApply} size="xl">
         <ModalOverlay />
         <ModalContent
           maxW={{ base: "90%", md: "420px" }}
           borderRadius={8}
-          my={{ base: 4 }}
+          // my={{base:4,md:"auto"}}
+          my="auto"
+          minH="650px"
+         
         >
           <ModalHeader display="Flex" justifyContent="space-between" mt={4}>
             <Box>
               <Text as="h3" fontSize="2xl" color="blue.400" lineHeight={1}>
                 Apply for a product
               </Text>
-              <Text as="small" color="gray.400" fontWeight="normal">
+             {!isSuccess&& <Text as="small" color="gray.400" fontWeight="normal">
                 Please fill the below details
-              </Text>
+              </Text>}
             </Box>
             <Box cursor="pointer">
-              <img src={CloseImg} alt="close" onClick={onClose} />
+             <Box onClick={BackTOApply}> <img src={CloseImg} alt="close"   /></Box>
             </Box>
           </ModalHeader>
-          {/* <ModalCloseButton /> */}
+
           <ModalBody>
             <Box maxW="520px">
+            <ApplyFormSuccess show={isSuccess} />
               {isSuccess ? (
-                <ApplyFormSuccess />
+                null
               ) : (
                   <Box maxW={{ base: "100%", md: "280px" }}>
                     {" "}
