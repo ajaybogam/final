@@ -61,7 +61,7 @@ const whyChooseOptionsList = [
     image: Score,
     title: "Low Cibil Score",
     description:
-      "If you have a low CIBIL score? Then do not worry. Dr Finance will still help you process the application",
+      "If you have a low CIBIL score? Then do not worry. dr.finance will still help you process the application",
   },
 ];
 
@@ -81,11 +81,11 @@ const Loans = () => {
           minutes without affecting your CIBIL score. After deep analysis, we
           would inform you about the banks that fulfil your requirement, the
           loan process, charges and time required to process your loan. Upon
-          your approval, we will start the loan process. Dr.Finance is your
+          your approval, we will start the loan process. dr.finance is your
           financial doctor for all your family needs like home renovation,
           property purchase, vacation, education and business needs. Your data
           is safe with us and will not be shared with anyone."
-          max_titleW="250px"
+        max_titleW="250px"
       />
 
       <PageProcessView
