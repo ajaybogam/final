@@ -59,7 +59,7 @@ const Insurance = (props) => {
         You would not have to worry about the clauses and conditions that
         are in fine print as our team would educate you about every nuance
         and share the necessary documentation for further reference."
-        max_titleW="170px"
+        // max_titleW="170px"
       />
 
       <PageProcessView
@@ -92,7 +92,7 @@ const Insurance = (props) => {
         title="why process insurance through dr.finance?"
         options={whyChooseOptionsList}
         maxw="350px"
-        max_titleW_md="1000px"
+        // max_titleW_md="1000px"
       />
     </React.Fragment>
   );

@@ -16,7 +16,7 @@ function GetStarted() {
         <Box as="img" ml={4} src={AppStore}></Box>
       </Flex>
     </PageWrapper>
-    <BgStar stars={4} />
+    <BgStar stars={2} />
   </Box>
 }
 

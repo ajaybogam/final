@@ -49,7 +49,7 @@ const CreditCard = (props) => {
         understand your needs. We then analyse your needs and based on your
         eligibility we suggest you the best possible credit card. You can
         finish your entire application right from the comfort of your home."
-        max_titleW="200px"
+        // max_titleW="200px"
       />
 
       <PageProcessView
@@ -70,7 +70,7 @@ const CreditCard = (props) => {
         title=" why process credit cards through dr.finance?"
         options={whyChooseOptionsList}
         maxw="350px"
-        max_titleW_md="1000px"
+        // max_titleW_md="1000px"
       />
     </React.Fragment>
   );

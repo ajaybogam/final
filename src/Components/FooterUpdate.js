@@ -25,12 +25,12 @@ function FooterUpdate() {
   ];
   return (
     <Box bg="blue.700" color="white">
-      <PageWrapper>
+      <PageWrapper >
         <Flex
-          pb={20}
-          justifyContent="space-between"
-          pt={20}
+          py={20}
+          justifyContent={{base:"center",md:"space-between"}}
           flexDir={{ base: "column-reverse", md: "row" }}
+          text-align={{base:"center",lg:"flex-start"}}
         >
           <Box display={{ base: "none", md: "block" }}>
             <TitleView title="QUICK LINKS" />
@@ -68,7 +68,7 @@ function FooterUpdate() {
               </Flex>
             ))}
           </Box>
-          <Box p={{ base: "24px", md: "0" }}>
+          <Box  p={{ base: "24px", md: "0" }}>
             <TitleView title="Get in Touch" />
 
             <Flex fontSize="sm" mb={6}>
@@ -77,7 +77,7 @@ function FooterUpdate() {
             </Flex>
             <Flex>
               <Box as="img" mr={2} src={EmailImage} />
-              <Box> support@dr-finance.in</Box>
+              <Box>support@dr-finance.in</Box>
             </Flex>
             <Flex
               display={{ base: "flex", md: "none" }}

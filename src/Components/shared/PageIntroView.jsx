@@ -8,8 +8,8 @@ function PageIntroView(props) {
     return <Box zIndex="1" position="relative" py={16} bg={invert ? 'blue.400' : 'white'}>
         <PageWrapper>
             {/* removed minH and added my in second text */}
-            <Flex flexDirection={{ base: "column", lg: "row" }} alignItems="center"  >
-                <Box flex={1} textAlign={{ base: "center", lg: "left" }} maxW={{md: "700px"}} mr="auto">
+            <Flex flexDirection={{ base: "column",md:"column", lg: "row" }} alignItems="center"  >
+                <Box flex={1} textAlign={{ base: "center",md:"center", lg:"left" }} maxW={{lg: "700px"}} mr="auto">
                     <Text fontSize={{ base: "4xl", lg:"6xl" }} fontWeight="bold" lineHeight="1"
                      color={invert ? 'white' : "blue.400"} >{title}</Text>
                     <Text my={8} fontSize={{ base: "md",md:"xl", lg: "2xl" }} mx={{base:"auto"}}color={invert ? 'white' : "black"}>{description}</Text>
@@ -19,7 +19,7 @@ function PageIntroView(props) {
                 </Box>
             </Flex>
         </PageWrapper>
-        <BgStar stars={10} />
+        <BgStar stars={3} />
     </Box>
 }
 

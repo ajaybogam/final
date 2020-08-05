@@ -14,7 +14,6 @@ import Faqs_down from "../Assets/FAQ Down Arrow.svg";
 export class Faqs extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       posts: [],
       activeFaq: 0,

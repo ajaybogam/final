@@ -9,7 +9,7 @@ import styled from "@emotion/styled";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import "./Partner.css";
-
+import BgStar from "../../../Components/shared/BgStar"
 function Partners() {
   return (
     <Box my={20}>
@@ -19,7 +19,7 @@ function Partners() {
           color="blue.600"
           textAlign="center"
           pt={8}
-          max_titleW="232px"
+          // max_titleW="232px"
         />
         <SimpleGrid
           display={{ base: "none", md: "grid" }}
@@ -37,6 +37,7 @@ function Partners() {
           ))}
         </SimpleGrid>
         <PartnersMobileView display={{ base: "block", md: "none" }} />
+        <BgStar stars={4}/>
       </PageWrapper>
       <div>{/* <React_carousel /> */}</div>
     </Box>

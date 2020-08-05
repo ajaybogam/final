@@ -136,6 +136,8 @@ export const JoinAsReferral = (props) => {
           color={!!color ? color : "gray.500"}
           fontWeight="normal"
           fontSize="sm"
+          // width={{md:"100px",lg:'100%'}}
+          // minW="100px"
         >
           as referral partners
         </Box>

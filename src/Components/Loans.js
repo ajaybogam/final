@@ -85,7 +85,11 @@ const Loans = () => {
           financial doctor for all your family needs like home renovation,
           property purchase, vacation, education and business needs. Your data
           is safe with us and will not be shared with anyone."
-        max_titleW="250px"
+        // <<<<<<< HEAD
+        //         max_titleW="250px"
+        // =======
+        // max_titleW="250px"
+        //>>>>>>> 1da186fe8849d2d7af562f6172ee62f0e53deb76
       />
 
       <PageProcessView
@@ -111,8 +115,8 @@ const Loans = () => {
         title="why process loans through dr.finance?"
         options={whyChooseOptionsList}
         maxw="350px"
-        max_title_base="250px"
-        max_titleW_md="900px"
+        // max_title_base="250px"
+        // max_titleW_md="900px"
       />
     </React.Fragment>
   );
