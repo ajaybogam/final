@@ -64,10 +64,10 @@ const Insurance = (props) => {
 
       <PageProcessView
         title="policies processed"
-        list={["Life", "Term","Child Education", "Retirement", "Pension"]}
+        list={["Life", "Term","Child Education", "Retirement", "Pension","Group Life Insurance"]}
         fontWeight="600"
         secondary={{
-          title: "Life Insurance For Life Products",
+          title: "Health Insurance",
           list: [
             "Individual",
             "Family",
@@ -81,7 +81,7 @@ const Insurance = (props) => {
             "Travel Insurance",
             "Group Health",
             "Top-up Insurance",
-            "Group Life Insurance"
+            
           ],
           
         }}

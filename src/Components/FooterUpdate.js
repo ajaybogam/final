@@ -46,12 +46,12 @@ function FooterUpdate() {
                 {data.title}
               </Flex>
             ))}
-            <Flex mt={16}>
+            {/* <Flex mt={16}>
               <Box as="img" mr={2} src={copyright} />
               <Box fontSize="md" fontWeight="300">
-                2020 dr.finance
+              2020 Swadishaa Financial services Pvt Ltd
               </Box>
-            </Flex>
+            </Flex> */}
           </Box>
           <Box display={{ base: "none", md: "inline" }}>
             <TitleView title="PRODUCTS" />
@@ -80,12 +80,13 @@ function FooterUpdate() {
               <Box>support@dr-finance.in</Box>
             </Flex>
             <Flex
-              display={{ base: "flex", md: "none" }}
-              mt={{ base: "40px", md: "0" }}
+              display={{md: "none" }}
+              mt={{ base: 12, md: "0" }}
+              justify="flex-start"
             >
               <Box as="img" mr={2} src={copyright} />
               <Box fontSize="md" fontWeight="300" color="rgba(208,208,208,1)">
-                2020 dr.finance
+              2020 Swadishaa Financial services Pvt Ltd
               </Box>
             </Flex>
           </Box>

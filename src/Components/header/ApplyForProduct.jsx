@@ -101,6 +101,7 @@ const ApplyForProductForm = (props) => {
   //       (instrument) => instrument.title === watchProductSelection
   //     )[0] || {}
   //   ).list || [];
+  const primaryLen=0,secondaryLen=0
   const productCategories = () => {
     const data = productsList.filter((instrument) => instrument.title === watchProductSelection)[0] || []
     const primary = data['list'] || []
@@ -185,10 +186,23 @@ const ApplyForProductForm = (props) => {
             <option value="" >
               Select Category
             </option>
-            {productCategories().map((category,idx) => (
+            
+            {productCategories().map((category, idx) => (
+              <>
+              {(watchProductSelection === "Insurance"&&idx===0) && 
+                <option value="" disabled >
+                  Life Insurances:
+                </option>
+              }
               <option value={category} key={idx}>
                 {category}
               </option>
+              {(watchProductSelection === "Insurance" && idx===5)&&
+                <option value="" disabled >
+                  Health Insurances:
+                </option>
+              }
+              </>
             ))}
           </Select>
           <FormErrorMessage>
@@ -217,7 +231,7 @@ const ApplyForProduct = (props) => {
   const { isOpen, onOpen, onClose } = props;
   const [isSuccess, setIsSuccess] = React.useState(false);
   const onSuccess = () => setIsSuccess(true);
-  const BackTOApply=()=>{
+  const BackTOApply = () => {
     onClose();
     setIsSuccess(false)
   }
@@ -234,25 +248,25 @@ const ApplyForProduct = (props) => {
           // my={{base:4,md:"auto"}}
           my="auto"
           minH="650px"
-         
+
         >
           <ModalHeader display="Flex" justifyContent="space-between" mt={4}>
             <Box>
               <Text as="h3" fontSize="2xl" color="blue.400" lineHeight={1}>
                 Apply for a product
               </Text>
-             {!isSuccess&& <Text as="small" color="gray.400" fontWeight="normal">
+              {!isSuccess && <Text as="small" color="gray.400" fontWeight="normal">
                 Please fill the below details
               </Text>}
             </Box>
             <Box cursor="pointer">
-             <Box onClick={BackTOApply}> <img src={CloseImg} alt="close"   /></Box>
+              <Box onClick={BackTOApply}> <img src={CloseImg} alt="close" /></Box>
             </Box>
           </ModalHeader>
 
           <ModalBody>
             <Box maxW="520px">
-            <ApplyFormSuccess show={isSuccess} />
+              <ApplyFormSuccess show={isSuccess} />
               {isSuccess ? (
                 null
               ) : (

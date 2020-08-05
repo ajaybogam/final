@@ -56,10 +56,11 @@ export const helpYouOptions = {
             "Term",
             "Child Education",
             "Retirement",
-            "Pension"
+            "Pension",
+            "Group Life Insurance"
         ],
         secondary: {
-            title: "Life Insurance For Life Products",//changed title 
+            title: "Health Insurance",
             list: [
                 "Individual",
                 "Family",
@@ -73,7 +74,7 @@ export const helpYouOptions = {
                 "Travel Insurance",
                 "Group Health",
                 "Top-up Insurance",
-                "Group Life Insurance"
+                
             ],
         },
         link: '/insurance'

@@ -1,293 +1,122 @@
 import React from "react";
-import "../css/Footer.css";
-import Copy from "../Assets/Copyright.svg";
+
+import { Flex, Box, Text } from "@chakra-ui/core";
 import { Link } from "react-router-dom";
-import PhoneWhite from "../Assets/Phone_White.svg";
-import EmailWhite from "../Assets/Email_White.svg";
-import axios from "axios";
-const validEmailRegex = RegExp(
-  /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
-);
-const validateName = (name) => {
-  var letter = /^[a-zA-Z\s]*$/;
-  if (name.match(letter) && name.length > 2) {
-    return true;
-  } else {
-    return false;
-  }
-};
-const validateSubject = (name) => {
-  var letter = /^[a-zA-Z0-9\s]*$/;
-  if (name.match(letter) && name.length > 2) {
-    return true;
-  } else {
-    return false;
-  }
-};
-const validateForm = (errors) => {
-  let valid = true;
-  Object.values(errors).forEach((val) => val.length > 0 && (valid = false));
-  return valid;
-};
-class Footer extends React.Component {
-  constructor(props) {
-    super(props);
+import PhoneImage from "../Assets/Phone_White.svg";
+import EmailImage from "../Assets/Email_White.svg";
+import copyright from "../Assets/Copyright.svg";
+import Footerform from "./FooterForm";
+import PageWrapper from "./shared/PageWrapper";
+function FooterUpdate() {
+  const quickLinks = [
+    { title: "Home", link: "/" },
+    { title: "About  dr.finance", link: "/about" },
+    { title: "Join as Referral Partner", link: "/joinasreferral" },
+    { title: "Contact Us", link: "/contact" },
+    { title: "Terms and Conditions", link: "/termsandconditions" },
+    { title: "Privacy Policy", link: "/privacypolicy" },
+    { title: "FAQs", link: "/faqs" },
+  ];
+  const product = [
+    { title: "Loans", link: "/loans" },
+    { title: "Investments", link: "/investments" },
+    { title: "Insurance", link: "/insurance" },
+    { title: "Credit Cards", link: "/creditcards" },
+  ];
+  return (
+    <Box bg="blue.700" color="white">
+      <PageWrapper px={{ base: 4, md: 4, lg: 16 }}>
+        <Flex py={{ base: 10, md: 20 }}
+          align={{ base: "center", md: 'flex-start' }}
+          justifyContent={{ base: "center", md: "space-between" }}
+          flexDir={{ base: "column-reverse", md: "row" }}
+          text-align={{ base: "center", lg: "flex-start" }}>
+          <Flex d="column" justifyContent={{ base: "center", md: "space-between" }} w="60%">
+            <Flex justifyContent={{ base: "center", md: "space-between" }}>
+              <Box display={{ base: "none", md: "block" }}>
+                <TitleView title="QUICK LINKS" />
+                {quickLinks.map((data, idx) => (
+                  <Flex
+                    as={Link}
+                    key={data.link}
+                    to={data.link}
+                    fontSize="sm"
+                    mb={6}
+                  >
+                    {data.title}
+                  </Flex>
+                ))}
+              </Box>
+              <Box display={{ base: "none", md: "inline" }}>
+                <TitleView title="PRODUCTS" />
+                {product.map((data, idx) => (
+                  <Flex
+                    as={Link}
+                    key={data.link}
+                    to={data.link}
+                    fontSize="sm"
+                    mb={6}
+                  >
+                    {data.title}
+                  </Flex>
+                ))}
+              </Box>
+              <Box py={{ base: "4", md: "0" }} display={{ base: "none", md: "inline" }}>
+                <TitleView title="Get in Touch" />
 
-    this.state = {
-      name: "",
-      phone: "",
-      email: "",
-      subject: "",
-      message: "",
-      dateTime: Date(),
-      errors: {
-        name: "",
-        phone: "",
-        email: "",
-        subject: "",
-        message: "",
-      },
-    };
-  }
-  submitHandler = (e) => {
-    e.preventDefault();
-    if (validateForm(this.state.errors)) {
-      console.log(this.state);
-      axios
-        .post("http://52.73.189.181/inquiries", this.state)
-        .then((response) => {
-          console.log(response);
-          if (response.status == 200) {
-            this.setState({
-              name: "",
-              phone: "",
-              email: "",
-              subject: "",
-              message: "",
-              errors: {
-                name: "",
-                phone: "",
-                email: "",
-                subject: "",
-                message: "",
-              },
-            });
-          }
-          alert("submitted Successfully");
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    } else {
-      console.log("Invalid application");
-    }
-  };
-  changeHandler = (e) => {
-    this.setState({
-      [e.target.name]: e.target.value,
-    });
-    const { name, value } = e.target;
-    let errors = this.state.errors;
+                <Flex fontSize="sm" mb={6}>
+                  <Box as="img" mr={2} src={PhoneImage} />
+                  <Box>+91 95814 76948</Box>
+                </Flex>
+                <Flex>
+                  <Box as="img" mr={2} src={EmailImage} />
+                  <Box>support@dr-finance.in</Box>
+                </Flex>
+                {/* <Box
+                  display={{ base: "flex", md: "none" }}
+                  mt={{ base: 4, md: "0" }}
+                  justifyContent="flex-start"
+                >
+                  <Box as="img" mr={2} src={copyright} />
+                  <Box fontSize="md" fontWeight="300" color="rgba(208,208,208,1)" >
+                    2020 Swadishaa Financial services Pvt Ltd
+                  </Box>
+                </Box> */}
+              </Box>
+            </Flex>
+            <Flex mt={12} display={{ base: 'none', md: 'flex' }}>
+              <Box as="img" mr={2} src={copyright} />
+              <Box fontSize="md" fontWeight="300">
+                2020 Swadishaa Financial services Pvt Ltd
+              </Box>
+            </Flex>
+          </Flex>
 
-    switch (name) {
-      case "name":
-        errors.name = !validateName(value) ? "Enter a valid Name" : "";
-        break;
-      case "subject":
-        errors.subject = !validateSubject(value) ? "Enter a valid subject" : "";
-        break;
-      case "email":
-        errors.email = validEmailRegex.test(value) ? "" : "Email is not valid!";
-        break;
-      case "phone":
-        errors.phone = value.length === 10 ? "" : "Enter a valid number";
-      default:
-        break;
-    }
-  };
-  render() {
-    const { name, phone, email, subject, message } = this.state;
-    return (
-      <div>
-        <div className="footer">
-          <div className="footCol1">
-            <div className="footerhead">QUICK LINKS</div>
-            <Link
-              to="/"
-              style={{ color: "inherit", textDecoration: "inherit" }}
-            >
-              <div className="footerSub">Home</div>
-            </Link>
-            <Link
-              to="/about"
-              style={{ color: "inherit", textDecoration: "inherit" }}
-            >
-              <div className="footerSub">About Dr.Finance</div>
-            </Link>
-            <Link
-              to="joinasreferral"
-              style={{ color: "inherit", textDecoration: "inherit" }}
-            >
-              <div className="footerSub">Join as Referral Partners</div>
-            </Link>
-            <Link
-              to="/contact"
-              style={{ color: "inherit", textDecoration: "inherit" }}
-            >
-              <div className="footerSub">Contact</div>
-            </Link>
-            <Link
-              to="/termsandconditions"
-              style={{ color: "inherit", textDecoration: "inherit" }}
-            >
-              <div className="footerSub">Terms and Conditions</div>
-            </Link>
-            <Link
-              to="/faqs"
-              style={{ color: "inherit", textDecoration: "inherit" }}
-            >
-              <div className="footerSub">FAQs</div>
-            </Link>
-            <div className="copyright">
-              <img src={Copy}></img>
-              <div>2020 Dr. Finance</div>
-            </div>
-          </div>
-          <div className="footCol1">
-            <div className="footerhead">PRODUCTS</div>
-            <Link
-              to="/loans"
-              style={{ color: "inherit", textDecoration: "inherit" }}
-            >
-              <div className="footerSub">Loans</div>
-            </Link>
-            <Link
-              to="/investments"
-              style={{ color: "inherit", textDecoration: "inherit" }}
-            >
-              <div className="footerSub">Investments</div>
-            </Link>
-            <Link
-              to="/insurance"
-              style={{ color: "inherit", textDecoration: "inherit" }}
-            >
-              <div className="footerSub">Insurance</div>
-            </Link>
-            <Link
-              to="/creditcards"
-              style={{ color: "inherit", textDecoration: "inherit" }}
-            >
-              <div className="footerSub">Credit Cards</div>
-            </Link>
-          </div>
-          <div className="footCol1">
-            <div className="footerhead">GET IN TOUCH</div>
-            <div className="footerSub1">
-              <img src={PhoneWhite} style={{ paddingRight: "10px" }}></img>
-              <div>+91 95814 76948</div>
-            </div>
-            <div className="footerSub1">
-              <img src={EmailWhite} style={{ paddingRight: "10px" }}></img>
-              <div>support@drfinance.com</div>
-            </div>
-          </div>
-          <div className="footerForm">
-            <div className="footerFormTitle">Got any questions?</div>
-            <div className="footerFormSub">Please fill the below details</div>
-            <form onSubmit={this.submitHandler}>
-              <div className="footer-input-height">
-                <input
-                  type="text"
-                  name="name"
-                  value={name}
-                  required
-                  onChange={this.changeHandler}
-                  placeholder="Name*"
-                  className="footerFormName"
-                ></input>
-                {this.state.errors.name.length > 0 && (
-                  <div className="error">{this.state.errors.name}</div>
-                )}
-              </div>
-              <div className="footer-input-height">
-                <input
-                  type="number"
-                  name="phone"
-                  maxLength="10"
-                  pattern="\d{10}"
-                  title="please enter proper phone number"
-                  value={phone}
-                  required
-                  onChange={this.changeHandler}
-                  placeholder="Mobile Number*"
-                  className="footerFormName"
-                ></input>
-                {this.state.errors.phone.length > 0 && (
-                  <div className="error">{this.state.errors.phone}</div>
-                )}
-              </div>
-              <div className="footer-input-height">
-                <input
-                  type="text"
-                  name="email"
-                  value={email}
-                  onChange={this.changeHandler}
-                  placeholder="Email"
-                  className="footerFormName"
-                ></input>
-                {this.state.errors.email.length > 0 && (
-                  <div className="error">{this.state.errors.email}</div>
-                )}
-              </div>
-              <div className="footer-input-height">
-                <input
-                  type="text"
-                  value={subject}
-                  name="subject"
-                  required
-                  onChange={this.changeHandler}
-                  placeholder="Subject*"
-                  className="footerFormName"
-                ></input>
-                {this.state.errors.subject.length > 0 && (
-                  <div className="error">{this.state.errors.subject}</div>
-                )}
-              </div>
-              <div className="footer-input-height">
-                <input
-                  type="text"
-                  name="message"
-                  value={message}
-                  required
-                  onChange={this.changeHandler}
-                  placeholder="Message*"
-                  className="footerFormName"
-                ></input>
-              </div>
-              <button type="submit" className="footerButton">
-                Submit
-              </button>
-            </form>
-          </div>
-        </div>
-        <div className="footer1">
-          <div className="footerhead">GET IN TOUCH</div>
-          <div className="footerSub1">
-            <img src={PhoneWhite} style={{ paddingRight: "10px" }}></img>
-            <div>+91 95814 76948</div>
-          </div>
-          <div className="footerSub1">
-            <img src={EmailWhite} style={{ paddingRight: "10px" }}></img>
-            <div>support@drfinance.com</div>
-          </div>
-          <div className="copyright">
-            <img src={Copy}></img>
-            <div>2020 Dr. Finance</div>
-          </div>
-        </div>
-      </div>
-    );
-  }
+          <Box
+            border={{ base: "none", md: "1px solid rgba(255,255,255,.3)" }}
+            rounded="8px"
+            p={{ base: "0", md: "3%" }}
+            px={{ base: "24px", md: "3%" }}
+            maxW="392px"
+          >
+            <Footerform />
+
+          </Box>
+        </Flex>
+      </PageWrapper>
+
+    </Box>
+  );
 }
 
-export default Footer;
+
+
+
+
+
+const TitleView = ({ title }) => (
+  <Text fontWeight="bold" fontSize="md" textTransform="uppercase" mb={4}>
+    {title}
+  </Text>
+);
+export default FooterUpdate;

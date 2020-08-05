@@ -4,8 +4,13 @@ import {
   Button,
   Box,
   FormControl,
+  Text,
+  Flex
 } from "@chakra-ui/core";
 import ApiServices from "../services/api.services";
+import PhoneImage from "../Assets/Phone_White.svg";
+import EmailImage from "../Assets/Email_White.svg";
+import copyright from "../Assets/Copyright.svg";
 const validEmailRegex = RegExp(
   /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
 );
@@ -223,9 +228,35 @@ class FooterForm extends React.Component {
             Submit
           </Button>
         </form>
+        <Box py={{ base: "4", md: "0" }} pt={6} alignItems={{ base: "center", md: "flex-start" }} display={{ base: "block", md: "none" }} >
+                <TitleView title="Get in Touch" />
+
+                <Flex fontSize="sm" mb={6}>
+                  <Box as="img" mr={2} src={PhoneImage} />
+                  <Box>+91 95814 76948</Box>
+                </Flex>
+                <Flex>
+                  <Box as="img" mr={2} src={EmailImage} />
+                  <Box>support@dr-finance.in</Box>
+                </Flex>
+                <Flex
+                  display={{base:"flex",md: "none" }}
+                  mt={{ base: 4, md: "0" }}
+                  justifyContent="flex-start"
+                >
+                  <Box as="img" mr={2} src={copyright} />
+                  <Box fontSize="md" fontWeight="300" color="rgba(208,208,208,1)"  >
+                    2020 Swadishaa Financial services Pvt Ltd
+                  </Box>
+                </Flex>
+        </Box>
       </Box>
     );
   }
 }
-
+const TitleView = ({ title }) => (
+  <Text fontWeight="bold" fontSize="md" textTransform="uppercase" mb={4}>
+    {title}
+  </Text>
+);
 export default FooterForm;
