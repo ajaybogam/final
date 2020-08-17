@@ -36,7 +36,7 @@ export const helpYouOptions = {
             "Gold",
             "Education",
             "Equipment",
-            "Consumer "//New entry added
+            "Consumer ",
         ],
         link: '/loans'
     },

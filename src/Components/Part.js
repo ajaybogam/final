@@ -12,7 +12,7 @@ import MainTitle from "./shared/MainTitle";
 import { Text, Flex, Box } from "@chakra-ui/core";
 import PageWrapper from "./shared/PageWrapper";
 import BgStar from "./shared/BgStar";
-import largeimg from '../Assets/Large.png'
+import largeimg from "../Assets/Large.png";
 const list = [
   {
     title: "Add Referrals",
@@ -40,7 +40,7 @@ function Part() {
       pb={0}
       borderTop="1px solid rgba(0,0,0,.1)"
     >
-      <PageWrapper textAlign={{ base: "center", md: "left" }} >
+      <PageWrapper textAlign={{ base: "center", md: "left" }}>
         <MainTitle
           title="want to be a part of dr.finance?"
           color="red.300"
@@ -48,18 +48,37 @@ function Part() {
           mb={1}
           px={0}
         />
-        <Text fontSize={{ base: "xl", md: "3xl" }}>Join as referral partner now!</Text>
+        <Text fontSize={{ base: "xl", md: "3xl" }}>
+          Join as referral partner now!
+        </Text>
         <Flex
           flexDirection={{ base: "column", md: "row" }}
           alignItems={{ base: "center", md: "stretch" }}
-          mx={{base:"-16px"}}
+          mx={{ base: "-16px" }}
         >
           <Box flex="1" my={{ base: 4, md: 16 }} maxW="100%">
-            <Flex justifyContent maxW="100%" overflow="hidden" overflowX="auto" >
+            <Flex justifyContent maxW="100%" overflow="hidden" overflowX="auto">
               {list.map(({ title, image, description }, idx) => (
-                <Box key={idx} mt={12} textAlign="center" flexShrink="0" 
-                // mr={idx < 2 ? 16 : 0}
-                mr={{md:idx < 2 ? 16 : 0,lg:idx < 2 ? 8 : 0,xl:idx < 2 ? 16 : 0}}
+                // <<<<<<< HEAD
+                //                 <Box
+                //                   key={idx}
+                //                   mt={12}
+                //                   textAlign="center"
+                //                   flexShrink="0"
+                //                   mr={idx < 2 ? 16 : 0}
+                // =======
+                <Box
+                  key={idx}
+                  mt={12}
+                  textAlign="center"
+                  flexShrink="0"
+                  // mr={idx < 2 ? 16 : 0}
+                  mr={{
+                    md: idx < 2 ? 16 : 0,
+                    lg: idx < 2 ? 8 : 0,
+                    xl: idx < 2 ? 16 : 0,
+                  }}
+                  //>>>>>>> 1da186fe8849d2d7af562f6172ee62f0e53deb76
                 >
                   <Box
                     as="img"
@@ -70,7 +89,10 @@ function Part() {
                   <Text fontWeight="bold" color="red.300" mt={4} fontSize="xl">
                     {title}
                   </Text>
-                  <Text maxW={idx === 0 ? "150px" : "160px"} mx={{ base: "auto" }}>
+                  <Text
+                    maxW={idx === 0 ? "150px" : "160px"}
+                    mx={{ base: "auto" }}
+                  >
                     {description}
                   </Text>
                 </Box>
@@ -91,13 +113,28 @@ function Part() {
               <Box as="img" src={LearnMore} />
             </Flex>
 
-            <Flex alignItems="center" justifyContent={{ base: "space-around", md: "start" }} mb={{ base: 10, md: "none" }}>
+            <Flex
+              alignItems="center"
+              justifyContent={{ base: "space-around", md: "start" }}
+              mb={{ base: 10, md: "none" }}
+            >
               <Box as="img" src={PlayStore}></Box>
               <Box as="img" ml={4} src={AppStore}></Box>
             </Flex>
           </Box>
-          <Box as="img" src={largeimg} ml={{ base: 0, md: 1 }} 
-          maxW={{base:"300px",md:"350px",lg:"350px",xl:"438px"}}
+          {/* <<<<<<< HEAD
+          <Box
+            as="img"
+            src={largeimg}
+            ml={{ base: 0, md: 1 }}
+            maxW={{ base: "300px", md: "300px", lg: "350px", xl: "438px" }}
+======= */}
+          <Box
+            as="img"
+            src={largeimg}
+            ml={{ base: 0, md: 1 }}
+            maxW={{ base: "300px", md: "350px", lg: "350px", xl: "438px" }}
+            // {/* >>>>>>> 5cb9ec7ff314de6b60bece8a305f948f3f48ef6b */}
           ></Box>
         </Flex>
       </PageWrapper>
