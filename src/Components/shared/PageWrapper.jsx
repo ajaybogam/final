@@ -10,7 +10,7 @@ export default function PageWrapper(props) {
       maxWidth={{ base: "100%", md: "1360px" }}
       width="100%"
       mx="auto"
-      px={{ base:4, md: 16 }}
+      px={props.px ||{ base:4, md: 16 }}
       {...props}
     >
       {props.children}

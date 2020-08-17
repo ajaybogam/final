@@ -20,6 +20,8 @@ function About() {
         our association with leading banks across the country, we keep
         expanding our reach."
         image={India}
+        maxW={{base: "250px", md:"300px", lg: "360px"}}
+        fontSize={{base: "4xl",md:'5xl',lg:"6xl" }}
        />
        {/*  */}
     </React.Fragment>

@@ -75,11 +75,11 @@ const TopHeader = (props) => {
                 color={currentPage === menu.link ? activeColor : ""}
                 borderBottom={currentPage === menu.link ? "2px" : ""}
                 as={Link}
-                ml={8}
+                ml={{sm:4,lg:8}}
                 fontWeight="bold"
                 key={menu.link}
                 to={menu.link}
-                fontSize="md"
+                fontSize={{md:"sm",lg:"md"}}
                 whiteSpace="pre"
               >
                 {menu.title}
@@ -87,7 +87,7 @@ const TopHeader = (props) => {
             ))}
             <Box
               px={{sm:2, lg: 4}}
-              mx={4}
+              mx={{base:2,lg:4}}
               border="2px solid"
               borderTop="0"
               borderBottom="0"
@@ -118,7 +118,7 @@ export const JoinAsReferral = (props) => {
   return (
     <Flex alignItems="center" as={Link} Link to="/joinasreferral" {...props}>
       <img src={img} alt="Referral" />
-      <Box ml={2} lineHeight={1}>
+      <Box ml={{base:1,lg:2}} lineHeight={1}>
         <Box
           m={0}
           fontWeight="bold"
@@ -135,7 +135,7 @@ export const JoinAsReferral = (props) => {
         <Box
           color={!!color ? color : "gray.500"}
           fontWeight="normal"
-          fontSize="sm"
+          fontSize={{md:"sm",lg:"md"}}
           // width={{md:"100px",lg:'100%'}}
           // minW="100px"
         >
@@ -148,7 +148,18 @@ export const JoinAsReferral = (props) => {
 
 const HeaderBar = styled(Flex)`
   padding: .75em 1.5em;
-
+  @media screen and (min-width: 844px) and (max-width: 960px){
+    padding-top: .75em;
+    padding-bottom: .75em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  @media screen and (min-width: 768px) and (max-width: 843px){
+    padding-top: .75em;
+    padding-bottom: .75em;
+    padding-left: 0em;
+    padding-right: 0em;
+  }
   @media screen and (max-width: 480px) {
     padding: 12px 1em;
   }

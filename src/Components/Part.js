@@ -54,6 +54,7 @@ function Part() {
         <Flex
           flexDirection={{ base: "column", md: "row" }}
           alignItems={{ base: "center", md: "stretch" }}
+          mx={{ base: "-16px" }}
         >
           <Box flex="1" my={{ base: 4, md: 16 }} maxW="100%">
             <Flex justifyContent maxW="100%" overflow="hidden" overflowX="auto">
@@ -121,11 +122,19 @@ function Part() {
               <Box as="img" ml={4} src={AppStore}></Box>
             </Flex>
           </Box>
+          {/* <<<<<<< HEAD
           <Box
             as="img"
             src={largeimg}
             ml={{ base: 0, md: 1 }}
             maxW={{ base: "300px", md: "300px", lg: "350px", xl: "438px" }}
+======= */}
+          <Box
+            as="img"
+            src={largeimg}
+            ml={{ base: 0, md: 1 }}
+            maxW={{ base: "300px", md: "350px", lg: "350px", xl: "438px" }}
+            // {/* >>>>>>> 5cb9ec7ff314de6b60bece8a305f948f3f48ef6b */}
           ></Box>
         </Flex>
       </PageWrapper>

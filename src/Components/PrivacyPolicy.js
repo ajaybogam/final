@@ -129,7 +129,7 @@ const terms = [
     ],
   },
   {
-    section: "Testmonials, Blogs and other forums on Finmarket.in Website ",
+    section: "Testmonials, Blogs and other forums on dr-finance. in Website ",
     heading: [
       "With your consent Company may post your testimonial along with your name. If you want your testimonial removed, please contact Company at support@dr-finance.in.If you use a blog or other public forum on Website, any information you submit there can be read, collected or used by other users and could be used to send you unsolicited messages. Company is not responsible for the Sensitive Information you choose to submit in these forums.",
     ],

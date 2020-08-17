@@ -16,7 +16,7 @@ import {
   Box,
   List,
 } from "@chakra-ui/core";
-import './ApplyForProduct.css'
+import "./ApplyForProduct.css";
 import Success from "../../Assets/Success.svg";
 
 import { useForm } from "react-hook-form";
@@ -101,12 +101,17 @@ const ApplyForProductForm = (props) => {
   //       (instrument) => instrument.title === watchProductSelection
   //     )[0] || {}
   //   ).list || [];
+  const primaryLen = 0,
+    secondaryLen = 0;
   const productCategories = () => {
-    const data = productsList.filter((instrument) => instrument.title === watchProductSelection)[0] || []
-    const primary = data['list'] || []
-    const secondary = data['secondary'] || []
-    return primary.concat(secondary['list']) || []
-  }
+    const data =
+      productsList.filter(
+        (instrument) => instrument.title === watchProductSelection
+      )[0] || [];
+    const primary = data["list"] || [];
+    const secondary = data["secondary"] || [];
+    return primary.concat(secondary["list"]) || [];
+  };
 
   function onSubmit(values) {
     setTimeout(() => {
@@ -116,7 +121,7 @@ const ApplyForProductForm = (props) => {
         .then((response) => {
           props.onSuccess();
         })
-        .catch((err) => { });
+        .catch((err) => {});
     }, 1000);
   }
   const Validator = (val) => {
@@ -182,13 +187,24 @@ const ApplyForProductForm = (props) => {
             defaultValue={""}
             ref={register({ validate: validator.category })}
           >
-            <option value="" >
-              Select Category
-            </option>
-            {productCategories().map((category,idx) => (
-              <option value={category} key={idx}>
-                {category}
-              </option>
+            <option value="">Select Category</option>
+
+            {productCategories().map((category, idx) => (
+              <>
+                {watchProductSelection === "Insurance" && idx === 0 && (
+                  <option value="" disabled>
+                    Life Insurance:
+                  </option>
+                )}
+                <option value={category} key={idx}>
+                  {category}
+                </option>
+                {watchProductSelection === "Insurance" && idx === 5 && (
+                  <option value="" disabled>
+                    Health Insurance:
+                  </option>
+                )}
+              </>
             ))}
           </Select>
           <FormErrorMessage>
@@ -212,15 +228,14 @@ const ApplyForProductForm = (props) => {
   );
 };
 
-
 const ApplyForProduct = (props) => {
   const { isOpen, onOpen, onClose } = props;
   const [isSuccess, setIsSuccess] = React.useState(false);
   const onSuccess = () => setIsSuccess(true);
-  const BackTOApply=()=>{
+  const BackTOApply = () => {
     onClose();
-    setIsSuccess(false)
-  }
+    setIsSuccess(false);
+  };
   return (
     <React.Fragment>
       <Button onClick={onOpen} variantColor="orange">
@@ -234,36 +249,38 @@ const ApplyForProduct = (props) => {
           // my={{base:4,md:"auto"}}
           my="auto"
           minH="650px"
-         
         >
           <ModalHeader display="Flex" justifyContent="space-between" mt={4}>
             <Box>
               <Text as="h3" fontSize="2xl" color="blue.400" lineHeight={1}>
                 Apply for a product
               </Text>
-             {!isSuccess&& <Text as="small" color="gray.400" fontWeight="normal">
-                Please fill the below details
-              </Text>}
+              {!isSuccess && (
+                <Text as="small" color="gray.400" fontWeight="normal">
+                  Please fill the below details
+                </Text>
+              )}
             </Box>
             <Box cursor="pointer">
-             <Box onClick={BackTOApply}> <img src={CloseImg} alt="close"   /></Box>
+              <Box onClick={BackTOApply}>
+                {" "}
+                <img src={CloseImg} alt="close" />
+              </Box>
             </Box>
           </ModalHeader>
 
           <ModalBody>
             <Box maxW="520px">
-            <ApplyFormSuccess show={isSuccess} />
-              {isSuccess ? (
-                null
-              ) : (
-                  <Box maxW={{ base: "100%", md: "280px" }}>
-                    {" "}
-                    <ApplyForProductForm
-                      onClose={onClose}
-                      onSuccess={onSuccess}
-                    />{" "}
-                  </Box>
-                )}
+              <ApplyFormSuccess show={isSuccess} />
+              {isSuccess ? null : (
+                <Box maxW={{ base: "100%", md: "280px" }}>
+                  {" "}
+                  <ApplyForProductForm
+                    onClose={onClose}
+                    onSuccess={onSuccess}
+                  />{" "}
+                </Box>
+              )}
             </Box>
           </ModalBody>
           <hr />
