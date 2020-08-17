@@ -18,7 +18,7 @@ import {
 } from "@chakra-ui/core";
 import './ApplyForProduct.css'
 import Success from "../../Assets/Success.svg";
-
+import './disable.css'
 import { useForm } from "react-hook-form";
 import GotAnyQuestions from "./GotAnyQuestions";
 import ApiServices from "../../services/api.services";
@@ -190,7 +190,7 @@ const ApplyForProductForm = (props) => {
             {productCategories().map((category, idx) => (
               <>
               {(watchProductSelection === "Insurance"&&idx===0) && 
-                <option value="" disabled >
+                <option value="" disabled fontSize="900">
                   Life Insurances:
                 </option>
               }
