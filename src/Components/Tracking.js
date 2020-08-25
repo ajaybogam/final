@@ -16,7 +16,7 @@ const Tracking = (props) => {
       <PageWrapper px="0">
         <MainTitle title="referral partner app" color="blue.600" />
         <Box overflow="hidden" overflowX="auto" w="100%" className="mobile_backround">
-          <TrackingOptions  />
+          <TrackingOptions />
         </Box>
       </PageWrapper>
       <BgStar stars={3} />
@@ -34,22 +34,22 @@ const TrackingOptions = (props) => {
 
   return <Box d="block">
     <SimpleGrid columns={{ base: 3, md: 3 }} width={{ base: "300%", md: "100%" }} mt={16}  >
-    {items.map((item, idx) => <Flex
-      flexDirection="column"
-      justifyContent="flex-end"
-      key={idx}
-      cursor="pointer"
-      opacity={activeIdx === idx ? 1 : window.innerWidth < constants.MOBILE_VIEW ? 1 : .3}
-      p={{ base: 1, md: 4 }}
-      pb={{ base: 0, md: 0 }}
-      onClick={() => setActiveIdx(idx)}
+      {items.map((item, idx) => <Flex
+        flexDirection="column"
+        justifyContent="flex-end"
+        key={idx}
+        cursor="pointer"
+        opacity={activeIdx === idx ? 1 : window.innerWidth < constants.MOBILE_VIEW ? 1 : .3}
+        p={{ base: 1, md: 4 }}
+        pb={{ base: 0, md: 0 }}
+        onClick={() => setActiveIdx(idx)}
       >
-      <Text fontWeight="bold" fontSize={["xl", "2xl"]}>{item.title}</Text>
-      <Text px={{ base: 2, md: 8 }} my={4} w="330px" mx="auto" fontSize={["md", "xl"]}>{item.description}</Text>
-      <Box as="img" display= "block" mt={8} src={item.image} mx="auto" />
-      
-    </Flex>)}
-  </SimpleGrid>
+        <Text fontWeight="bold" fontSize={["xl", "2xl"]}>{item.title}</Text>
+        <Text px={{ base: 2, md: 8 }} my={4} w="330px" mx="auto" fontSize={["md", "xl"]}>{item.description}</Text>
+        <Box as="img" display="block" mt={8} src={item.image} mx="auto" />
+
+      </Flex>)}
+    </SimpleGrid>
   </Box>
 
 }

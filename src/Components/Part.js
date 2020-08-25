@@ -78,7 +78,7 @@ function Part() {
                     lg: idx < 2 ? 8 : 0,
                     xl: idx < 2 ? 16 : 0,
                   }}
-                  //>>>>>>> 1da186fe8849d2d7af562f6172ee62f0e53deb76
+                //>>>>>>> 1da186fe8849d2d7af562f6172ee62f0e53deb76
                 >
                   <Box
                     as="img"
@@ -134,7 +134,7 @@ function Part() {
             src={largeimg}
             ml={{ base: 0, md: 1 }}
             maxW={{ base: "300px", md: "350px", lg: "350px", xl: "438px" }}
-            // {/* >>>>>>> 5cb9ec7ff314de6b60bece8a305f948f3f48ef6b */}
+          // {/* >>>>>>> 5cb9ec7ff314de6b60bece8a305f948f3f48ef6b */}
           ></Box>
         </Flex>
       </PageWrapper>
