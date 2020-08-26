@@ -1,4 +1,4 @@
 option:disabled {
     color: -internal-light-dark(graytext, rgb(170, 170, 170));
-    font-weight: 900;
+    font-weight: 900 !important;
 }

@@ -33,7 +33,7 @@ const TrackingOptions = (props) => {
   ]
 
   return <Box d="block">
-    <SimpleGrid columns={{ base: 3, md: 3 }} width={{ base: "300%", md: "100%" }} mt={16}  >
+    <SimpleGrid columns={{ base: 3, md: 3 }} width={{ base: "100%", md: "100%" }} mt={{base:1,md:16}}  >
       {items.map((item, idx) => <Flex
         flexDirection="column"
         justifyContent="flex-end"
@@ -43,10 +43,11 @@ const TrackingOptions = (props) => {
         p={{ base: 1, md: 4 }}
         pb={{ base: 0, md: 0 }}
         onClick={() => setActiveIdx(idx)}
+        ml={{base:4,md:'0'}}
       >
         <Text fontWeight="bold" fontSize={["xl", "2xl"]}>{item.title}</Text>
-        <Text px={{ base: 2, md: 8 }} my={4} w="330px" mx="auto" fontSize={["md", "xl"]}>{item.description}</Text>
-        <Box as="img" display="block" mt={8} src={item.image} mx="auto" />
+        <Text px={{ base: 2, md: 8 }} my={4} maxW={{base:'240px',md:'330px'}} mx="auto" fontSize={["md", "xl"]}>{item.description}</Text>
+        <Box as="img" display="block" mt={8} src={item.image} mx="auto" maxW={{base:'250px',md:'100%'}} />
 
       </Flex>)}
     </SimpleGrid>
