@@ -27,7 +27,7 @@ function Join() {
               <MainTitle
                 title="Join us as a referral partner now"
                 color="blue.600"
-                fontSize={{ base: "4xl", lg:"6xl" }}
+                fontSize={{ base: "4xl", lg: "6xl" }}
                 mb={4}
                 px="0"
               />
@@ -42,7 +42,7 @@ function Join() {
             </Flex>
           </Box>
           {/* maxW={{base: "180px", md:"240px", lg: "360px"}} */}
-          <Box as="img" maxW={{base: "200px", md:"280px", lg: "360px"}} src={largeimg} ml={{ base: 0, md: 6 }}></Box>
+          <Box as="img" maxW={{ base: "200px", md: "280px", lg: "360px" }} src={largeimg} ml={{ base: 0, md: 6 }}></Box>
         </Flex>
       </PageWrapper>
       <BgStar stars={4} />
