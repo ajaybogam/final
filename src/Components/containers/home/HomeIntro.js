@@ -16,7 +16,7 @@ function HomeIntro() {
           fontWeight="bold"
           color="blue.400"
           lineHeight="1"
-          // mt={{base:10,md:'0px'}}
+        // mt={{base:10,md:'0px'}}
         >
           At the centre of your financial needs
         </Text>
